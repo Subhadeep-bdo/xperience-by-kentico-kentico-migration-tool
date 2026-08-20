@@ -1,4 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
+using Migration.Tool.Extensions.ClassMappings;
 using Migration.Tool.Extensions.CommunityMigrations;
 using Migration.Tool.Extensions.DefaultMigrations;
 using Migration.Tool.KXP.Api.Services.CmsClass;
@@ -16,6 +17,12 @@ public static class ServiceCollectionExtensions
         services.AddTransient<IWidgetPropertyMigration, WidgetPathSelectorMigration>();
         services.AddTransient<IWidgetPropertyMigration, WidgetPageSelectorMigration>();
 
+
+        // Map K13 Home pages to the existing XbyK Home content type
+        services.AddHomePageMapping();
+
+        // Map K13 BDO.Person pages to the existing XbyK BDO.Person page content type
+        services.AddPersonMapping();
 
         // services.AddClassMergeExample();
         // services.AddClassMergeExampleAsReusable();

@@ -664,4 +664,110 @@ public static class ClassMappingSample
         serviceCollection.AddSingleton<IClassMapping>(m);
         return serviceCollection;
     }
+
+    public static IServiceCollection AddHomePageMapping(this IServiceCollection serviceCollection)
+    {
+        // Maps pages of the K13 Home page type into the existing XbyK Home content type and migrates their data.
+        //
+        // Prerequisites:
+        //   1. The target Home content type already exists in the XbyK instance.
+        //   2. Run the CLI with --bypass-dependency-check and WITHOUT --page-types (the target type already exists).
+        //   3. Each mapped target field's data type must be compatible with the source field it is mapped from.
+
+        // Target XbyK Home content type code name (as it exists in the target instance)
+        const string targetClassName = "DancingGoatCore.Home";
+        // Source K13 Home page type code name
+        const string sourceClassName = "DancingGoatCore.Home";
+
+        // No class patcher: the target type already exists, so we don't (re)define its structure.
+        var m = new MultiClassMapping(targetClassName, _ => { });
+
+        // Map each target field to its source field. Left = XbyK field name, right = K13 field name.
+        m.BuildField("HomeTitle").SetFrom(sourceClassName, "HomeTitle");
+        m.BuildField("HomeText").SetFrom(sourceClassName, "HomeText");
+        // Add the remaining field mappings for your Home page type here:
+        // m.BuildField("<XbyKFieldName>").SetFrom(sourceClassName, "<K13FieldName>");
+
+        serviceCollection.AddSingleton<IClassMapping>(m);
+        return serviceCollection;
+    }
+
+    public static IServiceCollection AddPersonMapping(this IServiceCollection serviceCollection)
+    {
+        // Maps pages of the K13 "BDO.Person" page type onto the existing XbyK "BDO.Person" page content type
+        // and migrates their page data.
+        //
+        // Prerequisites:
+        //   1. The target BDO.Person content type already exists in the XbyK instance.
+        //   2. Run the CLI with --bypass-dependency-check and WITHOUT --page-types (the target type already exists).
+        //   3. Each mapped target field's data type must be compatible with the source field it is mapped from.
+        //      Reference/asset target fields (e.g. Metadata* relationships, teaser/OG images) rely on the tool's
+        //      built-in asset and linked-item handling; verify the results after migration.
+        //
+        // NOTE: A custom class mapping only migrates the fields it explicitly maps. Target fields with no source
+        // (IsSearchExcluded, PageTitle, PageDescription, PageKeywords) are left at their defaults.
+
+        // Target XbyK Person content type code name (as it exists in the target instance)
+        const string targetClassName = "BDO.Person";
+        // Source K13 Person page type code name
+        const string sourceClassName = "BDO.Person";
+
+        // No class patcher: the target type already exists, so we don't (re)define its structure.
+        var m = new MultiClassMapping(targetClassName, _ => { });
+
+        // Map each target field to its source field. Left = XbyK field name, right = K13 field name.
+
+        // Person details
+        m.BuildField("PersonFirstName").SetFrom(sourceClassName, "PersonFirstName");
+        m.BuildField("PersonSurnamePrefixes").SetFrom(sourceClassName, "PersonSurnamePrefixes");
+        m.BuildField("PersonLastName").SetFrom(sourceClassName, "PersonLastName");
+        m.BuildField("PersonJobTitle").SetFrom(sourceClassName, "PersonJobTitle");
+        m.BuildField("PersonPhone").SetFrom(sourceClassName, "PersonPhone");
+        m.BuildField("PersonMobilePhone").SetFrom(sourceClassName, "PersonMobilePhone");
+        m.BuildField("PersonDirectDialNumber").SetFrom(sourceClassName, "PersonDirectDialNumber");
+        m.BuildField("PersonEmail").SetFrom(sourceClassName, "PersonEmail");
+        m.BuildField("EnableForm").SetFrom(sourceClassName, "EnableForm");
+        m.BuildField("EnableVCard").SetFrom(sourceClassName, "EnableVCard");
+        m.BuildField("PersonCredentials").SetFrom(sourceClassName, "PersonCredentials");
+
+        // Metadata relationships (six fields are renamed with a "Person" suffix in the target type)
+        m.BuildField("MetadataCity").SetFrom(sourceClassName, "MetadataCity");
+        m.BuildField("MetadataOfficeLocation").SetFrom(sourceClassName, "MetadataOfficeLocation");
+        m.BuildField("MetadataProfileGroups").SetFrom(sourceClassName, "MetadataProfileGroups");
+        m.BuildField("MetadataBusinessLines").SetFrom(sourceClassName, "MetadataBusinessLines");
+        m.BuildField("MetadataServiceAreasPerson").SetFrom(sourceClassName, "MetadataServiceAreas");
+        m.BuildField("MetadataServicesPerson").SetFrom(sourceClassName, "MetadataServices");
+        m.BuildField("MetadataSubServices").SetFrom(sourceClassName, "MetadataSubServices");
+        m.BuildField("MetadataIndustriesPerson").SetFrom(sourceClassName, "MetadataIndustries");
+        m.BuildField("MetadataIndustryServices").SetFrom(sourceClassName, "MetadataIndustryServices");
+        m.BuildField("MetadataIndustryCategoriesPerson").SetFrom(sourceClassName, "MetadataIndustryCategories");
+        m.BuildField("MetadataSpecialtiesCategories").SetFrom(sourceClassName, "MetadataSpecialtiesCategories");
+        m.BuildField("MetadataSpecialtiesAreas").SetFrom(sourceClassName, "MetadataSpecialtiesAreas");
+        m.BuildField("MetadataSpecialtiesPages").SetFrom(sourceClassName, "MetadataSpecialtiesPages");
+        m.BuildField("MicrositeMasterPagesPerson").SetFrom(sourceClassName, "MicrositeMasterPages");
+        m.BuildField("MicrositePagesPerson").SetFrom(sourceClassName, "MicrositePages");
+
+        // Social links
+        m.BuildField("LinkedIn").SetFrom(sourceClassName, "LinkedIn");
+        m.BuildField("Facebook").SetFrom(sourceClassName, "Facebook");
+        m.BuildField("Twitter").SetFrom(sourceClassName, "Twitter");
+
+        // SEO / Open Graph metadata (inherited from the K13 MetadataTreeNode base page type)
+        m.BuildField("MetadataTitle").SetFrom(sourceClassName, "MetadataTitle");
+        m.BuildField("MetadataDescription").SetFrom(sourceClassName, "MetadataDescription");
+        m.BuildField("MetadataTeaserImage").SetFrom(sourceClassName, "MetadataTeaserImage");
+        m.BuildField("MetadataTeaserImageAltText").SetFrom(sourceClassName, "MetadataTeaserImageAltText");
+        m.BuildField("MetadataCanonical").SetFrom(sourceClassName, "MetadataCanonical");
+        m.BuildField("MetadataOGTitle").SetFrom(sourceClassName, "MetadataOGTitle");
+        m.BuildField("MetadataOGDescription").SetFrom(sourceClassName, "MetadataOGDescription");
+        m.BuildField("MetadataOGImage").SetFrom(sourceClassName, "MetadataOGImage");
+        m.BuildField("MetadataOGTwitterImageSizeCheckbox").SetFrom(sourceClassName, "MetadataOGTwitterImageSizeCheckbox");
+        m.BuildField("MetadataOGTwitterImage").SetFrom(sourceClassName, "MetadataOGTwitterImage");
+        m.BuildField("MetadataNofollow").SetFrom(sourceClassName, "MetadataNofollow");
+        m.BuildField("MetadataNoindex").SetFrom(sourceClassName, "MetadataNoindex");
+        m.BuildField("IncludeInSitemap").SetFrom(sourceClassName, "IncludeInSitemap");
+
+        serviceCollection.AddSingleton<IClassMapping>(m);
+        return serviceCollection;
+    }
 }

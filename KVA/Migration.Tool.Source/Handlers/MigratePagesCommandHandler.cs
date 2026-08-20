@@ -559,7 +559,9 @@ public class MigratePagesCommandHandler(
         if (ContentItemFromNode(ksNode)?.ContentItemID is { } contentItemId)
         {
             if (cultureCodeToLanguageGuid!.TryGetValue(linkedDocument.DocumentCulture, out var languageGuid) &&
-                ContentLanguageInfo.Provider.Get(languageGuid) is { } languageInfo)
+                ContentLanguageInfo.Provider.Get()
+                    .WhereEquals(nameof(ContentLanguageInfo.ContentLanguageGUID), languageGuid)
+                    .FirstOrDefault() is { } languageInfo)
             {
                 if (ContentItemCommonDataInfo.Provider.Get()
                         .WhereEquals(nameof(ContentItemCommonDataInfo.ContentItemCommonDataContentItemID), contentItemId)
@@ -770,8 +772,12 @@ public class MigratePagesCommandHandler(
     private async Task MigratePageUrlPaths(Guid webSiteChannelGuid, Guid languageGuid,
         List<ContentItemCommonDataInfo> contentItemCommonDataInfos, ICmsDocument? ksDocument, ICmsTree ksTree, string documentCulture, bool wasLinkedNode, WebPageItemInfo webPageItemInfo)
     {
-        var languageInfo = ContentLanguageInfo.Provider.Get(languageGuid);
-        var webSiteChannel = WebsiteChannelInfo.Provider.Get(webSiteChannelGuid);
+        var languageInfo = ContentLanguageInfo.Provider.Get()
+            .WhereEquals(nameof(ContentLanguageInfo.ContentLanguageGUID), languageGuid)
+            .FirstOrDefault() ?? throw new InvalidOperationException($"Content language '{languageGuid}' not found.");
+        var webSiteChannel = WebsiteChannelInfo.Provider.Get()
+            .WhereEquals(nameof(WebsiteChannelInfo.WebsiteChannelGUID), webSiteChannelGuid)
+            .FirstOrDefault() ?? throw new InvalidOperationException($"Website channel '{webSiteChannelGuid}' not found.");
 
         #region Migration of custom routing model
 
@@ -957,8 +963,12 @@ public class MigratePagesCommandHandler(
             return;
         }
 
-        var languageInfo = ContentLanguageInfo.Provider.Get(languageGuid);
-        var webSiteChannel = WebsiteChannelInfo.Provider.Get(ksSite.SiteGUID);
+        var languageInfo = ContentLanguageInfo.Provider.Get()
+            .WhereEquals(nameof(ContentLanguageInfo.ContentLanguageGUID), languageGuid)
+            .FirstOrDefault() ?? throw new InvalidOperationException($"Content language '{languageGuid}' not found.");
+        var webSiteChannel = WebsiteChannelInfo.Provider.Get()
+            .WhereEquals(nameof(WebsiteChannelInfo.WebsiteChannelGUID), ksSite.SiteGUID)
+            .FirstOrDefault() ?? throw new InvalidOperationException($"Website channel '{ksSite.SiteGUID}' not found.");
 
         var ksUrls = modelFacade.SelectWhere<ICmsAlternativeUrl>("AlternativeUrlDocumentID = @documentId AND AlternativeUrlSiteID = @siteId",
             new SqlParameter("documentId", ksDocument.DocumentID), new SqlParameter("siteId", ksSite.SiteID)).ToArray();
