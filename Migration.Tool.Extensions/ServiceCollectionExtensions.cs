@@ -18,9 +18,6 @@ public static class ServiceCollectionExtensions
         services.AddTransient<IWidgetPropertyMigration, WidgetPageSelectorMigration>();
 
 
-        // Map K13 Home pages to the existing XbyK Home content type
-        services.AddHomePageMapping();
-
         // Map K13 BDO.Person pages to the existing XbyK BDO.Person page content type
         services.AddPersonMapping();
 

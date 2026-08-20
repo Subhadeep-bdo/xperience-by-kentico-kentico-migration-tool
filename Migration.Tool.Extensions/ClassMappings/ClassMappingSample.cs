@@ -665,33 +665,6 @@ public static class ClassMappingSample
         return serviceCollection;
     }
 
-    public static IServiceCollection AddHomePageMapping(this IServiceCollection serviceCollection)
-    {
-        // Maps pages of the K13 Home page type into the existing XbyK Home content type and migrates their data.
-        //
-        // Prerequisites:
-        //   1. The target Home content type already exists in the XbyK instance.
-        //   2. Run the CLI with --bypass-dependency-check and WITHOUT --page-types (the target type already exists).
-        //   3. Each mapped target field's data type must be compatible with the source field it is mapped from.
-
-        // Target XbyK Home content type code name (as it exists in the target instance)
-        const string targetClassName = "DancingGoatCore.Home";
-        // Source K13 Home page type code name
-        const string sourceClassName = "DancingGoatCore.Home";
-
-        // No class patcher: the target type already exists, so we don't (re)define its structure.
-        var m = new MultiClassMapping(targetClassName, _ => { });
-
-        // Map each target field to its source field. Left = XbyK field name, right = K13 field name.
-        m.BuildField("HomeTitle").SetFrom(sourceClassName, "HomeTitle");
-        m.BuildField("HomeText").SetFrom(sourceClassName, "HomeText");
-        // Add the remaining field mappings for your Home page type here:
-        // m.BuildField("<XbyKFieldName>").SetFrom(sourceClassName, "<K13FieldName>");
-
-        serviceCollection.AddSingleton<IClassMapping>(m);
-        return serviceCollection;
-    }
-
     public static IServiceCollection AddPersonMapping(this IServiceCollection serviceCollection)
     {
         // Maps pages of the K13 "BDO.Person" page type onto the existing XbyK "BDO.Person" page content type
