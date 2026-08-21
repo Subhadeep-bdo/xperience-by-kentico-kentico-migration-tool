@@ -1,0 +1,755 @@
+20260821_011404: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 265,
+  "ResourceDisplayName": "A/B testing",
+  "ResourceName": "CMS.ABTest",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "f23e944e-1a51-46f0-8a2e-75bcfc2a70ea",
+  "ResourceLastModified": "2023-06-14T10:07:04.5342678",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011404: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 419,
+  "ResourceDisplayName": "Activities",
+  "ResourceName": "CMS.Activities",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "f26ac0e2-0658-4598-bae8-4cc628758550",
+  "ResourceLastModified": "2023-06-14T10:07:04.5773682",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011404: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 137,
+  "ResourceDisplayName": "Badges",
+  "ResourceName": "CMS.Badges",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "c431cf4a-3734-447e-8c7b-7e01a7aaa202",
+  "ResourceLastModified": "2023-06-14T10:05:28.6862314",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011404: Success: ResourceInfo(ID=470, Guid=36f44633-74cd-4968-a0b1-a934a2c35198 Name=BDO)
+20260821_011404: Success: ResourceInfo(ID=471, Guid=ef797d1f-920e-408e-bd16-d8b0a82f2d57 Name=BDOAPIPermissions)
+20260821_011404: Success: ResourceInfo(ID=472, Guid=0c50b41b-19d0-49fc-8e07-c8d878998278 Name=BDOAuditLog)
+20260821_011404: Success: ResourceInfo(ID=473, Guid=3b072c5a-9e8a-47e2-b789-a31f5e4a2642 Name=BDO.CentralRepository)
+20260821_011404: Success: ResourceInfo(ID=474, Guid=d048fe85-f2b8-4793-a660-dfd2106c7dd5 Name=BDODealCards)
+20260821_011404: Success: ResourceInfo(ID=475, Guid=27297757-9153-4d3a-9af2-8e5f5629e4be Name=BDOEvents)
+20260821_011404: Success: ResourceInfo(ID=476, Guid=a1e42e8b-94c8-4b92-9720-bf63c9259b9c Name=BDO.GDPR)
+20260821_011404: Success: ResourceInfo(ID=477, Guid=27969bb2-b1da-41c5-b54b-011b841c17d6 Name=BDOHosting)
+20260821_011404: Success: ResourceInfo(ID=478, Guid=d2623ab4-a8e2-4896-aea5-14bad509d3fb Name=BDOMetadata)
+20260821_011404: Success: ResourceInfo(ID=479, Guid=1c4398ec-bb67-415a-9f2f-045af7db7671 Name=BDORelease)
+20260821_011404: Success: ResourceInfo(ID=480, Guid=90803d98-9e0c-4de8-a610-d65ac36aea23 Name=BDOSettings)
+20260821_011404: Success: ResourceInfo(ID=481, Guid=c5e6ad4e-2dad-4956-a30f-4f66cd901460 Name=BDOSiteLocalization)
+20260821_011404: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 260,
+  "ResourceDisplayName": "Categories",
+  "ResourceName": "CMS.Categories",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "aafd78f2-91f7-47cc-bf0b-d1a048d9540a",
+  "ResourceLastModified": "2023-06-14T10:07:04.6385136",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011404: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 325,
+  "ResourceDisplayName": "CMS",
+  "ResourceName": "CMS",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "ce1a65a0-80dc-4c53-b0e7-bdecf0aa8c02",
+  "ResourceLastModified": "2023-06-14T10:07:07.3027057",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011404: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 253,
+  "ResourceDisplayName": "Contact management",
+  "ResourceName": "CMS.ContactManagement",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "0e4beef1-989c-4687-80ca-ae21fec09734",
+  "ResourceLastModified": "2023-06-14T10:07:04.721237",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011404: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 54,
+  "ResourceDisplayName": "Content",
+  "ResourceName": "CMS.Content",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "98c6ee00-230a-4207-a6d3-03677b83b245",
+  "ResourceLastModified": "2023-06-14T10:07:04.9699065",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011404: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 409,
+  "ResourceDisplayName": "Continuous integration",
+  "ResourceName": "CMS.ContinuousIntegration",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "03687e8b-82dc-479e-9174-38e478a8af45",
+  "ResourceLastModified": "2023-06-14T10:06:57.5671137",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011404: Success: ResourceInfo(ID=482, Guid=17649fbe-f972-41f9-b0f1-d6f6f3847f76 Name=customsystemmodule)
+20260821_011404: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 129,
+  "ResourceDisplayName": "Custom tables",
+  "ResourceName": "CMS.CustomTables",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "99fac5bf-4371-473b-823a-d6f903a78f50",
+  "ResourceLastModified": "2023-06-14T10:07:05.0711945",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011404: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 449,
+  "ResourceDisplayName": "Data protection",
+  "ResourceName": "CMS.DataProtection",
+  "ResourceDescription": "The module allows the system to be compliant with General Data Protection Regulation.",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "8089f9a7-95d9-4e3c-b95a-91a49ccf10c4",
+  "ResourceLastModified": "2023-06-14T10:07:05.1314371",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011404: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 252,
+  "ResourceDisplayName": "Design",
+  "ResourceName": "CMS.Design",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "b755e8fc-a06f-421a-b749-f2d31d1f2570",
+  "ResourceLastModified": "2023-06-14T10:07:05.190429",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 111,
+  "ResourceDisplayName": "E-commerce",
+  "ResourceName": "CMS.Ecommerce",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "684e021b-8b56-4cbf-8fd5-b7a791fd2dbc",
+  "ResourceLastModified": "2023-06-14T10:07:05.5899668",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 108,
+  "ResourceDisplayName": "Email marketing",
+  "ResourceName": "CMS.Newsletter",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "82445572-642a-4f53-a411-063e5f4b63c0",
+  "ResourceLastModified": "2023-06-14T10:07:06.3842617",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 236,
+  "ResourceDisplayName": "Email templates",
+  "ResourceName": "CMS.EmailTemplates",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "0918154f-3c60-4ac5-8413-c2b4bd619cd0",
+  "ResourceLastModified": "2023-06-14T10:07:05.6899953",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 338,
+  "ResourceDisplayName": "Emails",
+  "ResourceName": "CMS.EmailEngine",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "7675c4a8-a792-4d4c-b83e-38ed24b64eab",
+  "ResourceLastModified": "2023-06-14T10:07:05.6304432",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 141,
+  "ResourceDisplayName": "Event log",
+  "ResourceName": "CMS.EventLog",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "ff8285c1-9d1a-49b3-8c9d-7502e1e533f7",
+  "ResourceLastModified": "2023-06-14T10:07:05.7326505",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 106,
+  "ResourceDisplayName": "Forms",
+  "ResourceName": "CMS.Form",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "385e528a-e013-4a84-bad9-d5956408741a",
+  "ResourceLastModified": "2023-06-14T10:07:05.8812149",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 259,
+  "ResourceDisplayName": "Global permissions",
+  "ResourceName": "CMS.GlobalPermissions",
+  "ResourceDescription": "Contains global permissions.",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "b8a076ee-2344-4292-af65-a679dfa81b59",
+  "ResourceLastModified": "2023-06-14T10:07:05.9583567",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 331,
+  "ResourceDisplayName": "Globalization",
+  "ResourceName": "CMS.Globalization",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "c171949b-8edd-4bcd-95c2-0d6a0dd5cbbb",
+  "ResourceLastModified": "2023-06-14T10:05:28.8664398",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 357,
+  "ResourceDisplayName": "Licenses",
+  "ResourceName": "Licenses",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "490ac665-3c73-4db0-8369-ce305fd252ed",
+  "ResourceLastModified": "2023-06-14T10:07:04.1034484",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 264,
+  "ResourceDisplayName": "Localization",
+  "ResourceName": "CMS.Localization",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "4387e6da-cc0f-4a9d-9604-b8dd78234882",
+  "ResourceLastModified": "2023-06-14T10:07:05.9784137",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 447,
+  "ResourceDisplayName": "Macro engine",
+  "ResourceName": "CMS.MacroEngine",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "313656bc-0d27-4911-80fb-00a69012ba46",
+  "ResourceLastModified": "2023-06-14T10:06:27.4047859",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 164,
+  "ResourceDisplayName": "Media dialog",
+  "ResourceName": "CMS.MediaDialog",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "cb2b7f8d-0517-4d17-95a2-4fd7040bc2b7",
+  "ResourceLastModified": "2023-06-14T10:06:27.5402545",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 140,
+  "ResourceDisplayName": "Media libraries",
+  "ResourceName": "CMS.MediaLibrary",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "f1ae7bb7-e5e2-4944-b0a6-c92be4f95982",
+  "ResourceLastModified": "2023-06-14T10:07:06.162152",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 242,
+  "ResourceDisplayName": "Membership",
+  "ResourceName": "CMS.Membership",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "d4b7561a-f188-420c-8f68-63b5c573b2bf",
+  "ResourceLastModified": "2023-06-14T10:07:06.2340721",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 432,
+  "ResourceDisplayName": "Module licenses",
+  "ResourceName": "CMS.ModuleLicenses",
+  "ResourceDescription": "Module containing application and API for managing licenses of custom modules.",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "83fc020e-c0cd-45c3-aeee-e0b7b12107a2",
+  "ResourceLastModified": "2023-06-14T10:07:06.2666955",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 403,
+  "ResourceDisplayName": "Module usage tracking",
+  "ResourceName": "CMS.ModuleUsageTracking",
+  "ResourceDescription": "Kentico improvement program",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "4deb9523-2bb4-4b88-94cb-557e26cd2824",
+  "ResourceLastModified": "2023-06-14T10:05:28.9610383",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 196,
+  "ResourceDisplayName": "Online marketing",
+  "ResourceName": "CMS.OnlineMarketing",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "bd03e629-e677-42a6-8b12-5277fa04add7",
+  "ResourceLastModified": "2023-06-14T10:07:06.530404",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 339,
+  "ResourceDisplayName": "Pages",
+  "ResourceName": "CMS.DocumentEngine",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "83ff58cf-d7ed-4567-a68c-439daf7e85cf",
+  "ResourceLastModified": "2024-07-09T14:40:34.2076759",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 142,
+  "ResourceDisplayName": "Permissions",
+  "ResourceName": "CMS.Permissions",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "80c352ef-06ae-4e2c-acb5-a58dfa35e90c",
+  "ResourceLastModified": "2023-06-14T10:07:06.5715395",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 361,
+  "ResourceDisplayName": "Personas",
+  "ResourceName": "CMS.Personas",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "904548ca-bed8-45bf-a6d0-42c1bae4d26d",
+  "ResourceLastModified": "2023-06-14T10:07:06.6086315",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 342,
+  "ResourceDisplayName": "Relationships",
+  "ResourceName": "CMS.Relationships",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "04cc7e6c-110c-4d1d-8d4a-fc74e64e1122",
+  "ResourceLastModified": "2023-06-14T10:07:00.9256024",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 114,
+  "ResourceDisplayName": "Reporting",
+  "ResourceName": "CMS.Reporting",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "6620e618-9925-4297-bcf7-ed6d9e21ba21",
+  "ResourceLastModified": "2024-06-17T06:18:21.3950027",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 143,
+  "ResourceDisplayName": "Roles",
+  "ResourceName": "CMS.Roles",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "4dcb3b9b-8bee-4a3e-97dd-610f6e5623a4",
+  "ResourceLastModified": "2023-06-14T10:07:06.7766749",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 144,
+  "ResourceDisplayName": "Scheduled tasks",
+  "ResourceName": "CMS.ScheduledTasks",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "1017a016-7671-4bca-a5b0-8ea84dae01fa",
+  "ResourceLastModified": "2023-06-14T10:07:06.8098428",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 261,
+  "ResourceDisplayName": "Scoring",
+  "ResourceName": "CMS.Scoring",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "65210a3e-5aef-4a10-aa23-17906fcd7039",
+  "ResourceLastModified": "2023-06-14T10:07:06.8414078",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 332,
+  "ResourceDisplayName": "Search",
+  "ResourceName": "CMS.Search",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "7a137c8e-394d-4013-a707-ffd1ca1029c7",
+  "ResourceLastModified": "2023-06-14T10:07:01.3534883",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 450,
+  "ResourceDisplayName": "Search - Azure",
+  "ResourceName": "CMS.Search.Azure",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "6b0a5d42-3671-4eec-8d05-0d3d249ef207",
+  "ResourceLastModified": "2023-06-14T10:06:30.1647119",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 394,
+  "ResourceDisplayName": "SharePoint",
+  "ResourceName": "CMS.SharePoint",
+  "ResourceDescription": "This module extends the capabilities of integration with Microsoft SharePoint.",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "978f8972-606c-4f8f-9b01-7b650a5ca31d",
+  "ResourceLastModified": "2023-06-14T10:07:06.877003",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 350,
+  "ResourceDisplayName": "Social media",
+  "ResourceName": "CMS.SocialMarketing",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "66fed7e0-3dfc-4367-9350-0ce620cc1d7e",
+  "ResourceLastModified": "2023-06-14T10:07:06.9674094",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 110,
+  "ResourceDisplayName": "Staging",
+  "ResourceName": "CMS.Staging",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "b1640241-8905-4845-ac9a-0301cb60cb63",
+  "ResourceLastModified": "2023-06-14T10:07:07.0792274",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 333,
+  "ResourceDisplayName": "Synchronization",
+  "ResourceName": "CMS.Synchronization",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "0d650be6-b050-46c5-8a4c-b1e8afe2b052",
+  "ResourceLastModified": "2023-06-14T10:05:29.1292882",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 336,
+  "ResourceDisplayName": "Taxonomy",
+  "ResourceName": "CMS.Taxonomy",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "98145ff3-36e3-43a5-a006-c43bfc764ab0",
+  "ResourceLastModified": "2023-06-14T10:07:01.9750397",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 286,
+  "ResourceDisplayName": "Translations",
+  "ResourceName": "CMS.TranslationServices",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "1ab44056-7cc1-4ad2-bc49-3adae489654f",
+  "ResourceLastModified": "2023-06-14T10:07:07.1183674",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 158,
+  "ResourceDisplayName": "UI personalization",
+  "ResourceName": "CMS.UIPersonalization",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "ab8fa139-0db5-4276-b8ad-e408bd981696",
+  "ResourceLastModified": "2023-06-14T10:07:07.155529",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 145,
+  "ResourceDisplayName": "Users",
+  "ResourceName": "CMS.Users",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "31882975-240a-4bcf-bc38-09a3d21df485",
+  "ResourceLastModified": "2023-06-14T10:07:07.2181498",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 115,
+  "ResourceDisplayName": "Web analytics",
+  "ResourceName": "CMS.WebAnalytics",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "d3c82114-86f7-4aa9-8206-9b006100641c",
+  "ResourceLastModified": "2023-06-14T10:07:07.2686038",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011405: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 335,
+  "ResourceDisplayName": "Web farms",
+  "ResourceName": "CMS.WebFarm",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "b8cebc73-6fe5-4428-b522-8c7841d89af8",
+  "ResourceLastModified": "2023-06-14T10:07:02.492621",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011406: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 152,
+  "ResourceDisplayName": "Widgets",
+  "ResourceName": "CMS.Widgets",
+  "ResourceDescription": "{$cms.widgets.description$}",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "c408448c-9373-42b0-950d-812d5c95f57b",
+  "ResourceLastModified": "2023-06-14T10:07:07.2856516",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011406: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 360,
+  "ResourceDisplayName": "WIF integration",
+  "ResourceName": "CMS.WIFIntegration",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "7151f929-7dd0-484a-a107-06e837dda3e5",
+  "ResourceLastModified": "2023-06-14T10:05:29.2242327",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011406: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 334,
+  "ResourceDisplayName": "Workflow",
+  "ResourceName": "CMS.WorkflowEngine",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "2b67f370-3df4-4a4d-8734-1974639c5b69",
+  "ResourceLastModified": "2023-06-14T10:05:29.2344248",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011406: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 151,
+  "ResourceDisplayName": "WYSIWYG editor",
+  "ResourceName": "CMS.WYSIWYGEditor",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "8159098b-ea70-40df-ae2e-f7730ea6814e",
+  "ResourceLastModified": "2023-06-14T10:06:34.0903681",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_011406: Success: ResourceInfo(ID=483, Guid=448ec3fa-8afc-459f-8c21-ae6e71996394 Name=URLRedirection)

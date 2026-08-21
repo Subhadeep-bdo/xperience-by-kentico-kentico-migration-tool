@@ -1,0 +1,1237 @@
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 265,
+  "ResourceDisplayName": "A/B testing",
+  "ResourceName": "CMS.ABTest",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "f23e944e-1a51-46f0-8a2e-75bcfc2a70ea",
+  "ResourceLastModified": "2023-06-14T10:07:04.5342678",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 419,
+  "ResourceDisplayName": "Activities",
+  "ResourceName": "CMS.Activities",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "f26ac0e2-0658-4598-bae8-4cc628758550",
+  "ResourceLastModified": "2023-06-14T10:07:04.5773682",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 137,
+  "ResourceDisplayName": "Badges",
+  "ResourceName": "CMS.Badges",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "c431cf4a-3734-447e-8c7b-7e01a7aaa202",
+  "ResourceLastModified": "2023-06-14T10:05:28.6862314",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: Success: ResourceInfo(ID=470, Guid=36f44633-74cd-4968-a0b1-a934a2c35198 Name=BDO)
+20260821_012206: Success: ResourceInfo(ID=471, Guid=ef797d1f-920e-408e-bd16-d8b0a82f2d57 Name=BDOAPIPermissions)
+20260821_012206: Success: ResourceInfo(ID=472, Guid=0c50b41b-19d0-49fc-8e07-c8d878998278 Name=BDOAuditLog)
+20260821_012206: Success: ResourceInfo(ID=473, Guid=3b072c5a-9e8a-47e2-b789-a31f5e4a2642 Name=BDO.CentralRepository)
+20260821_012206: Success: ResourceInfo(ID=474, Guid=d048fe85-f2b8-4793-a660-dfd2106c7dd5 Name=BDODealCards)
+20260821_012206: Success: ResourceInfo(ID=475, Guid=27297757-9153-4d3a-9af2-8e5f5629e4be Name=BDOEvents)
+20260821_012206: Success: ResourceInfo(ID=476, Guid=a1e42e8b-94c8-4b92-9720-bf63c9259b9c Name=BDO.GDPR)
+20260821_012206: Success: ResourceInfo(ID=477, Guid=27969bb2-b1da-41c5-b54b-011b841c17d6 Name=BDOHosting)
+20260821_012206: Success: ResourceInfo(ID=478, Guid=d2623ab4-a8e2-4896-aea5-14bad509d3fb Name=BDOMetadata)
+20260821_012206: Success: ResourceInfo(ID=479, Guid=1c4398ec-bb67-415a-9f2f-045af7db7671 Name=BDORelease)
+20260821_012206: Success: ResourceInfo(ID=480, Guid=90803d98-9e0c-4de8-a610-d65ac36aea23 Name=BDOSettings)
+20260821_012206: Success: ResourceInfo(ID=481, Guid=c5e6ad4e-2dad-4956-a30f-4f66cd901460 Name=BDOSiteLocalization)
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 260,
+  "ResourceDisplayName": "Categories",
+  "ResourceName": "CMS.Categories",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "aafd78f2-91f7-47cc-bf0b-d1a048d9540a",
+  "ResourceLastModified": "2023-06-14T10:07:04.6385136",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 325,
+  "ResourceDisplayName": "CMS",
+  "ResourceName": "CMS",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "ce1a65a0-80dc-4c53-b0e7-bdecf0aa8c02",
+  "ResourceLastModified": "2023-06-14T10:07:07.3027057",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 253,
+  "ResourceDisplayName": "Contact management",
+  "ResourceName": "CMS.ContactManagement",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "0e4beef1-989c-4687-80ca-ae21fec09734",
+  "ResourceLastModified": "2023-06-14T10:07:04.721237",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 54,
+  "ResourceDisplayName": "Content",
+  "ResourceName": "CMS.Content",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "98c6ee00-230a-4207-a6d3-03677b83b245",
+  "ResourceLastModified": "2023-06-14T10:07:04.9699065",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 409,
+  "ResourceDisplayName": "Continuous integration",
+  "ResourceName": "CMS.ContinuousIntegration",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "03687e8b-82dc-479e-9174-38e478a8af45",
+  "ResourceLastModified": "2023-06-14T10:06:57.5671137",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: Success: ResourceInfo(ID=482, Guid=17649fbe-f972-41f9-b0f1-d6f6f3847f76 Name=customsystemmodule)
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 129,
+  "ResourceDisplayName": "Custom tables",
+  "ResourceName": "CMS.CustomTables",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "99fac5bf-4371-473b-823a-d6f903a78f50",
+  "ResourceLastModified": "2023-06-14T10:07:05.0711945",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 449,
+  "ResourceDisplayName": "Data protection",
+  "ResourceName": "CMS.DataProtection",
+  "ResourceDescription": "The module allows the system to be compliant with General Data Protection Regulation.",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "8089f9a7-95d9-4e3c-b95a-91a49ccf10c4",
+  "ResourceLastModified": "2023-06-14T10:07:05.1314371",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 252,
+  "ResourceDisplayName": "Design",
+  "ResourceName": "CMS.Design",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "b755e8fc-a06f-421a-b749-f2d31d1f2570",
+  "ResourceLastModified": "2023-06-14T10:07:05.190429",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 111,
+  "ResourceDisplayName": "E-commerce",
+  "ResourceName": "CMS.Ecommerce",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "684e021b-8b56-4cbf-8fd5-b7a791fd2dbc",
+  "ResourceLastModified": "2023-06-14T10:07:05.5899668",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 108,
+  "ResourceDisplayName": "Email marketing",
+  "ResourceName": "CMS.Newsletter",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "82445572-642a-4f53-a411-063e5f4b63c0",
+  "ResourceLastModified": "2023-06-14T10:07:06.3842617",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 236,
+  "ResourceDisplayName": "Email templates",
+  "ResourceName": "CMS.EmailTemplates",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "0918154f-3c60-4ac5-8413-c2b4bd619cd0",
+  "ResourceLastModified": "2023-06-14T10:07:05.6899953",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 338,
+  "ResourceDisplayName": "Emails",
+  "ResourceName": "CMS.EmailEngine",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "7675c4a8-a792-4d4c-b83e-38ed24b64eab",
+  "ResourceLastModified": "2023-06-14T10:07:05.6304432",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 141,
+  "ResourceDisplayName": "Event log",
+  "ResourceName": "CMS.EventLog",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "ff8285c1-9d1a-49b3-8c9d-7502e1e533f7",
+  "ResourceLastModified": "2023-06-14T10:07:05.7326505",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 106,
+  "ResourceDisplayName": "Forms",
+  "ResourceName": "CMS.Form",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "385e528a-e013-4a84-bad9-d5956408741a",
+  "ResourceLastModified": "2023-06-14T10:07:05.8812149",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 259,
+  "ResourceDisplayName": "Global permissions",
+  "ResourceName": "CMS.GlobalPermissions",
+  "ResourceDescription": "Contains global permissions.",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "b8a076ee-2344-4292-af65-a679dfa81b59",
+  "ResourceLastModified": "2023-06-14T10:07:05.9583567",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 331,
+  "ResourceDisplayName": "Globalization",
+  "ResourceName": "CMS.Globalization",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "c171949b-8edd-4bcd-95c2-0d6a0dd5cbbb",
+  "ResourceLastModified": "2023-06-14T10:05:28.8664398",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 357,
+  "ResourceDisplayName": "Licenses",
+  "ResourceName": "Licenses",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "490ac665-3c73-4db0-8369-ce305fd252ed",
+  "ResourceLastModified": "2023-06-14T10:07:04.1034484",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 264,
+  "ResourceDisplayName": "Localization",
+  "ResourceName": "CMS.Localization",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "4387e6da-cc0f-4a9d-9604-b8dd78234882",
+  "ResourceLastModified": "2023-06-14T10:07:05.9784137",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 447,
+  "ResourceDisplayName": "Macro engine",
+  "ResourceName": "CMS.MacroEngine",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "313656bc-0d27-4911-80fb-00a69012ba46",
+  "ResourceLastModified": "2023-06-14T10:06:27.4047859",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 164,
+  "ResourceDisplayName": "Media dialog",
+  "ResourceName": "CMS.MediaDialog",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "cb2b7f8d-0517-4d17-95a2-4fd7040bc2b7",
+  "ResourceLastModified": "2023-06-14T10:06:27.5402545",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 140,
+  "ResourceDisplayName": "Media libraries",
+  "ResourceName": "CMS.MediaLibrary",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "f1ae7bb7-e5e2-4944-b0a6-c92be4f95982",
+  "ResourceLastModified": "2023-06-14T10:07:06.162152",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 242,
+  "ResourceDisplayName": "Membership",
+  "ResourceName": "CMS.Membership",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "d4b7561a-f188-420c-8f68-63b5c573b2bf",
+  "ResourceLastModified": "2023-06-14T10:07:06.2340721",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 432,
+  "ResourceDisplayName": "Module licenses",
+  "ResourceName": "CMS.ModuleLicenses",
+  "ResourceDescription": "Module containing application and API for managing licenses of custom modules.",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "83fc020e-c0cd-45c3-aeee-e0b7b12107a2",
+  "ResourceLastModified": "2023-06-14T10:07:06.2666955",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 403,
+  "ResourceDisplayName": "Module usage tracking",
+  "ResourceName": "CMS.ModuleUsageTracking",
+  "ResourceDescription": "Kentico improvement program",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "4deb9523-2bb4-4b88-94cb-557e26cd2824",
+  "ResourceLastModified": "2023-06-14T10:05:28.9610383",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 196,
+  "ResourceDisplayName": "Online marketing",
+  "ResourceName": "CMS.OnlineMarketing",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "bd03e629-e677-42a6-8b12-5277fa04add7",
+  "ResourceLastModified": "2023-06-14T10:07:06.530404",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 339,
+  "ResourceDisplayName": "Pages",
+  "ResourceName": "CMS.DocumentEngine",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "83ff58cf-d7ed-4567-a68c-439daf7e85cf",
+  "ResourceLastModified": "2024-07-09T14:40:34.2076759",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 142,
+  "ResourceDisplayName": "Permissions",
+  "ResourceName": "CMS.Permissions",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "80c352ef-06ae-4e2c-acb5-a58dfa35e90c",
+  "ResourceLastModified": "2023-06-14T10:07:06.5715395",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 361,
+  "ResourceDisplayName": "Personas",
+  "ResourceName": "CMS.Personas",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "904548ca-bed8-45bf-a6d0-42c1bae4d26d",
+  "ResourceLastModified": "2023-06-14T10:07:06.6086315",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012206: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 342,
+  "ResourceDisplayName": "Relationships",
+  "ResourceName": "CMS.Relationships",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "04cc7e6c-110c-4d1d-8d4a-fc74e64e1122",
+  "ResourceLastModified": "2023-06-14T10:07:00.9256024",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012207: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 114,
+  "ResourceDisplayName": "Reporting",
+  "ResourceName": "CMS.Reporting",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "6620e618-9925-4297-bcf7-ed6d9e21ba21",
+  "ResourceLastModified": "2024-06-17T06:18:21.3950027",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012207: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 143,
+  "ResourceDisplayName": "Roles",
+  "ResourceName": "CMS.Roles",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "4dcb3b9b-8bee-4a3e-97dd-610f6e5623a4",
+  "ResourceLastModified": "2023-06-14T10:07:06.7766749",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012207: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 144,
+  "ResourceDisplayName": "Scheduled tasks",
+  "ResourceName": "CMS.ScheduledTasks",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "1017a016-7671-4bca-a5b0-8ea84dae01fa",
+  "ResourceLastModified": "2023-06-14T10:07:06.8098428",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012207: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 261,
+  "ResourceDisplayName": "Scoring",
+  "ResourceName": "CMS.Scoring",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "65210a3e-5aef-4a10-aa23-17906fcd7039",
+  "ResourceLastModified": "2023-06-14T10:07:06.8414078",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012207: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 332,
+  "ResourceDisplayName": "Search",
+  "ResourceName": "CMS.Search",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "7a137c8e-394d-4013-a707-ffd1ca1029c7",
+  "ResourceLastModified": "2023-06-14T10:07:01.3534883",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012207: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 450,
+  "ResourceDisplayName": "Search - Azure",
+  "ResourceName": "CMS.Search.Azure",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "6b0a5d42-3671-4eec-8d05-0d3d249ef207",
+  "ResourceLastModified": "2023-06-14T10:06:30.1647119",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012207: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 394,
+  "ResourceDisplayName": "SharePoint",
+  "ResourceName": "CMS.SharePoint",
+  "ResourceDescription": "This module extends the capabilities of integration with Microsoft SharePoint.",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "978f8972-606c-4f8f-9b01-7b650a5ca31d",
+  "ResourceLastModified": "2023-06-14T10:07:06.877003",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012207: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 350,
+  "ResourceDisplayName": "Social media",
+  "ResourceName": "CMS.SocialMarketing",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "66fed7e0-3dfc-4367-9350-0ce620cc1d7e",
+  "ResourceLastModified": "2023-06-14T10:07:06.9674094",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012207: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 110,
+  "ResourceDisplayName": "Staging",
+  "ResourceName": "CMS.Staging",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "b1640241-8905-4845-ac9a-0301cb60cb63",
+  "ResourceLastModified": "2023-06-14T10:07:07.0792274",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012207: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 333,
+  "ResourceDisplayName": "Synchronization",
+  "ResourceName": "CMS.Synchronization",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "0d650be6-b050-46c5-8a4c-b1e8afe2b052",
+  "ResourceLastModified": "2023-06-14T10:05:29.1292882",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012207: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 336,
+  "ResourceDisplayName": "Taxonomy",
+  "ResourceName": "CMS.Taxonomy",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "98145ff3-36e3-43a5-a006-c43bfc764ab0",
+  "ResourceLastModified": "2023-06-14T10:07:01.9750397",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012207: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 286,
+  "ResourceDisplayName": "Translations",
+  "ResourceName": "CMS.TranslationServices",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "1ab44056-7cc1-4ad2-bc49-3adae489654f",
+  "ResourceLastModified": "2023-06-14T10:07:07.1183674",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012207: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 158,
+  "ResourceDisplayName": "UI personalization",
+  "ResourceName": "CMS.UIPersonalization",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "ab8fa139-0db5-4276-b8ad-e408bd981696",
+  "ResourceLastModified": "2023-06-14T10:07:07.155529",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012207: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 145,
+  "ResourceDisplayName": "Users",
+  "ResourceName": "CMS.Users",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "31882975-240a-4bcf-bc38-09a3d21df485",
+  "ResourceLastModified": "2023-06-14T10:07:07.2181498",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012207: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 115,
+  "ResourceDisplayName": "Web analytics",
+  "ResourceName": "CMS.WebAnalytics",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "d3c82114-86f7-4aa9-8206-9b006100641c",
+  "ResourceLastModified": "2023-06-14T10:07:07.2686038",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012207: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 335,
+  "ResourceDisplayName": "Web farms",
+  "ResourceName": "CMS.WebFarm",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "b8cebc73-6fe5-4428-b522-8c7841d89af8",
+  "ResourceLastModified": "2023-06-14T10:07:02.492621",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012207: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 152,
+  "ResourceDisplayName": "Widgets",
+  "ResourceName": "CMS.Widgets",
+  "ResourceDescription": "{$cms.widgets.description$}",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "c408448c-9373-42b0-950d-812d5c95f57b",
+  "ResourceLastModified": "2023-06-14T10:07:07.2856516",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012207: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 360,
+  "ResourceDisplayName": "WIF integration",
+  "ResourceName": "CMS.WIFIntegration",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "7151f929-7dd0-484a-a107-06e837dda3e5",
+  "ResourceLastModified": "2023-06-14T10:05:29.2242327",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": true,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012207: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 334,
+  "ResourceDisplayName": "Workflow",
+  "ResourceName": "CMS.WorkflowEngine",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceGUID": "2b67f370-3df4-4a4d-8734-1974639c5b69",
+  "ResourceLastModified": "2023-06-14T10:05:29.2344248",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012207: NeedManualAction: False, ReferenceName: NotSupportedSkip, AdditionalInfo: Type: ICmsResource, Entity: ICmsResource({
+  "ResourceID": 151,
+  "ResourceDisplayName": "WYSIWYG editor",
+  "ResourceName": "CMS.WYSIWYGEditor",
+  "ResourceDescription": "",
+  "ShowInDevelopment": false,
+  "ResourceURL": "",
+  "ResourceGUID": "8159098b-ea70-40df-ae2e-f7730ea6814e",
+  "ResourceLastModified": "2023-06-14T10:06:34.0903681",
+  "ResourceIsInDevelopment": false,
+  "ResourceHasFiles": false,
+  "ResourceInstallationState": "",
+  "ResourceInstalledVersion": ""
+})
+
+20260821_012207: Success: ResourceInfo(ID=483, Guid=448ec3fa-8afc-459f-8c21-ae6e71996394 Name=URLRedirection)
+20260821_012213: Success: DataClassInfo(ID=9943, GUID=634aeb6c-5299-45ed-a730-7d7441cddca8, Name=BDORelease.UpgradeLog)
+20260821_012214: Success: DataClassInfo(ID=9944, GUID=00b6c10a-d362-4884-b120-7e504bcd1e28, Name=BDOSettings.SocialLinks)
+20260821_012214: Success: DataClassInfo(ID=9945, GUID=9d264c22-50c0-4297-a760-c43285ce7fc2, Name=BDOSettings.FooterLinks)
+20260821_012214: Success: DataClassInfo(ID=9946, GUID=929505ad-53f9-41f4-9986-73c90bc922df, Name=BDOAPIPermissions.UserApiPermission)
+20260821_012215: Success: DataClassInfo(ID=9947, GUID=8894139e-3056-44a8-8516-77d33b7efe4a, Name=BDOAPIPermissions.ApiMethodGroup)
+20260821_012215: Success: DataClassInfo(ID=9948, GUID=9ed00376-5468-47b0-a5f2-09c1862b7f99, Name=BDOMetadata.CareerEmploymentType)
+20260821_012215: Success: DataClassInfo(ID=9949, GUID=588b67e7-ab9f-4057-848b-0c4300698331, Name=BDOMetadata.ProfileGroup)
+20260821_012215: Success: DataClassInfo(ID=9950, GUID=a6951637-33cc-4516-b25d-382a4121b307, Name=BDOMetadata.TestimonialServiceLine)
+20260821_012216: Success: DataClassInfo(ID=9951, GUID=41be9cc7-f059-4ab8-80bb-61822d9645ef, Name=BDOMetadata.RSSCategory)
+20260821_012216: Success: DataClassInfo(ID=9952, GUID=1ba7c082-3f6a-4ef1-a2c6-6265ccbb3d44, Name=BDOMetadata.TestimonialIndustry)
+20260821_012216: Success: DataClassInfo(ID=9953, GUID=157b4376-6940-4109-a00e-800a35b1f65e, Name=BDOMetadata.CareerJobTitle)
+20260821_012217: Success: DataClassInfo(ID=9954, GUID=98898183-10b7-4145-bde0-9244c9f41fcd, Name=BDOMetadata.CareerType)
+20260821_012217: Success: DataClassInfo(ID=9955, GUID=27d44c66-e3b9-4b07-b66b-9afc6151f507, Name=BDOMetadata.TestimonialClientType)
+20260821_012217: Success: DataClassInfo(ID=9956, GUID=7c2924d2-20da-42dc-b653-be0c248e33ac, Name=BDOMetadata.ContentType)
+20260821_012217: Success: DataClassInfo(ID=9957, GUID=e7516643-c3f4-49b3-a08c-c48d92bd3144, Name=BDOMetadata.ProfileRelationship)
+20260821_012218: Success: DataClassInfo(ID=9958, GUID=f234bc81-5aed-4f48-9e1a-c4ed99f7dfd1, Name=BDOMetadata.CareerLevel)
+20260821_012218: Success: DataClassInfo(ID=9959, GUID=32c9b691-173c-4cab-830f-e53d3d77420e, Name=BDOMetadata.EventType)
+20260821_012218: Success: DataClassInfo(ID=9960, GUID=8224f7dd-b0a5-4f60-b3b8-f8c754d3f5a9, Name=BDOMetadata.Credentials)
+20260821_012218: Success: DataClassInfo(ID=9961, GUID=08c510ca-bc00-4676-a0b7-fe98ec7ac9f7, Name=BDOMetadata.BusinessIssue)
+20260821_012219: Success: DataClassInfo(ID=9962, GUID=b556ce08-4063-41aa-bcbf-d5599bca9ea9, Name=BDO.GDPRConsent)
+20260821_012219: Success: DataClassInfo(ID=9963, GUID=e84d3d6e-5de0-4e05-afad-194c569a7ad0, Name=BDO.PeopleSort)
+20260821_012219: Success: DataClassInfo(ID=9964, GUID=bc6bc79c-c80d-40c0-80eb-2bd2635ca660, Name=BDO.LinkedPages)
+20260821_012219: Success: DataClassInfo(ID=9965, GUID=436a07f1-bb53-41e9-86bf-10ff91ad35d8, Name=URLRedirection.RedirectionTable)
+20260821_012220: Success: DataClassInfo(ID=9966, GUID=fc02ba50-528f-4db8-9424-29515083e2dd, Name=BDO.CentralRepositoryInsight)
+20260821_012220: Success: DataClassInfo(ID=9967, GUID=1a7be163-50af-497c-9f29-67a5913bc28a, Name=BDO.CentralRepositoryDeletedDocument)
+20260821_012220: Success: DataClassInfo(ID=9968, GUID=8f992a03-7bb4-4e30-9cb0-e3f508984c28, Name=BDO.CentralRepositoryMyInsight)
+20260821_012221: Success: DataClassInfo(ID=9969, GUID=e8732d5d-c5b3-4a17-89ed-bf763cabe077, Name=BDO.EventRegistration)
+20260821_012221: Success: DataClassInfo(ID=9970, GUID=59cd9f18-68c2-4d4c-9105-62e6e84aff43, Name=BDO.GDPRDeleteLog)
+20260821_012221: Success: DataClassInfo(ID=9971, GUID=d685acf7-b42a-44da-8168-ad48e6f81e24, Name=BDO.GDPRContact)
+20260821_012221: Success: DataClassInfo(ID=9972, GUID=a7053c43-0495-4a79-b6ac-2efe0345b9fa, Name=BDOSiteLocalization.SiteTranslation)
+20260821_012221: Success: DataClassInfo(ID=9973, GUID=5c0dbfed-c7d7-46b5-b475-037ed4f5bfea, Name=BDODealCards.SubIndustry)
+20260821_012222: Success: DataClassInfo(ID=9974, GUID=613da3b0-df0f-47a6-8092-3d35f1dd9e00, Name=BDODealCards.GlobalIndustry)
+20260821_012222: Success: DataClassInfo(ID=9975, GUID=bb536de9-7cbc-4824-afee-561720df17a4, Name=BDODealCards.Range)
+20260821_012222: Success: DataClassInfo(ID=9976, GUID=1f5f228e-a8b2-434f-89d1-793cca65edbe, Name=BDODealCards.DealType)
+20260821_012222: Success: DataClassInfo(ID=9977, GUID=d4a70acd-37e2-4b47-90f1-7fd972907017, Name=BDODealCards.GlobalDealType)
+20260821_012223: Success: DataClassInfo(ID=9978, GUID=c8e72e1c-0cfe-42b5-b497-c29e8a9642ef, Name=BDODealCards.GlobalSubIndustry)
+20260821_012223: Success: DataClassInfo(ID=9979, GUID=7ce17360-1497-490b-8f07-dde70d286fd5, Name=BDODealCards.Industry)
+20260821_012223: Success: DataClassInfo(ID=9980, GUID=2dd51cd6-9245-427d-860c-0546e95090b0, Name=BDOSiteLocalization.DateFormat)
+20260821_012223: Success: DataClassInfo(ID=9981, GUID=f69acbf8-f096-4002-b55e-a1dd876af1df, Name=BDOSiteLocalization.SiteCultures)
+20260821_012223: Success: DataClassInfo(ID=9982, GUID=8fd325e6-d4a6-4766-9773-0072ffd4d5af, Name=BDOAuditLog.AuditLog)
+20260821_012223: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: ICmsResource, FieldName: ResourceID, SourceValue: 463
+
+20260821_012224: Success: DataClassInfo(ID=9983, GUID=fe52fcce-b559-4f6b-b33c-3243e6e072d1, Name=BDOHosting.HostedFile)
+20260821_012225: NeedManualAction: False, ReferenceName: CmsClass_CmsRootClassTypeSkip, AdditionalInfo: 
+20260821_012225: Success: DataClassInfo(ID=5692, GUID=7539c21d-cde0-4d71-ab9f-12de5ddec092, Name=Ecommerce.Transformations)
+20260821_012243: Success: DataClassInfo(ID=9984, GUID=9c67a80a-ba22-4ad6-92ff-734f2327e4c0, Name=BDO.DealFolder)
+20260821_012302: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5610
+
+20260821_012302: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012302: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5520
+
+20260821_012302: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012302: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012302: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012302: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012302: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012302: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012302: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012302: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012302: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012302: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012302: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012303: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012303: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012303: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012303: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012303: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5610
+
+20260821_012303: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012303: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012303: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012303: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012303: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012303: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012303: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012303: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012303: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012303: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012303: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012304: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012304: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012304: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012304: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012304: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012304: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012304: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012304: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012304: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012304: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012304: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012304: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012304: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012304: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012304: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012304: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012304: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012304: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5610
+
+20260821_012305: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012305: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012305: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012305: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012305: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012305: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012305: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: DataClassInfo, FieldName: ClassID, SourceValue: 5513
+
+20260821_012555: NeedManualAction: False, ReferenceName: CmsUser_SkipAdminUser, AdditionalInfo: Entity: UserInfo(ID=53, Guid=6415b8ce-8072-4bcd-8e48-9d7178b826b7 Name=administrator)
+
+20260821_012555: Success: UserInfo(ID=132, Guid=9a993fad-7099-4772-8074-31dfad7e55df Name=lachezar.milushev@mgt.bdo.global)
+20260821_012555: Success: UserInfo(ID=133, Guid=6499e569-0cca-4099-b694-c09e243bc7cd Name=Mykolas.Petraitis@mgt.bdo.global)
+20260821_012555: Success: UserInfo(ID=134, Guid=b990ef0c-a6bf-4116-b753-86f8e6d58e02 Name=Edvinas.Vasiliauskas@mgt.bdo.global)
+20260821_012555: Success: UserInfo(ID=135, Guid=84edd5b8-94c2-45f3-bb5e-b2f634148b7b Name=John.Valle@mgt.bdo.global)
+20260821_012555: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.Membership.UserInfo, Exception: CMS.DataEngine.InfoObjectException: Cannot set info object, domain validation failed (Field name: Email): Enter an email address.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfo(TInfo info)
+   at CMS.Membership.UserInfoProvider.SetUserInfoInternal(UserInfo user)
+   at CMS.Membership.UserInfoProvider.Set(UserInfo info)
+   at Migration.Tool.Core.KX13.Handlers.MigrateUsersCommandHandler.SaveUserUsingKenticoApi(IModelMappingResult`1 mapped, CmsUser kx13User) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\Migration.Tool.Core.KX13\Handlers\MigrateUsersCommandHandler.cs:line 95, Entity: UserInfo(ID=0, Guid=bb014c64-8d01-4bf7-89e9-3f1239f021a3 Name=Editor)
+
+20260821_012555: Success: UserInfo(ID=136, Guid=6f655cf5-5717-4784-8429-a08b6179b9b7 Name=Nerijus.Viluckas@mgt.bdo.global)
+20260821_012555: Success: UserInfo(ID=137, Guid=a689d431-3c63-4c95-9cfd-2f01243235d9 Name=Jurate.Jurkevice@mgt.bdo.global)
+20260821_012555: Success: UserInfo(ID=138, Guid=03a73bab-9fdc-4cbf-b6a5-f48e02fbef94 Name=Rita.Kasperaviciene@mgt.bdo.global)
+20260821_012555: Success: UserInfo(ID=139, Guid=8ef1501b-9d35-4fba-a350-e27061f3dff8 Name=Rytis.Krusinskas@mgt.bdo.global)
+20260821_012555: Success: UserInfo(ID=140, Guid=a5c0588f-b422-438d-84a6-c28e2fe50e23 Name=Sarunas.Dubinskas@mgt.bdo.global)
+20260821_012555: Success: UserInfo(ID=141, Guid=cde171d6-04e1-434a-8c77-818ce8fde158 Name=Tadas.Lape@mgt.bdo.global)
+20260821_012556: Success: UserInfo(ID=142, Guid=d1b102a1-b8a2-427e-bbbe-c3355a2627a1 Name=UserName)
+20260821_012556: Success: UserInfo(ID=143, Guid=cf63f980-ce9d-47df-a01f-90405337d4a9 Name=Lukas.Beizaras@mgt.bdo.global)
+20260821_012556: Success: UserInfo(ID=144, Guid=56656967-f748-48a3-a999-989b0a426962 Name=Edvinas.Svetlauskas@mgt.bdo.global)
+20260821_012556: Success: UserInfo(ID=145, Guid=352e0ac0-99b3-4803-be72-58868b1081d7 Name=Lina.Buineviciute@mgt.bdo.global)
+20260821_012556: Success: UserInfo(ID=146, Guid=dad9c4c3-35b9-40af-81d0-98d897e7a82b Name=Vipul.Kumar@mgt.bdo.global)
+20260821_012556: Success: UserInfo(ID=147, Guid=87992b10-7c70-405a-b6c6-3971e25c4066 Name=Vishwash.Kumar@mgt.bdo.global)
+20260821_012556: Success: UserInfo(ID=148, Guid=49cc5b31-80cf-4d22-8f11-4e880adfca0b Name=Scott.Dopwell@mgt.bdo.global)
+20260821_012556: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.Membership.UserInfo, Exception: CMS.DataEngine.InfoObjectException: Cannot set info object, domain validation failed (Field name: Email): Enter an email address.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfo(TInfo info)
+   at CMS.Membership.UserInfoProvider.SetUserInfoInternal(UserInfo user)
+   at CMS.Membership.UserInfoProvider.Set(UserInfo info)
+   at Migration.Tool.Core.KX13.Handlers.MigrateUsersCommandHandler.SaveUserUsingKenticoApi(IModelMappingResult`1 mapped, CmsUser kx13User) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\Migration.Tool.Core.KX13\Handlers\MigrateUsersCommandHandler.cs:line 95, Entity: UserInfo(ID=0, Guid=9d4c391d-1240-4aa3-9900-e42e2002cd20 Name=d4f79783-42b6-4fc8-b6c3-d83c58e55234)
+
+20260821_012556: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.Membership.UserInfo, Exception: CMS.DataEngine.InfoObjectException: Cannot set info object, domain validation failed (Field name: Email): Enter an email address.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfo(TInfo info)
+   at CMS.Membership.UserInfoProvider.SetUserInfoInternal(UserInfo user)
+   at CMS.Membership.UserInfoProvider.Set(UserInfo info)
+   at Migration.Tool.Core.KX13.Handlers.MigrateUsersCommandHandler.SaveUserUsingKenticoApi(IModelMappingResult`1 mapped, CmsUser kx13User) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\Migration.Tool.Core.KX13\Handlers\MigrateUsersCommandHandler.cs:line 95, Entity: UserInfo(ID=0, Guid=18b68abb-e7b5-490b-8263-3e5746654d50 Name=clemence.thia@mgt.bdo.global)
+
+20260821_012556: Success: UserInfo(ID=149, Guid=a1ede8af-fa96-4bff-904d-d94b8ac44ce5 Name=Ramutis.Ramanauskas@mgt.bdo.global)
+20260821_012556: Success: UserInfo(ID=150, Guid=123b77c8-5595-4f09-a76c-041035950cd4 Name=6f4bb466-9109-4c1d-8a3d-6f894498ac88)
+20260821_012556: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.Membership.UserInfo, Exception: CMS.DataEngine.InfoObjectException: Cannot set info object, domain validation failed (Field name: Email): Enter an email address.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfo(TInfo info)
+   at CMS.Membership.UserInfoProvider.SetUserInfoInternal(UserInfo user)
+   at CMS.Membership.UserInfoProvider.Set(UserInfo info)
+   at Migration.Tool.Core.KX13.Handlers.MigrateUsersCommandHandler.SaveUserUsingKenticoApi(IModelMappingResult`1 mapped, CmsUser kx13User) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\Migration.Tool.Core.KX13\Handlers\MigrateUsersCommandHandler.cs:line 95, Entity: UserInfo(ID=0, Guid=25ea7d68-684e-4377-bebd-8377c796f864 Name=gwtadmintst)
+
+20260821_012556: Success: UserInfo(ID=151, Guid=e9b1d1cd-44e3-4899-a54f-7731aa2f8d7e Name=ivaylo.stoilov@mgt.bdo.global)
+20260821_012556: Success: UserInfo(ID=152, Guid=7969cc0d-68a6-4292-a168-70c31ee51ebf Name=Dobromir.Dobrev@mgt.bdo.global)
+20260821_012556: Success: UserInfo(ID=153, Guid=0655b43b-f59c-46e8-87ef-0beb4c858824 Name=kevin.gerretsen@truelime.nl)
+20260821_012556: Success: UserInfo(ID=154, Guid=2e1217ae-790c-409b-9fdc-78ca8cbde8bc Name=Tom.Breuker@bdo.de)
+20260821_012556: Success: UserInfo(ID=155, Guid=d9ceca6c-3de9-4c72-bedb-c6c51fbb3f18 Name=Ali.Sayani@mgt.bdo.global)
+20260821_012556: Success: UserInfo(ID=156, Guid=e6694dc8-aa24-4e6e-8eaf-23396387bc90 Name=kalin.bakalov@mgt.bdo.global)
+20260821_012556: Success: UserInfo(ID=157, Guid=a3a85ed7-3b92-43fc-868c-7a60a61aaa47 Name=Joe.Bannister@mgt.bdo.global)
+20260821_012556: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.Membership.UserInfo, Exception: CMS.DataEngine.InfoObjectException: Cannot set info object, domain validation failed (Field name: Email): Enter an email address.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfo(TInfo info)
+   at CMS.Membership.UserInfoProvider.SetUserInfoInternal(UserInfo user)
+   at CMS.Membership.UserInfoProvider.Set(UserInfo info)
+   at Migration.Tool.Core.KX13.Handlers.MigrateUsersCommandHandler.SaveUserUsingKenticoApi(IModelMappingResult`1 mapped, CmsUser kx13User) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\Migration.Tool.Core.KX13\Handlers\MigrateUsersCommandHandler.cs:line 95, Entity: UserInfo(ID=0, Guid=1fdefa96-ee52-422f-9f1f-230a91905368 Name=SVC.GWT-UI-Tests-User-01@bdoapoutlook.onmicrosoft.com)
+
+20260821_012556: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.Membership.UserInfo, Exception: CMS.DataEngine.InfoObjectException: Cannot set info object, domain validation failed (Field name: Email): Enter an email address.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfo(TInfo info)
+   at CMS.Membership.UserInfoProvider.SetUserInfoInternal(UserInfo user)
+   at CMS.Membership.UserInfoProvider.Set(UserInfo info)
+   at Migration.Tool.Core.KX13.Handlers.MigrateUsersCommandHandler.SaveUserUsingKenticoApi(IModelMappingResult`1 mapped, CmsUser kx13User) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\Migration.Tool.Core.KX13\Handlers\MigrateUsersCommandHandler.cs:line 95, Entity: UserInfo(ID=0, Guid=d46ee080-f730-4173-9e11-cd63593114ef Name=78084110-66e2-4c5c-a48d-4815ec6ab852)
+
+20260821_012556: Success: UserInfo(ID=158, Guid=4f62f3cc-dde6-4a1e-a10d-61c5e0abb25a Name=martin.regec@mgt.bdo.global)
+20260821_012556: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.Membership.UserInfo, Exception: CMS.DataEngine.InfoObjectException: Cannot set info object, domain validation failed (Field name: Email): Enter an email address.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfo(TInfo info)
+   at CMS.Membership.UserInfoProvider.SetUserInfoInternal(UserInfo user)
+   at CMS.Membership.UserInfoProvider.Set(UserInfo info)
+   at Migration.Tool.Core.KX13.Handlers.MigrateUsersCommandHandler.SaveUserUsingKenticoApi(IModelMappingResult`1 mapped, CmsUser kx13User) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\Migration.Tool.Core.KX13\Handlers\MigrateUsersCommandHandler.cs:line 95, Entity: UserInfo(ID=0, Guid=5b205a68-35b5-4e91-b20a-cf6a0906d87f Name=7e4dd0b1-d3a6-498c-bb32-7d47977ee791)
+
+20260821_012556: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.Membership.UserInfo, Exception: CMS.DataEngine.InfoObjectException: Cannot set info object, domain validation failed (Field name: Email): Enter an email address.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfo(TInfo info)
+   at CMS.Membership.UserInfoProvider.SetUserInfoInternal(UserInfo user)
+   at CMS.Membership.UserInfoProvider.Set(UserInfo info)
+   at Migration.Tool.Core.KX13.Handlers.MigrateUsersCommandHandler.SaveUserUsingKenticoApi(IModelMappingResult`1 mapped, CmsUser kx13User) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\Migration.Tool.Core.KX13\Handlers\MigrateUsersCommandHandler.cs:line 95, Entity: UserInfo(ID=0, Guid=5e66b830-6b78-46f5-b978-efc70f8d5c2e Name=Consultant)
+
+20260821_012556: Success: UserInfo(ID=159, Guid=b3f70ad6-e638-4517-b92b-65c5c553d1c4 Name=michal.soldan@actumdigital.com)
+20260821_012556: Success: UserInfo(ID=160, Guid=f1758452-a8e2-455a-b0f6-9533444fab55 Name=Dainius.Tenys@mgt.bdo.global)
+20260821_012556: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.Membership.UserInfo, Exception: CMS.DataEngine.InfoObjectException: Cannot set info object, domain validation failed (Field name: Email): Enter an email address.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfo(TInfo info)
+   at CMS.Membership.UserInfoProvider.SetUserInfoInternal(UserInfo user)
+   at CMS.Membership.UserInfoProvider.Set(UserInfo info)
+   at Migration.Tool.Core.KX13.Handlers.MigrateUsersCommandHandler.SaveUserUsingKenticoApi(IModelMappingResult`1 mapped, CmsUser kx13User) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\Migration.Tool.Core.KX13\Handlers\MigrateUsersCommandHandler.cs:line 95, Entity: UserInfo(ID=0, Guid=48c94eb6-0ee5-4531-b54e-9a95867775a5 Name=GWT_TST_Site_Editor)
+
+20260821_012556: Success: UserInfo(ID=161, Guid=c8b3ae8b-8d19-4414-8b17-8f03a380bc21 Name=matas.vaitkus@mgt.bdo.global)
+20260821_012556: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.Membership.UserInfo, Exception: CMS.DataEngine.CodeNameNotUniqueException: The user with code name 'mark.bowman@mgt.bdo.global' already exists.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfo(TInfo info)
+   at CMS.Membership.UserInfoProvider.SetUserInfoInternal(UserInfo user)
+   at CMS.Membership.UserInfoProvider.Set(UserInfo info)
+   at Migration.Tool.Core.KX13.Handlers.MigrateUsersCommandHandler.SaveUserUsingKenticoApi(IModelMappingResult`1 mapped, CmsUser kx13User) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\Migration.Tool.Core.KX13\Handlers\MigrateUsersCommandHandler.cs:line 95, Entity: UserInfo(ID=0, Guid=3283ca34-6e33-41be-896e-165d33460795 Name=mark.bowman@mgt.bdo.global)
+
+20260821_012556: Success: UserInfo(ID=162, Guid=b9f5f58d-510c-45e3-b6f7-c6c5f3a55171 Name=martin.regec@actumdigital.com)
+20260821_012556: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.Membership.UserInfo, Exception: CMS.DataEngine.InfoObjectException: Cannot set info object, domain validation failed (Field name: Email): Enter an email address.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfo(TInfo info)
+   at CMS.Membership.UserInfoProvider.SetUserInfoInternal(UserInfo user)
+   at CMS.Membership.UserInfoProvider.Set(UserInfo info)
+   at Migration.Tool.Core.KX13.Handlers.MigrateUsersCommandHandler.SaveUserUsingKenticoApi(IModelMappingResult`1 mapped, CmsUser kx13User) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\Migration.Tool.Core.KX13\Handlers\MigrateUsersCommandHandler.cs:line 95, Entity: UserInfo(ID=0, Guid=0df98324-c4fe-4bcc-a25e-903da2793f40 Name=f6ac03e3-f8ff-415e-b0c2-20ba70890430)
+
+20260821_012556: Success: UserInfo(ID=163, Guid=2c026066-327a-4b22-94bf-ecdf446f45e8 Name=Jerard.Dahuyag@mgt.bdo.global)
+20260821_012556: Success: UserInfo(ID=164, Guid=c4cfa8eb-8bf3-4aec-8a95-79ef01158d7a Name=koycho.kisyov@mgt.bdo.global)
+20260821_012556: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.Membership.UserInfo, Exception: CMS.DataEngine.CodeNameNotUniqueException: The user with code name 'Kiran.Kumar@mgt.bdo.global' already exists.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfo(TInfo info)
+   at CMS.Membership.UserInfoProvider.SetUserInfoInternal(UserInfo user)
+   at CMS.Membership.UserInfoProvider.Set(UserInfo info)
+   at Migration.Tool.Core.KX13.Handlers.MigrateUsersCommandHandler.SaveUserUsingKenticoApi(IModelMappingResult`1 mapped, CmsUser kx13User) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\Migration.Tool.Core.KX13\Handlers\MigrateUsersCommandHandler.cs:line 95, Entity: UserInfo(ID=0, Guid=bc30d036-a949-4d66-8e13-b15f19171f61 Name=Kiran.Kumar@mgt.bdo.global)
+
+20260821_012556: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.Membership.UserInfo, Exception: CMS.DataEngine.CodeNameNotUniqueException: The user with code name 'Pooja.Rajak@mgt.bdo.global' already exists.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfo(TInfo info)
+   at CMS.Membership.UserInfoProvider.SetUserInfoInternal(UserInfo user)
+   at CMS.Membership.UserInfoProvider.Set(UserInfo info)
+   at Migration.Tool.Core.KX13.Handlers.MigrateUsersCommandHandler.SaveUserUsingKenticoApi(IModelMappingResult`1 mapped, CmsUser kx13User) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\Migration.Tool.Core.KX13\Handlers\MigrateUsersCommandHandler.cs:line 95, Entity: UserInfo(ID=0, Guid=31261be9-ba70-4139-975f-2946d9ba6b6b Name=Pooja.Rajak@mgt.bdo.global)
+
+20260821_012556: Success: UserInfo(ID=165, Guid=dbff684b-96d4-4d2d-91c3-a22f78c1f00c Name=Puneet.Srivastava@mgt.bdo.global)
+20260821_012556: Success: UserInfo(ID=166, Guid=88219540-ec19-497d-b3b9-ed6e540b32ec Name=Manoj.Dani@mgt.bdo.global)
+20260821_012556: Success: UserInfo(ID=167, Guid=ab674c44-6172-4177-90d6-aec2fa563640 Name=Priyanshi.Yadav@mgt.bdo.global)
+20260821_012556: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.Membership.UserInfo, Exception: CMS.DataEngine.CodeNameNotUniqueException: The user with code name 'Tapasya.Mahor@mgt.bdo.global' already exists.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfo(TInfo info)
+   at CMS.Membership.UserInfoProvider.SetUserInfoInternal(UserInfo user)
+   at CMS.Membership.UserInfoProvider.Set(UserInfo info)
+   at Migration.Tool.Core.KX13.Handlers.MigrateUsersCommandHandler.SaveUserUsingKenticoApi(IModelMappingResult`1 mapped, CmsUser kx13User) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\Migration.Tool.Core.KX13\Handlers\MigrateUsersCommandHandler.cs:line 95, Entity: UserInfo(ID=0, Guid=847e215d-b14a-4ab0-8227-c422aac5d173 Name=Tapasya.Mahor@mgt.bdo.global)
+
+20260821_012556: Success: UserInfo(ID=168, Guid=47c09cff-322a-4811-b48d-d711c2c2cad1 Name=Nilesh.Hingu@mgt.bdo.global)
+20260821_012556: Success: UserInfo(ID=169, Guid=9e237a1b-4231-49b8-b787-b1aefe454c18 Name=Kratika.Khasdeo@mgt.bdo.global)
+20260821_012556: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.Membership.UserInfo, Exception: CMS.DataEngine.CodeNameNotUniqueException: The user with code name 'Brijesh.Kansara@mgt.bdo.global' already exists.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfo(TInfo info)
+   at CMS.Membership.UserInfoProvider.SetUserInfoInternal(UserInfo user)
+   at CMS.Membership.UserInfoProvider.Set(UserInfo info)
+   at Migration.Tool.Core.KX13.Handlers.MigrateUsersCommandHandler.SaveUserUsingKenticoApi(IModelMappingResult`1 mapped, CmsUser kx13User) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\Migration.Tool.Core.KX13\Handlers\MigrateUsersCommandHandler.cs:line 95, Entity: UserInfo(ID=0, Guid=441fe1ae-720a-4b27-9450-d25fcb6f7613 Name=Brijesh.Kansara@mgt.bdo.global)
+
+20260821_012556: Success: UserInfo(ID=170, Guid=40f8a62b-2c62-4c90-8258-2425d4e18aa7 Name=Monica.Bajaj@mgt.bdo.global)
+20260821_012556: Success: UserInfo(ID=171, Guid=71219434-ed72-41d5-aa1a-4c393e3aba6f Name=Ankit.Pastaur@mgt.bdo.global)
+20260821_012556: Success: UserInfo(ID=172, Guid=dc95556a-edd3-4441-a4fe-ad6f08692bb0 Name=Videshi.Muduli@mgt.bdo.global)
+20260821_012556: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.Membership.UserInfo, Exception: CMS.DataEngine.CodeNameNotUniqueException: The user with code name 'Chiranjeev.Mishra@mgt.bdo.global' already exists.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfo(TInfo info)
+   at CMS.Membership.UserInfoProvider.SetUserInfoInternal(UserInfo user)
+   at CMS.Membership.UserInfoProvider.Set(UserInfo info)
+   at Migration.Tool.Core.KX13.Handlers.MigrateUsersCommandHandler.SaveUserUsingKenticoApi(IModelMappingResult`1 mapped, CmsUser kx13User) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\Migration.Tool.Core.KX13\Handlers\MigrateUsersCommandHandler.cs:line 95, Entity: UserInfo(ID=0, Guid=e2cf91ff-e6d1-4457-898b-a323a9d339c3 Name=Chiranjeev.Mishra@mgt.bdo.global)
+
+20260821_012556: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.Membership.UserInfo, Exception: CMS.DataEngine.CodeNameNotUniqueException: The user with code name 'Gopal.Gour@mgt.bdo.global' already exists.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfo(TInfo info)
+   at CMS.Membership.UserInfoProvider.SetUserInfoInternal(UserInfo user)
+   at CMS.Membership.UserInfoProvider.Set(UserInfo info)
+   at Migration.Tool.Core.KX13.Handlers.MigrateUsersCommandHandler.SaveUserUsingKenticoApi(IModelMappingResult`1 mapped, CmsUser kx13User) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\Migration.Tool.Core.KX13\Handlers\MigrateUsersCommandHandler.cs:line 95, Entity: UserInfo(ID=0, Guid=6017a76c-1ff6-4fb5-8c1e-c543fe599bf0 Name=Gopal.Gour@mgt.bdo.global)
+
+20260821_012556: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.Membership.UserInfo, Exception: CMS.DataEngine.CodeNameNotUniqueException: The user with code name 'rahul.singh@mgt.bdo.global' already exists.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfo(TInfo info)
+   at CMS.Membership.UserInfoProvider.SetUserInfoInternal(UserInfo user)
+   at CMS.Membership.UserInfoProvider.Set(UserInfo info)
+   at Migration.Tool.Core.KX13.Handlers.MigrateUsersCommandHandler.SaveUserUsingKenticoApi(IModelMappingResult`1 mapped, CmsUser kx13User) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\Migration.Tool.Core.KX13\Handlers\MigrateUsersCommandHandler.cs:line 95, Entity: UserInfo(ID=0, Guid=1f7e3bd7-4b78-4281-817f-5417823996e4 Name=rahul.singh@mgt.bdo.global)
+
+20260821_012556: Success: UserInfo(ID=173, Guid=25a6d80e-f4f4-49c1-b761-4a47aa54515a Name=wesley.verbrugge@mgt.bdo.global)
+20260821_012556: Success: UserInfo(ID=174, Guid=6bc208bd-a924-4279-b537-d73bb0e4b2f1 Name=Anvita.Rao@mgt.bdo.global)
+20260821_012556: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.Membership.UserInfo, Exception: CMS.DataEngine.CodeNameNotUniqueException: The user with code name 'Subhadeep.Mandal@mgt.bdo.global' already exists.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfo(TInfo info)
+   at CMS.Membership.UserInfoProvider.SetUserInfoInternal(UserInfo user)
+   at CMS.Membership.UserInfoProvider.Set(UserInfo info)
+   at Migration.Tool.Core.KX13.Handlers.MigrateUsersCommandHandler.SaveUserUsingKenticoApi(IModelMappingResult`1 mapped, CmsUser kx13User) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\Migration.Tool.Core.KX13\Handlers\MigrateUsersCommandHandler.cs:line 95, Entity: UserInfo(ID=0, Guid=28620759-3109-4f54-a1be-a1571af4615a Name=Subhadeep.Mandal@mgt.bdo.global)
+
+20260821_012556: Success: UserInfo(ID=175, Guid=a9226f36-1c9f-43ac-b0d3-1ebefefaf184 Name=Ashish.Vashist@mgt.bdo.global)
+20260821_012556: Success: UserInfo(ID=176, Guid=83f65498-0556-4e62-bdca-947a0e3ad4ff Name=matteo.spada@mgt.bdo.global)
+20260821_012556: Success: UserInfo(ID=177, Guid=a18b285b-5b0f-4028-ad7b-7deaa7cadfe4 Name=Mayuri.Khairnar@mgt.bdo.global)
+20260821_012556: Success: RoleInfo(ID=151, Guid=e2c74cb0-75a9-454f-bed4-6d5f00105620 Name=BDOConsultant)
+20260821_012556: Success: UserRoleInfo({
+  "UserID": 153,
+  "RoleID": 151,
+  "ClassName": "CMS.UserRole",
+  "IsComplete": true
+})
+20260821_012556: Success: RoleInfo(ID=152, Guid=ff7506b5-ad25-446b-8ca3-e398bf85e5bb Name=BDOEditor)
+20260821_012556: Success: UserRoleInfo({
+  "UserID": 53,
+  "RoleID": 152,
+  "ClassName": "CMS.UserRole",
+  "IsComplete": true
+})
+20260821_012556: Success: UserRoleInfo({
+  "UserID": 141,
+  "RoleID": 152,
+  "ClassName": "CMS.UserRole",
+  "IsComplete": true
+})
+20260821_012556: Success: UserRoleInfo({
+  "UserID": 146,
+  "RoleID": 152,
+  "ClassName": "CMS.UserRole",
+  "IsComplete": true
+})
+20260821_012556: Success: UserRoleInfo({
+  "UserID": 147,
+  "RoleID": 152,
+  "ClassName": "CMS.UserRole",
+  "IsComplete": true
+})
+20260821_012556: Success: UserRoleInfo({
+  "UserID": 153,
+  "RoleID": 152,
+  "ClassName": "CMS.UserRole",
+  "IsComplete": true
+})
+20260821_012556: Success: UserRoleInfo({
+  "UserID": 154,
+  "RoleID": 152,
+  "ClassName": "CMS.UserRole",
+  "IsComplete": true
+})
+20260821_012556: Success: UserRoleInfo({
+  "UserID": 163,
+  "RoleID": 152,
+  "ClassName": "CMS.UserRole",
+  "IsComplete": true
+})
+20260821_012556: Success: RoleInfo(ID=153, Guid=2d31b51d-8666-4add-896e-32cea618e081 Name=BDOPublisher)
+20260821_012556: Success: UserRoleInfo({
+  "UserID": 53,
+  "RoleID": 153,
+  "ClassName": "CMS.UserRole",
+  "IsComplete": true
+})
+20260821_012556: Success: RoleInfo(ID=154, Guid=61a6ddb2-b3a7-4d2d-9c5f-b246d0459cab Name=CMSGlobalAdministrator)
+20260821_012556: Success: UserRoleInfo({
+  "UserID": 53,
+  "RoleID": 154,
+  "ClassName": "CMS.UserRole",
+  "IsComplete": true
+})
+20260821_012556: Success: UserRoleInfo({
+  "UserID": 141,
+  "RoleID": 154,
+  "ClassName": "CMS.UserRole",
+  "IsComplete": true
+})
+20260821_012556: Success: UserRoleInfo({
+  "UserID": 163,
+  "RoleID": 154,
+  "ClassName": "CMS.UserRole",
+  "IsComplete": true
+})
+20260821_012556: Success: RoleInfo(ID=155, Guid=52ee983c-e065-457f-a82c-47bc0a359f90 Name=GWTDevelopmentTeam)
+20260821_012556: Success: UserRoleInfo({
+  "UserID": 141,
+  "RoleID": 155,
+  "ClassName": "CMS.UserRole",
+  "IsComplete": true
+})
+20260821_012556: Success: UserRoleInfo({
+  "UserID": 163,
+  "RoleID": 155,
+  "ClassName": "CMS.UserRole",
+  "IsComplete": true
+})
+20260821_012556: Success: RoleInfo(ID=156, Guid=e2c1cc43-86eb-49d9-ab1a-c8a3bcb84742 Name=BDOEditor_1)
+20260821_012556: Success: UserRoleInfo({
+  "UserID": 53,
+  "RoleID": 156,
+  "ClassName": "CMS.UserRole",
+  "IsComplete": true
+})
+20260821_012556: Success: UserRoleInfo({
+  "UserID": 141,
+  "RoleID": 156,
+  "ClassName": "CMS.UserRole",
+  "IsComplete": true
+})
+20260821_012556: Success: UserRoleInfo({
+  "UserID": 146,
+  "RoleID": 156,
+  "ClassName": "CMS.UserRole",
+  "IsComplete": true
+})
+20260821_012556: Success: UserRoleInfo({
+  "UserID": 147,
+  "RoleID": 156,
+  "ClassName": "CMS.UserRole",
+  "IsComplete": true
+})
+20260821_012557: Success: UserRoleInfo({
+  "UserID": 153,
+  "RoleID": 156,
+  "ClassName": "CMS.UserRole",
+  "IsComplete": true
+})
+20260821_012557: Success: UserRoleInfo({
+  "UserID": 154,
+  "RoleID": 156,
+  "ClassName": "CMS.UserRole",
+  "IsComplete": true
+})

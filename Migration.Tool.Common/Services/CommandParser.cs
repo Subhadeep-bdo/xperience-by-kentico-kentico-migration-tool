@@ -25,6 +25,7 @@ public class CommandParser : ICommandParser
         }
 
         var subcommands = new List<ICommand>();
+        bool skipAttachments = false;
         while (args.TryDequeue(out string? arg))
         {
             if (arg.IsIn("help", "h"))
@@ -42,6 +43,12 @@ public class CommandParser : ICommandParser
             if (arg == "--bypass-dependency-check")
             {
                 bypassDependencyCheck = true;
+                continue;
+            }
+
+            if (arg == "--skip-attachments")
+            {
+                skipAttachments = true;
                 continue;
             }
 
@@ -146,6 +153,11 @@ public class CommandParser : ICommandParser
             throw new InvalidOperationException($"Unknown command '{arg}'");
         }
 
+        if (skipAttachments)
+        {
+            subcommands.RemoveAll(command => command is MigrateAttachmentsCommand);
+        }
+
         return (command, subcommands);
     }
 
@@ -155,6 +167,7 @@ public class CommandParser : ICommandParser
         Console.WriteLine("Subcommands:");
         WriteCommandDesc($"starts migration of {Green(MigratePageTypesCommand.MonikerFriendly)}", $"migrate --{MigratePageTypesCommand.Moniker}");
         WriteCommandDesc($"starts migration of {Green(MigratePagesCommand.MonikerFriendly)}", $"migrate --{MigratePagesCommand.Moniker}");
+        WriteCommandDesc("skips page attachment migration when used with pages", "migrate --skip-attachments");
         WriteCommandDesc($"starts migration of {Green(MigrateCategoriesCommand.MonikerFriendly)}", $"migrate --{MigrateCategoriesCommand.Moniker}");
         WriteCommandDesc($"starts migration of {Green(MigrateSettingKeysCommand.MonikerFriendly)}", $"migrate --{MigrateSettingKeysCommand.Moniker}");
         WriteCommandDesc($"starts migration of {Green(MigrateContactManagementCommand.MonikerFriendly)}", $"migrate --{MigrateContactManagementCommand.Moniker}");

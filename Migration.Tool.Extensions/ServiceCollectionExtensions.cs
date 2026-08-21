@@ -1,8 +1,11 @@
 using Microsoft.Extensions.DependencyInjection;
 using Migration.Tool.Extensions.ClassMappings;
 using Migration.Tool.Extensions.CommunityMigrations;
+using Migration.Tool.Extensions.ContentItemDirectors;
 using Migration.Tool.Extensions.DefaultMigrations;
+using Migration.Tool.Extensions.FieldMigrations;
 using Migration.Tool.KXP.Api.Services.CmsClass;
+using Migration.Tool.Source.Mappers.ContentItemMapperDirectives;
 
 namespace Migration.Tool.Extensions;
 
@@ -13,6 +16,21 @@ public static class ServiceCollectionExtensions
         services.AddTransient<IFieldMigration, AssetMigration>();
         services.AddTransient<IFieldMigration, SampleTextMigration>();
 
+        // Cross-class HTML sanitization for all HtmlAreaControl/longtext fields (MetadataDescription, Content,
+        // SharingInstructions, etc.). Also performs the built-in longtext -> richtexthtml field definition
+        // change, so no appsettings.json FieldMigrations entry is needed for HtmlAreaControl fields.
+        services.AddHtmlSanitizationMigration();
+
+        // Drop the 6 real KX13 linked pages instead of duplicating them (see LinkedPageDirector.cs).
+        services.AddLinkedPageDirector();
+
+        // Drop utility/system pages under /Error-Pages, /Status-Code-Pages, /Reusable-Content-Tab.
+        services.AddUtilityPageDirector();
+
+        // Link direct BDO.Insight children of SectionInsightsPage/InsightCategory/InsightGroup as content
+        // item references, since Insight becomes reusable and leaves the web page tree.
+        services.AddInsightChildLinkDirector();
+
         services.AddTransient<IWidgetPropertyMigration, WidgetFileMigration>();
         services.AddTransient<IWidgetPropertyMigration, WidgetPathSelectorMigration>();
         services.AddTransient<IWidgetPropertyMigration, WidgetPageSelectorMigration>();
@@ -20,6 +38,29 @@ public static class ServiceCollectionExtensions
 
         // Map K13 BDO.Person pages to the existing XbyK BDO.Person page content type
         services.AddPersonMapping();
+
+        // Shared metadata schema (title, description, teaserImage, teaserImageAltText, canonicalUrl) - must be
+        // registered before any class mapping that calls UseReusableSchema(MetadataFieldsSchema.SchemaName).
+        services.AddMetadataFieldsSchema();
+
+        // Convert BDO.Insight (page type) into a reusable Content hub item composed from BDO.MetadataFields.
+        services.AddInsightMapping();
+
+        // Remodel the remaining BDO.Metadata/BDO.ContentPage-derived page types (stay webpages) to compose
+        // their metadata fields from BDO.MetadataFields. Other own fields keep their names and auto-migrate.
+        services.AddNewsArticleMapping();
+        services.AddBlogPostMapping();
+        services.AddHomePageMapping();
+        services.AddEventMapping();
+        services.AddServiceAreaMapping();
+        services.AddDealMapping();
+        services.AddIndustryMapping();
+        services.AddInsightCategoryMapping();
+        services.AddInsightGroupMapping();
+        services.AddSectionInsightsPageMapping();
+
+        // Convert BDO.GlobalLocation (custom table) into the reusable "global_location" content type.
+        services.AddGlobalLocationMapping();
 
         // services.AddClassMergeExample();
         // services.AddClassMergeExampleAsReusable();

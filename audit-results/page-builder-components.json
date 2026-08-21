@@ -1,0 +1,3274 @@
+[
+  {
+    "identifier": "Kentico.DefaultSection",
+    "displayName": "Kentico.DefaultSection",
+    "kind": 1,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.AboutPage",
+      "BDO.Blog",
+      "BDO.BlogPost",
+      "BDO.BusinessLine",
+      "BDO.BusinessStrategy",
+      "BDO.Career",
+      "BDO.CareerCategory",
+      "BDO.CareerContent",
+      "BDO.Contact",
+      "BDO.Deal",
+      "BDO.Event",
+      "BDO.EventRegistrationForm",
+      "BDO.HomePage",
+      "BDO.Industry",
+      "BDO.IndustryCategory",
+      "BDO.IndustryService",
+      "BDO.Insight",
+      "BDO.InsightCategory",
+      "BDO.InsightGroup",
+      "BDO.LegalPage",
+      "BDO.LocationCity",
+      "BDO.Locations",
+      "BDO.MicrositeMasterPage",
+      "BDO.MicrositePage",
+      "BDO.NewsArticle",
+      "BDO.Person",
+      "BDO.SectionBlogs",
+      "BDO.SectionBusinessStrategies",
+      "BDO.SectionCareers",
+      "BDO.SectionDeals",
+      "BDO.SectionIndustries",
+      "BDO.SectionInsightsPage",
+      "BDO.SectionServices",
+      "BDO.SectionSpecialties",
+      "BDO.Service",
+      "BDO.ServiceArea",
+      "BDO.SpecialtiesArea",
+      "BDO.SpecialtiesCategory",
+      "BDO.SpecialtiesPage",
+      "BDO.SubService",
+      "BDO.ThankYouConversionPage",
+      "BDO.Webinar"
+    ],
+    "propertyDefinitions": []
+  },
+  {
+    "identifier": "BDO.Section.TwoColumns",
+    "displayName": "BDO.Section.TwoColumns",
+    "kind": 1,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.AboutPage",
+      "BDO.BlogPost",
+      "BDO.BusinessLine",
+      "BDO.Industry",
+      "BDO.IndustryCategory",
+      "BDO.IndustryService",
+      "BDO.Insight",
+      "BDO.LocationCity",
+      "BDO.MicrositePage",
+      "BDO.NewsArticle",
+      "BDO.SectionCareers",
+      "BDO.SectionEvents",
+      "BDO.ServiceArea",
+      "BDO.ThankYouConversionPage"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "containerPadding",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "sectionsGap",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Section.LocalNavigation",
+    "displayName": "BDO.Section.LocalNavigation",
+    "kind": 1,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.AboutPage",
+      "BDO.BlogPost",
+      "BDO.BusinessLine",
+      "BDO.BusinessStrategy",
+      "BDO.Career",
+      "BDO.CareerCategory",
+      "BDO.CareerContent",
+      "BDO.Event",
+      "BDO.Industry",
+      "BDO.IndustryCategory",
+      "BDO.IndustryService",
+      "BDO.Insight",
+      "BDO.MicrositeMasterPage",
+      "BDO.MicrositePage",
+      "BDO.NewsArticle",
+      "BDO.SectionAbout",
+      "BDO.SectionBlogs",
+      "BDO.SectionBusinessStrategies",
+      "BDO.SectionCareers",
+      "BDO.SectionIndustries",
+      "BDO.SectionInsightsPage",
+      "BDO.SectionServices",
+      "BDO.SectionSpecialties",
+      "BDO.Service",
+      "BDO.ServiceArea",
+      "BDO.SpecialtiesArea",
+      "BDO.SpecialtiesCategory",
+      "BDO.SpecialtiesPage",
+      "BDO.SubService",
+      "BDO.Webinar"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "containerPadding",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Section.Container",
+    "displayName": "BDO.Section.Container",
+    "kind": 1,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.AboutPage",
+      "BDO.BlogPost",
+      "BDO.BusinessLine",
+      "BDO.BusinessStrategy",
+      "BDO.Deal",
+      "BDO.HomePage",
+      "BDO.Industry",
+      "BDO.IndustryCategory",
+      "BDO.IndustryService",
+      "BDO.Insight",
+      "BDO.LocationCity",
+      "BDO.Locations",
+      "BDO.MicrositeMasterPage",
+      "BDO.MicrositePage",
+      "BDO.NewsArticle",
+      "BDO.Person",
+      "BDO.SectionAbout",
+      "BDO.SectionBusinessStrategies",
+      "BDO.SectionCareers",
+      "BDO.SectionEvents",
+      "BDO.SectionIndustries",
+      "BDO.SectionServices",
+      "BDO.Service",
+      "BDO.ServiceArea",
+      "BDO.SubService",
+      "BDO.ThankYouConversionPage"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "containerPadding",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Section.TwoThirdOneThird",
+    "displayName": "BDO.Section.TwoThirdOneThird",
+    "kind": 1,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.BlogPost",
+      "BDO.BusinessLine",
+      "BDO.IndustryCategory",
+      "BDO.Insight",
+      "BDO.MicrositePage"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "containerPadding",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "sectionsGap",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Section.OneThirdTwoThird",
+    "displayName": "BDO.Section.OneThirdTwoThird",
+    "kind": 1,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.AboutPage",
+      "BDO.BlogPost",
+      "BDO.IndustryCategory",
+      "BDO.Insight",
+      "BDO.SectionServices",
+      "BDO.Service",
+      "BDO.ServiceArea"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "containerPadding",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "sectionsGap",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Section.ThreeColumns",
+    "displayName": "BDO.Section.ThreeColumns",
+    "kind": 1,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.AboutPage",
+      "BDO.BlogPost",
+      "BDO.BusinessLine",
+      "BDO.BusinessStrategy",
+      "BDO.Deal",
+      "BDO.Industry",
+      "BDO.IndustryCategory",
+      "BDO.IndustryService",
+      "BDO.Insight",
+      "BDO.InsightCategory",
+      "BDO.MicrositePage",
+      "BDO.NewsArticle",
+      "BDO.SectionCareers",
+      "BDO.SectionEvents",
+      "BDO.SectionServices",
+      "BDO.SpecialtiesArea"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "containerPadding",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "sectionsGap",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Section.FiveColumns",
+    "displayName": "BDO.Section.FiveColumns",
+    "kind": 1,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.Insight"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "containerPadding",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "sectionsGap",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Section.FourColumns",
+    "displayName": "BDO.Section.FourColumns",
+    "kind": 1,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.Insight"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "containerPadding",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "sectionsGap",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.InsightCarousel",
+    "displayName": "BDO.Widget.InsightCarousel",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.AboutPage",
+      "BDO.BlogPost",
+      "BDO.BusinessLine",
+      "BDO.BusinessStrategy",
+      "BDO.HomePage",
+      "BDO.Industry",
+      "BDO.IndustryCategory",
+      "BDO.Insight",
+      "BDO.LocationCity",
+      "BDO.MicrositeMasterPage",
+      "BDO.MicrositePage",
+      "BDO.SectionAbout",
+      "BDO.ServiceArea",
+      "BDO.ThankYouConversionPage"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "backgroundImageAltText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "backgroundImages",
+        "propertyTypeName": "array",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "bottomMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "description",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 3,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "featuredInsights",
+        "propertyTypeName": "array",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 4,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "filteringEnabled",
+        "propertyTypeName": "boolean",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 5,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "filters",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 6,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "seeAllLinkText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 7,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "seeAllLinkURL",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 8,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "seeAllLinkURLTarget",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 9,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "title",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 10,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "topMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 11,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetID",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 12,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.RelatedContacts",
+    "displayName": "BDO.Widget.RelatedContacts",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.BusinessLine",
+      "BDO.Deal",
+      "BDO.IndustryCategory",
+      "BDO.Insight",
+      "BDO.LocationCity",
+      "BDO.MicrositeMasterPage",
+      "BDO.MicrositePage",
+      "BDO.NewsArticle",
+      "BDO.Service",
+      "BDO.ServiceArea"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "bottomMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "description",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "isDescendingOrder",
+        "propertyTypeName": "boolean",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "orderCriteria",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 3,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "seeAllLinkText",
+        "propertyTypeName": "null",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 4,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "seeAllLinkURL",
+        "propertyTypeName": "null",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 5,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "showOffice",
+        "propertyTypeName": "boolean",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 6,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "title",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 7,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "topMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 8,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetID",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 9,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.ImageWithText",
+    "displayName": "BDO.Widget.ImageWithText",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.AboutPage",
+      "BDO.BusinessLine",
+      "BDO.Deal",
+      "BDO.Industry",
+      "BDO.IndustryCategory",
+      "BDO.Insight",
+      "BDO.LocationCity",
+      "BDO.MicrositeMasterPage",
+      "BDO.MicrositePage",
+      "BDO.NewsArticle",
+      "BDO.SectionBusinessStrategies",
+      "BDO.ServiceArea"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "backgroundImageAltText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "backgroundImageURL",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "bottomMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "buttonText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 3,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "buttonType",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 4,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "buttonURL",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 5,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "description",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 6,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "embedCode",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 7,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "imageAltText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 8,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "imageURL",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 9,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "mediaPosition",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 10,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "mediaType",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 11,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "primaryButtonLinkTarget",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 12,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "theme",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 13,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "title",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 14,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "topMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 15,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetID",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 16,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.RichText",
+    "displayName": "BDO.Widget.RichText",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.AboutPage",
+      "BDO.BlogPost",
+      "BDO.BusinessLine",
+      "BDO.BusinessStrategy",
+      "BDO.Career",
+      "BDO.Deal",
+      "BDO.EventRegistrationForm",
+      "BDO.HomePage",
+      "BDO.Industry",
+      "BDO.IndustryCategory",
+      "BDO.IndustryService",
+      "BDO.Insight",
+      "BDO.InsightCategory",
+      "BDO.LegalPage",
+      "BDO.MicrositeMasterPage",
+      "BDO.MicrositePage",
+      "BDO.NewsArticle",
+      "BDO.Person",
+      "BDO.SectionAbout",
+      "BDO.SectionBusinessStrategies",
+      "BDO.SectionCareers",
+      "BDO.SectionEvents",
+      "BDO.Service",
+      "BDO.ServiceArea",
+      "BDO.SpecialtiesArea",
+      "BDO.SpecialtiesCategory",
+      "BDO.ThankYouConversionPage"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "bottomMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "content",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "topMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetID",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 3,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.FlexibleContent",
+    "displayName": "BDO.Widget.FlexibleContent",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.BlogPost",
+      "BDO.BusinessLine",
+      "BDO.IndustryCategory",
+      "BDO.Insight",
+      "BDO.Locations",
+      "BDO.MicrositeMasterPage",
+      "BDO.MicrositePage",
+      "BDO.Person",
+      "BDO.SectionSpecialties",
+      "BDO.Service",
+      "BDO.ServiceArea",
+      "BDO.SpecialtiesPage",
+      "BDO.SubService"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "bottomMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "description",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "featuredPages",
+        "propertyTypeName": "array",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "learnMoreButtonURLTarget",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 3,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "pages",
+        "propertyTypeName": "array",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 4,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "title",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 5,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "topMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 6,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetID",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 7,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.EventsWebinarsSlider",
+    "displayName": "BDO.Widget.EventsWebinarsSlider",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.BusinessLine",
+      "BDO.BusinessStrategy",
+      "BDO.CareerContent",
+      "BDO.Event",
+      "BDO.HomePage",
+      "BDO.Industry",
+      "BDO.IndustryCategory",
+      "BDO.Insight",
+      "BDO.LocationCity",
+      "BDO.MicrositeMasterPage",
+      "BDO.MicrositePage",
+      "BDO.SectionAbout",
+      "BDO.SectionCareers",
+      "BDO.Service",
+      "BDO.ServiceArea",
+      "BDO.Webinar"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "backgroundImageAltText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "backgroundImages",
+        "propertyTypeName": "array",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "bottomMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "description",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 3,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "featuredEventsAndWebinars",
+        "propertyTypeName": "array",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 4,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "filteringEnabled",
+        "propertyTypeName": "boolean",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 5,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "filters",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 6,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "seeAllLinkText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 7,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "seeAllLinkURL",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 8,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "seeAllLinkURLTarget",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 9,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "title",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 10,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "topMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 11,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetID",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 12,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.Hero",
+    "displayName": "BDO.Widget.Hero",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.BlogPost",
+      "BDO.Deal",
+      "BDO.Event",
+      "BDO.Insight",
+      "BDO.MicrositeMasterPage",
+      "BDO.MicrositePage",
+      "BDO.NewsArticle",
+      "BDO.SectionDeals",
+      "BDO.ThankYouConversionPage",
+      "BDO.Webinar"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "backgroundImage",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "backgroundImageAltText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "ctaButtonText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "ctaButtonType",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 3,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "ctaButtonUrl",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 4,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "ctaButtonUrlTarget",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 5,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "description",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 6,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "layout",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 7,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "mobileBackgroundImage",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 8,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "mobileBackgroundImageAltText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 9,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "title",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 10,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetID",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 11,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.NewsCarousel",
+    "displayName": "BDO.Widget.NewsCarousel",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.AboutPage",
+      "BDO.BusinessLine",
+      "BDO.HomePage",
+      "BDO.Insight",
+      "BDO.MicrositeMasterPage",
+      "BDO.MicrositePage",
+      "BDO.Service",
+      "BDO.ServiceArea"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "backgroundImageAltText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "backgroundImages",
+        "propertyTypeName": "array",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "bottomMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "description",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 3,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "featuredNews",
+        "propertyTypeName": "array",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 4,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "filteringEnabled",
+        "propertyTypeName": "boolean",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 5,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "filters",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 6,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "seeAllLinkText",
+        "propertyTypeName": "null",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 7,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "seeAllLinkURL",
+        "propertyTypeName": "null",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 8,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "seeAllLinkURLTarget",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 9,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "title",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 10,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "topMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 11,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetID",
+        "propertyTypeName": "null",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 12,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "Kentico.FormWidget",
+    "displayName": "Kentico.FormWidget",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.AboutPage",
+      "BDO.BlogPost",
+      "BDO.BusinessLine",
+      "BDO.BusinessStrategy",
+      "BDO.HomePage",
+      "BDO.IndustryCategory",
+      "BDO.Insight",
+      "BDO.LegalPage",
+      "BDO.Locations",
+      "BDO.NewsArticle",
+      "BDO.Person",
+      "BDO.SectionAbout",
+      "BDO.SectionServices",
+      "BDO.ServiceArea",
+      "BDO.ThankYouConversionPage"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "selectedForm",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.LocalNavigation",
+    "displayName": "BDO.Widget.LocalNavigation",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.AboutPage",
+      "BDO.BlogPost",
+      "BDO.BusinessLine",
+      "BDO.Event",
+      "BDO.Industry",
+      "BDO.IndustryCategory",
+      "BDO.Insight",
+      "BDO.MicrositeMasterPage",
+      "BDO.MicrositePage",
+      "BDO.NewsArticle",
+      "BDO.SectionAbout",
+      "BDO.SectionCareers",
+      "BDO.ServiceArea",
+      "BDO.Webinar"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "linkText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetIdToLink",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.KeyContacts",
+    "displayName": "BDO.Widget.KeyContacts",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.AboutPage",
+      "BDO.BusinessLine",
+      "BDO.Deal",
+      "BDO.Industry",
+      "BDO.IndustryCategory",
+      "BDO.IndustryService",
+      "BDO.Insight",
+      "BDO.MicrositePage",
+      "BDO.NewsArticle",
+      "BDO.SectionCareers",
+      "BDO.SectionServices",
+      "BDO.Service",
+      "BDO.ServiceArea",
+      "BDO.SpecialtiesArea"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "bottomMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "contributors",
+        "propertyTypeName": "array",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "description",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "isDescendingOrder",
+        "propertyTypeName": "boolean",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 3,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "isOrderOverriden",
+        "propertyTypeName": "boolean",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 4,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "orderCriteria",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 5,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "people",
+        "propertyTypeName": "array",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 6,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "seeAllLinkText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 7,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "seeAllLinkURL",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 8,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "seeAllLinkURLTarget",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 9,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "showOffice",
+        "propertyTypeName": "boolean",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 10,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "title",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 11,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "topMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 12,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetID",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 13,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.FlexibleBanner",
+    "displayName": "BDO.Widget.FlexibleBanner",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.AboutPage",
+      "BDO.BusinessStrategy",
+      "BDO.CareerCategory",
+      "BDO.Deal",
+      "BDO.Insight",
+      "BDO.MicrositeMasterPage",
+      "BDO.MicrositePage",
+      "BDO.NewsArticle",
+      "BDO.SectionCareers",
+      "BDO.Service",
+      "BDO.ServiceArea",
+      "BDO.SpecialtiesArea"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "backgroundImage",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "backgroundImageAltText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "bottomMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "buttonSide",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 3,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "description",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 4,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "layout",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 5,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "primaryButtonLinkTarget",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 6,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "primaryButtonText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 7,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "primaryButtonType",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 8,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "primaryButtonUrl",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 9,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "secondaryButtonLinkTarget",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 10,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "secondaryButtonText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 11,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "secondaryButtonType",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 12,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "secondaryButtonUrl",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 13,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "theme",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 14,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "topMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 15,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetID",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 16,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.EditorsPick",
+    "displayName": "BDO.Widget.EditorsPick",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.AboutPage",
+      "BDO.BlogPost",
+      "BDO.BusinessLine",
+      "BDO.Deal",
+      "BDO.IndustryCategory",
+      "BDO.Insight",
+      "BDO.LocationCity",
+      "BDO.MicrositeMasterPage",
+      "BDO.MicrositePage",
+      "BDO.NewsArticle",
+      "BDO.Person",
+      "BDO.SectionBusinessStrategies",
+      "BDO.SectionSpecialties",
+      "BDO.Service",
+      "BDO.ServiceArea",
+      "BDO.SpecialtiesArea",
+      "BDO.SubService"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "backgroundImageAltText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "backgroundImages",
+        "propertyTypeName": "array",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "bottomMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "description",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 3,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "featuredPages",
+        "propertyTypeName": "array",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 4,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "filteringEnabled",
+        "propertyTypeName": "boolean",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 5,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "filters",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 6,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "pages",
+        "propertyTypeName": "array",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 7,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "seeAllLinkText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 8,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "seeAllLinkURL",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 9,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "seeAllLinkURLTarget",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 10,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "title",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 11,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "topMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 12,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetID",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 13,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.SocialMediaButtons",
+    "displayName": "BDO.Widget.SocialMediaButtons",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.AboutPage",
+      "BDO.BlogPost",
+      "BDO.Deal",
+      "BDO.HomePage",
+      "BDO.Insight",
+      "BDO.MicrositeMasterPage",
+      "BDO.NewsArticle",
+      "BDO.Person",
+      "BDO.Service"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "bottomMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "topMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetID",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.TrendingTopicsCarousel",
+    "displayName": "BDO.Widget.TrendingTopicsCarousel",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.BusinessLine",
+      "BDO.Deal",
+      "BDO.Industry",
+      "BDO.IndustryCategory",
+      "BDO.MicrositeMasterPage",
+      "BDO.MicrositePage",
+      "BDO.SectionInsightsPage",
+      "BDO.SectionServices",
+      "BDO.Service",
+      "BDO.ServiceArea",
+      "BDO.SubService"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "bottomMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "description",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "learnMoreButtonURLTarget",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "pages",
+        "propertyTypeName": "array",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 3,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "title",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 4,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "topMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 5,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "trendingTopicsPageType",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 6,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetID",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 7,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.RelatedContentCarousel",
+    "displayName": "BDO.Widget.RelatedContentCarousel",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.BusinessLine",
+      "BDO.Industry",
+      "BDO.IndustryCategory",
+      "BDO.Insight",
+      "BDO.MicrositeMasterPage",
+      "BDO.MicrositePage",
+      "BDO.Service",
+      "BDO.ServiceArea",
+      "BDO.SubService"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "backgroundImageAltText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "backgroundImages",
+        "propertyTypeName": "array",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "bottomMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "description",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 3,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "featuredPages",
+        "propertyTypeName": "array",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 4,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "filteringEnabled",
+        "propertyTypeName": "boolean",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 5,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "filters",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 6,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "seeAllLinkText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 7,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "seeAllLinkURL",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 8,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "seeAllLinkURLTarget",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 9,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "selectedPageTypes",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 10,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "title",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 11,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "topMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 12,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetID",
+        "propertyTypeName": "null",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 13,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.TabAccordion",
+    "displayName": "BDO.Widget.TabAccordion",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.AboutPage",
+      "BDO.BusinessLine",
+      "BDO.BusinessStrategy",
+      "BDO.Industry",
+      "BDO.IndustryCategory",
+      "BDO.MicrositeMasterPage",
+      "BDO.MicrositePage",
+      "BDO.SectionCareers",
+      "BDO.Service",
+      "BDO.ServiceArea",
+      "BDO.SpecialtiesCategory",
+      "BDO.SubService"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "bottomMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "layout",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "pages",
+        "propertyTypeName": "array",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "pageType",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 3,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "title",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 4,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "topMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 5,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetID",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 6,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.InFocus",
+    "displayName": "BDO.Widget.InFocus",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.AboutPage",
+      "BDO.BusinessLine",
+      "BDO.Insight",
+      "BDO.ServiceArea"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "bottomMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "imageAltText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "imageURL",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "pages",
+        "propertyTypeName": "array",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 3,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "subtitle",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 4,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "title",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 5,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "topMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 6,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetID",
+        "propertyTypeName": "null",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 7,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.Faq",
+    "displayName": "BDO.Widget.Faq",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.BusinessLine",
+      "BDO.Insight",
+      "BDO.ServiceArea"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "bottomMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "hoverColour",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "layout",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "pages",
+        "propertyTypeName": "array",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 3,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "title",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 4,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "topMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 5,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetID",
+        "propertyTypeName": "null",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 6,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.Button",
+    "displayName": "BDO.Widget.Button",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.BusinessLine",
+      "BDO.CareerContent",
+      "BDO.Deal",
+      "BDO.HomePage",
+      "BDO.Industry",
+      "BDO.IndustryService",
+      "BDO.Insight",
+      "BDO.InsightCategory",
+      "BDO.InsightGroup",
+      "BDO.Locations",
+      "BDO.MicrositeMasterPage",
+      "BDO.MicrositePage",
+      "BDO.SectionCareers",
+      "BDO.ServiceArea",
+      "BDO.ThankYouConversionPage"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "bottomMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "buttonSide",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "link",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "target",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 3,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "text",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 4,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "theme",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 5,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "topMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 6,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "type",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 7,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetID",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 8,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.Accordion",
+    "displayName": "BDO.Widget.Accordion",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.AboutPage",
+      "BDO.BusinessLine",
+      "BDO.Deal",
+      "BDO.IndustryCategory",
+      "BDO.Insight",
+      "BDO.MicrositeMasterPage",
+      "BDO.MicrositePage",
+      "BDO.Person",
+      "BDO.SectionCareers"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "bottomMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "content",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "deepLinkID",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "heading",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 3,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "topMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 4,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetID",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 5,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.QuoteCard",
+    "displayName": "BDO.Widget.QuoteCard",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.AboutPage",
+      "BDO.Deal",
+      "BDO.HomePage",
+      "BDO.IndustryCategory",
+      "BDO.Insight",
+      "BDO.MicrositePage",
+      "BDO.SectionCareers",
+      "BDO.ServiceArea",
+      "BDO.SpecialtiesArea"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "authorsJobTitle",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "bottomMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "buttonText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "buttonUrl",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 3,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "heading",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 4,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "image",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 5,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "imageAltText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 6,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "primaryButtonLinkTarget",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 7,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "quotesAuthor",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 8,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "quoteText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 9,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "size",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 10,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "subheading",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 11,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "topMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 12,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetID",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 13,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.KeyTakeaways",
+    "displayName": "BDO.Widget.KeyTakeaways",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.Insight"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "backgroundColour",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "bottomMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "content",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "contentAlignment",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 3,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "contentWidth",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 4,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "title",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 5,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "topMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 6,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetID",
+        "propertyTypeName": "null",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 7,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.TiledLinkSection",
+    "displayName": "BDO.Widget.TiledLinkSection",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.AboutPage",
+      "BDO.BusinessLine",
+      "BDO.Deal",
+      "BDO.HomePage",
+      "BDO.Industry",
+      "BDO.IndustryCategory",
+      "BDO.IndustryService",
+      "BDO.SectionAbout",
+      "BDO.SectionIndustries",
+      "BDO.Service",
+      "BDO.ServiceArea"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "backgroundImageAltText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "backgroundImages",
+        "propertyTypeName": "array",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "bottomMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "description",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 3,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "seeAllLinkText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 4,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "seeAllLinkURL",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 5,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "seeAllLinkURLTarget",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 6,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "theme",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 7,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "tilePages",
+        "propertyTypeName": "array",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 8,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "tilePageType",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 9,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "title",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 10,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "topMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 11,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetID",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 12,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.HTML",
+    "displayName": "BDO.Widget.HTML",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.AboutPage",
+      "BDO.BusinessLine",
+      "BDO.Event",
+      "BDO.HomePage",
+      "BDO.Insight",
+      "BDO.LocationCity",
+      "BDO.MicrositeMasterPage",
+      "BDO.MicrositePage",
+      "BDO.SectionCareers",
+      "BDO.SectionEvents",
+      "BDO.Service",
+      "BDO.ServiceArea",
+      "BDO.Webinar"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "htmlCode",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.ViewGlobalLocations",
+    "displayName": "BDO.Widget.ViewGlobalLocations",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.AboutPage",
+      "BDO.BusinessLine",
+      "BDO.HomePage",
+      "BDO.LocationCity",
+      "BDO.SectionBusinessStrategies",
+      "BDO.SectionInsightsPage",
+      "BDO.SubService"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "bottomMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "buttonLinkTarget",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "buttonText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "buttonUrl",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 3,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "description",
+        "propertyTypeName": "null",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 4,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "layout",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 5,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "theme",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 6,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "title",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 7,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "topMargin",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 8,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "widgetID",
+        "propertyTypeName": "null",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 9,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  },
+  {
+    "identifier": "BDO.Widget.ExternalNavigation",
+    "displayName": "BDO.Widget.ExternalNavigation",
+    "kind": 2,
+    "propertiesTypeFullName": null,
+    "viewComponentTypeFullName": null,
+    "customViewName": null,
+    "iconClass": null,
+    "allowedForPageTypes": [
+      "BDO.Insight"
+    ],
+    "propertyDefinitions": [
+      {
+        "propertyName": "externalLink",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 0,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "linkText",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 1,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      },
+      {
+        "propertyName": "primaryButtonLinkTarget",
+        "propertyTypeName": "string",
+        "editingComponentIdentifier": null,
+        "label": null,
+        "order": 2,
+        "defaultValue": null,
+        "componentPropertySettings": {}
+      }
+    ]
+  }
+]
