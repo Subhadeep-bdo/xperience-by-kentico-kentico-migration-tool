@@ -22,22 +22,22 @@ public static class MetadataFieldsSchema
         var sb = new ReusableSchemaBuilder(SchemaName, "Metadata Fields",
             "Shared SEO/metadata fields (title, description, teaser image, canonical link, OG tags, SEO flags)");
 
-        sb.BuildField("title").WithFactory(() => new FormFieldInfo
+        sb.BuildField("bdo_title").WithFactory(() => new FormFieldInfo
         {
-            Name = "title",
+            Name = "bdo_title",
             Caption = "Title",
-            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|title"),
+            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|bdo_title"),
             DataType = FieldDataType.Text,
             Size = 200,
             AllowEmpty = false,
             Settings = { ["controlname"] = FormComponents.AdminTextInputComponent }
         });
 
-        sb.BuildField("description").WithFactory(() => new FormFieldInfo
+        sb.BuildField("bdo_description").WithFactory(() => new FormFieldInfo
         {
-            Name = "description",
+            Name = "bdo_description",
             Caption = "Description",
-            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|description"),
+            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|bdo_description"),
             DataType = FieldDataType.RichTextHTML,
             AllowEmpty = true,
             Settings = { ["controlname"] = FormComponents.AdminRichTextEditorComponent }
@@ -46,115 +46,115 @@ public static class MetadataFieldsSchema
         // Source is a Text field with the MediaSelectionControl; converted to a content item asset reference
         // (not a legacy Media Library file, per appsettings MigrateMediaToMediaLibrary: false) by the
         // OptInFeatures.CustomMigration.FieldMigrations rule configured in appsettings.json.
-        sb.BuildField("teaserImage").WithFactory(() => new FormFieldInfo
+        sb.BuildField("bdo_teaserImage").WithFactory(() => new FormFieldInfo
         {
-            Name = "teaserImage",
+            Name = "bdo_teaserImage",
             Caption = "Teaser image",
-            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|teaserImage"),
+            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|bdo_teaserImage"),
             DataType = FieldDataType.ContentItemReference,
             AllowEmpty = true,
             Settings = { ["controlname"] = FormComponents.AdminAssetSelectorComponent }
         });
 
-        sb.BuildField("teaserImageAltText").WithFactory(() => new FormFieldInfo
+        sb.BuildField("bdo_teaserImageAltText").WithFactory(() => new FormFieldInfo
         {
-            Name = "teaserImageAltText",
+            Name = "bdo_teaserImageAltText",
             Caption = "Teaser image alt text",
-            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|teaserImageAltText"),
+            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|bdo_teaserImageAltText"),
             DataType = FieldDataType.Text,
             Size = 200,
             AllowEmpty = true,
             Settings = { ["controlname"] = FormComponents.AdminTextInputComponent }
         });
 
-        sb.BuildField("canonicalUrl").WithFactory(() => new FormFieldInfo
+        sb.BuildField("bdo_canonicalUrl").WithFactory(() => new FormFieldInfo
         {
-            Name = "canonicalUrl",
+            Name = "bdo_canonicalUrl",
             Caption = "Canonical link",
-            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|canonicalUrl"),
+            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|bdo_canonicalUrl"),
             DataType = FieldDataType.Text,
             Size = 2000,
             AllowEmpty = true,
             Settings = { ["controlname"] = FormComponents.AdminTextInputComponent }
         });
 
-        sb.BuildField("ogTitle").WithFactory(() => new FormFieldInfo
+        sb.BuildField("bdo_ogTitle").WithFactory(() => new FormFieldInfo
         {
-            Name = "ogTitle",
+            Name = "bdo_ogTitle",
             Caption = "OG metadata title",
-            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|ogTitle"),
+            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|bdo_ogTitle"),
             DataType = FieldDataType.Text,
             Size = 60,
             AllowEmpty = true,
             Settings = { ["controlname"] = FormComponents.AdminTextInputComponent }
         });
 
-        sb.BuildField("ogDescription").WithFactory(() => new FormFieldInfo
+        sb.BuildField("bdo_ogDescription").WithFactory(() => new FormFieldInfo
         {
-            Name = "ogDescription",
+            Name = "bdo_ogDescription",
             Caption = "OG metadata description",
-            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|ogDescription"),
+            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|bdo_ogDescription"),
             DataType = FieldDataType.Text,
             Size = 500,
             AllowEmpty = true,
             Settings = { ["controlname"] = FormComponents.AdminTextAreaComponent }
         });
 
-        sb.BuildField("ogImage").WithFactory(() => new FormFieldInfo
+        sb.BuildField("bdo_ogImage").WithFactory(() => new FormFieldInfo
         {
-            Name = "ogImage",
+            Name = "bdo_ogImage",
             Caption = "OG metadata image",
-            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|ogImage"),
+            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|bdo_ogImage"),
             DataType = FieldDataType.ContentItemReference,
             AllowEmpty = true,
             Settings = { ["controlname"] = FormComponents.AdminAssetSelectorComponent }
         });
 
-        sb.BuildField("ogTwitterImageSizeCheckbox").WithFactory(() => new FormFieldInfo
+        sb.BuildField("bdo_ogTwitterImageSizeCheckbox").WithFactory(() => new FormFieldInfo
         {
-            Name = "ogTwitterImageSizeCheckbox",
+            Name = "bdo_ogTwitterImageSizeCheckbox",
             Caption = "Use small image for Twitter (1:1)",
-            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|ogTwitterImageSizeCheckbox"),
+            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|bdo_ogTwitterImageSizeCheckbox"),
             DataType = FieldDataType.Boolean,
             AllowEmpty = true,
             Settings = { ["controlname"] = FormComponents.AdminCheckBoxComponent }
         });
 
-        sb.BuildField("ogTwitterImage").WithFactory(() => new FormFieldInfo
+        sb.BuildField("bdo_ogTwitterImage").WithFactory(() => new FormFieldInfo
         {
-            Name = "ogTwitterImage",
+            Name = "bdo_ogTwitterImage",
             Caption = "Twitter OG metadata image",
-            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|ogTwitterImage"),
+            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|bdo_ogTwitterImage"),
             DataType = FieldDataType.ContentItemReference,
             AllowEmpty = true,
             Settings = { ["controlname"] = FormComponents.AdminAssetSelectorComponent }
         });
 
-        sb.BuildField("metaNofollow").WithFactory(() => new FormFieldInfo
+        sb.BuildField("bdo_metaNofollow").WithFactory(() => new FormFieldInfo
         {
-            Name = "metaNofollow",
+            Name = "bdo_metaNofollow",
             Caption = "Nofollow",
-            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|metaNofollow"),
+            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|bdo_metaNofollow"),
             DataType = FieldDataType.Boolean,
             AllowEmpty = true,
             Settings = { ["controlname"] = FormComponents.AdminCheckBoxComponent }
         });
 
-        sb.BuildField("metaNoindex").WithFactory(() => new FormFieldInfo
+        sb.BuildField("bdo_metaNoindex").WithFactory(() => new FormFieldInfo
         {
-            Name = "metaNoindex",
+            Name = "bdo_metaNoindex",
             Caption = "Noindex",
-            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|metaNoindex"),
+            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|bdo_metaNoindex"),
             DataType = FieldDataType.Boolean,
             AllowEmpty = true,
             Settings = { ["controlname"] = FormComponents.AdminCheckBoxComponent }
         });
 
-        sb.BuildField("includeInSitemap").WithFactory(() => new FormFieldInfo
+        sb.BuildField("bdo_includeInSitemap").WithFactory(() => new FormFieldInfo
         {
-            Name = "includeInSitemap",
+            Name = "bdo_includeInSitemap",
             Caption = "Include page in the sitemap",
-            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|includeInSitemap"),
+            Guid = GuidHelper.CreateFieldGuid("bdo.metadatafields|bdo_includeInSitemap"),
             DataType = FieldDataType.Boolean,
             AllowEmpty = true,
             DefaultValue = "true",
@@ -166,25 +166,26 @@ public static class MetadataFieldsSchema
 
     /// <summary>
     /// Maps the 13 BDO.Metadata-derived fields of <paramref name="sourceClassName"/> onto the
-    /// BDO.MetadataFields schema fields. Call after <c>m.UseReusableSchema(SchemaName)</c>.
+    /// BDO.MetadataFields schema fields (with bdo_ prefix to avoid conflicts with CMS.ContentItemCommonData).
+    /// Call after <c>m.UseReusableSchema(SchemaName)</c>.
     /// </summary>
     public static void MapCommonFields(MultiClassMapping m, string sourceClassName)
     {
         m.UseReusableSchema(SchemaName);
 
-        m.BuildField("title").SetFrom(sourceClassName, "MetadataTitle");
-        m.BuildField("description").SetFrom(sourceClassName, "MetadataDescription");
-        m.BuildField("teaserImage").SetFrom(sourceClassName, "MetadataTeaserImage");
-        m.BuildField("teaserImageAltText").SetFrom(sourceClassName, "MetadataTeaserImageAltText");
-        m.BuildField("canonicalUrl").SetFrom(sourceClassName, "MetadataCanonical");
-        m.BuildField("ogTitle").SetFrom(sourceClassName, "MetadataOGTitle");
-        m.BuildField("ogDescription").SetFrom(sourceClassName, "MetadataOGDescription");
-        m.BuildField("ogImage").SetFrom(sourceClassName, "MetadataOGImage");
-        m.BuildField("ogTwitterImageSizeCheckbox").SetFrom(sourceClassName, "MetadataOGTwitterImageSizeCheckbox");
-        m.BuildField("ogTwitterImage").SetFrom(sourceClassName, "MetadataOGTwitterImage");
-        m.BuildField("metaNofollow").SetFrom(sourceClassName, "MetadataNofollow");
-        m.BuildField("metaNoindex").SetFrom(sourceClassName, "MetadataNoindex");
-        m.BuildField("includeInSitemap").SetFrom(sourceClassName, "IncludeInSitemap");
+        m.BuildField("bdo_title").SetFrom(sourceClassName, "MetadataTitle");
+        m.BuildField("bdo_description").SetFrom(sourceClassName, "MetadataDescription");
+        m.BuildField("bdo_teaserImage").SetFrom(sourceClassName, "MetadataTeaserImage");
+        m.BuildField("bdo_teaserImageAltText").SetFrom(sourceClassName, "MetadataTeaserImageAltText");
+        m.BuildField("bdo_canonicalUrl").SetFrom(sourceClassName, "MetadataCanonical");
+        m.BuildField("bdo_ogTitle").SetFrom(sourceClassName, "MetadataOGTitle");
+        m.BuildField("bdo_ogDescription").SetFrom(sourceClassName, "MetadataOGDescription");
+        m.BuildField("bdo_ogImage").SetFrom(sourceClassName, "MetadataOGImage");
+        m.BuildField("bdo_ogTwitterImageSizeCheckbox").SetFrom(sourceClassName, "MetadataOGTwitterImageSizeCheckbox");
+        m.BuildField("bdo_ogTwitterImage").SetFrom(sourceClassName, "MetadataOGTwitterImage");
+        m.BuildField("bdo_metaNofollow").SetFrom(sourceClassName, "MetadataNofollow");
+        m.BuildField("bdo_metaNoindex").SetFrom(sourceClassName, "MetadataNoindex");
+        m.BuildField("bdo_includeInSitemap").SetFrom(sourceClassName, "IncludeInSitemap");
     }
 
     public static IServiceCollection AddMetadataFieldsSchema(this IServiceCollection serviceCollection)

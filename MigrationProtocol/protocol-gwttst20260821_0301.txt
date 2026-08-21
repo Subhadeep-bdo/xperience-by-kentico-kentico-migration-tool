@@ -1,0 +1,244 @@
+20260821_030131: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: ICmsUser, FieldName: FileCreatedByUserID, SourceValue: 70
+
+20260821_030132: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: ICmsUser, FieldName: FileCreatedByUserID, SourceValue: 104
+
+20260821_030132: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: ICmsUser, FieldName: FileCreatedByUserID, SourceValue: 104
+
+20260821_030132: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: ICmsUser, FieldName: FileCreatedByUserID, SourceValue: 104
+
+20260821_030133: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: ICmsUser, FieldName: FileCreatedByUserID, SourceValue: 104
+
+20260821_030133: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: ICmsUser, FieldName: FileCreatedByUserID, SourceValue: 70
+
+20260821_030144: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: ICmsUser, FieldName: FileCreatedByUserID, SourceValue: 108
+
+20260821_030145: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: ICmsUser, FieldName: FileCreatedByUserID, SourceValue: 70
+
+20260821_030147: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: ICmsUser, FieldName: FileCreatedByUserID, SourceValue: 70
+
+20260821_030147: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: ICmsUser, FieldName: FileCreatedByUserID, SourceValue: 70
+
+20260821_030147: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: ICmsUser, FieldName: FileCreatedByUserID, SourceValue: 70
+
+20260821_030149: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: ICmsUser, FieldName: FileCreatedByUserID, SourceValue: 70
+
+20260821_030150: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: ICmsUser, FieldName: FileCreatedByUserID, SourceValue: 70
+
+20260821_030151: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: ICmsUser, FieldName: FileCreatedByUserID, SourceValue: 70
+
+20260821_030152: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: ICmsUser, FieldName: FileCreatedByUserID, SourceValue: 70
+
+20260821_030153: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: ICmsUser, FieldName: FileCreatedByUserID, SourceValue: 70
+
+20260821_030210: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: ICmsUser, FieldName: FileCreatedByUserID, SourceValue: 104
+
+20260821_030211: NeedManualAction: True, ReferenceName: MissingRequiredDependency, AdditionalInfo: DependencyType: ICmsUser, FieldName: FileCreatedByUserID, SourceValue: 104
+
+20260821_030217: Success: DataClassInfo(ID=9838, GUID=5a09b663-60ce-4b5f-956f-673c87199efa, Name=BizForm.BDOEventTemplate_DoNotModify)
+20260821_030219: Success: DataClassInfo(ID=9839, GUID=e72b55f6-cbce-409c-bbe0-adbd9deb5306, Name=BizForm.BDOEventTemplate_DoNotModify_1)
+20260821_030219: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.OnlineForms.BizFormInfo, Exception: CMS.DataEngine.CodeNameNotUniqueException: The form with code name 'BDOEventTemplate_DoNotModify' already exists.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfo(TInfo info)
+   at CMS.OnlineForms.BizFormInfoProvider.SetBizFormInfoInternal(BizFormInfo bizForm)
+   at CMS.OnlineForms.BizFormInfoProvider.Set(BizFormInfo info)
+   at Migration.Tool.Source.Handlers.MigrateFormsCommandHandler.Handle(MigrateFormsCommand request, CancellationToken cancellationToken) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\KVA\Migration.Tool.Source\Handlers\MigrateFormsCommandHandler.cs:line 74, Entity: BizFormInfo(ID=0, GUID=b345e8e3-0599-4485-8146-4e4ba379b7d4, Name=BDOEventTemplate_DoNotModify)
+
+20260821_030219: Success: DataClassInfo(ID=9840, GUID=589cdb1a-ddb7-48ce-8ed0-9976a265da63, Name=BizForm.Test)
+20260821_030219: Success: DataClassInfo(ID=9841, GUID=4a43a06d-9d38-48f9-8bdc-7eed48fec661, Name=BizForm.Demo10_10)
+20260821_030220: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_GWT_TST_Demo10_10
+
+20260821_030220: Success: DataClassInfo(ID=9842, GUID=bba6a6fe-df83-4e5f-9173-ca54ba90d3f8, Name=BizForm.LapeForm)
+20260821_030221: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_GWT_TST_LapeForm
+
+20260821_030221: Success: DataClassInfo(ID=9843, GUID=b554f5ac-aafb-417e-9b23-bbbadd335d5e, Name=BizForm.NewAPIForm)
+20260821_030221: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_GWT_TST_NewAPIForm
+
+20260821_030221: Success: DataClassInfo(ID=9844, GUID=8f70a291-f35b-4d75-b571-c00d4850e112, Name=bizform.BDO_EventNode4c09ad927a5e44d8af130cb7ea8152d2)
+20260821_030222: Success: DataClassInfo(ID=9845, GUID=8179743c-a301-4121-858e-f6a2e0026448, Name=bizform.BDO_EventNodec615e46f0e6545088c00886451976513)
+20260821_030223: Success: DataClassInfo(ID=9846, GUID=2d41139d-2c76-44e5-83b6-8fe9ff42ee72, Name=bizform.BDO_EventNodee2bf4e2874e14459a76abca8d9f134b5)
+20260821_030224: Success: DataClassInfo(ID=9847, GUID=d69f6d4c-f88e-43e9-97e8-783bf52e1b3f, Name=bizform.BDO_EventNode89534182b6f54d9f8797b0ec1319c012)
+20260821_030227: Success: DataClassInfo(ID=9848, GUID=de425267-66cc-41d2-93b8-ae7a8ccfd308, Name=bizform.BDO_EventNodee825a689a4ed4c57b5551fb2c5724f56)
+20260821_030228: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_BDO_EventNodee825a689a4ed4c57b5551fb2c5724f56
+
+20260821_030228: Success: DataClassInfo(ID=9849, GUID=a6f07d22-1a89-4963-813b-98b87095c38a, Name=BizForm.BDO_KIT_ContactPeople)
+20260821_030229: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_GWT_TST_BDO_KIT_ContactPeople
+
+20260821_030229: Success: DataClassInfo(ID=9850, GUID=3b6447bc-ae77-4879-8f66-bd9a9996ca43, Name=bizform.BDO_EventNode33c6d4b9471941c6a77f5b8147f24510)
+20260821_030230: Success: DataClassInfo(ID=9851, GUID=71504edc-bac6-4da5-8e7c-55b18d71b408, Name=BizForm.Carerix)
+20260821_030233: Success: DataClassInfo(ID=9852, GUID=7720161f-bfe6-48db-9fe1-63c4624fd480, Name=BizForm.CarerixInterimKandidaat)
+20260821_030239: Success: DataClassInfo(ID=9853, GUID=551a0e78-e5ce-4c4c-a413-2203e4750bca, Name=BizForm.FormAfterHotfix)
+20260821_030240: Success: DataClassInfo(ID=9854, GUID=81563bab-a154-4b87-acba-9ded3cb051bf, Name=bizform.BDO_EventNoded452bc7fe57b40009e12910e074f5281)
+20260821_030242: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_BDO_EventNoded452bc7fe57b40009e12910e074f5281
+
+20260821_030242: Success: DataClassInfo(ID=9855, GUID=c74d9db3-40af-4742-a2e1-57f9e49c8617, Name=BizForm.FormAfterHotfix_1)
+20260821_030244: Success: DataClassInfo(ID=9856, GUID=a978d65b-e096-4109-a380-f507ca226b1e, Name=bizform.BDO_EventNodef9e76cafb7f64f61a39a15e2f5673ca3)
+20260821_030245: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_BDO_EventNodef9e76cafb7f64f61a39a15e2f5673ca3
+
+20260821_030245: Success: DataClassInfo(ID=9857, GUID=adb83dc5-94fd-45d3-8250-22270c232602, Name=bizform.BDO_EventNodef7aeb7413bb0436faa6f3b340ae184a4)
+20260821_030248: Success: DataClassInfo(ID=9858, GUID=8e8e6139-2b27-4ab7-9b8f-4473ce10369d, Name=bizform.BDO_EventNodeb2d681955e8a48528bde75821c4c722d)
+20260821_030251: Success: DataClassInfo(ID=9859, GUID=0472746b-7119-4650-8e24-c260aa58331d, Name=bizform.BDO_EventNode9de930a6ab16471aaf4c73c7a41a3c80)
+20260821_030252: Success: DataClassInfo(ID=9860, GUID=3614a6c1-12a9-43a8-a12b-6d48b1cc44df, Name=BizForm.URL_R_dir_ction_T_st)
+20260821_030254: Success: DataClassInfo(ID=9861, GUID=10721e49-6e05-4eac-8f46-cc4f1f568163, Name=BizForm.AaaeOU2c2)
+20260821_030254: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_GWT_TST_AaaeOU2c2
+
+20260821_030254: Success: DataClassInfo(ID=9862, GUID=d84dcd22-35e7-429e-b14d-e4f1eb6c8f84, Name=BizForm.Aa_AaaeOU2c2)
+20260821_030255: Success: DataClassInfo(ID=9863, GUID=96ee4cf2-61e4-4589-9910-144dec3a7baa, Name=bizform.BDO_EventNode371dfa0b33664d328d5333f1621e3f03)
+20260821_030256: Success: DataClassInfo(ID=9864, GUID=04e7beff-f51c-4eda-9fbc-96d4b3b0bf9a, Name=bizform.BDO_EventNode32337d94b56a4dd0a211a90fd83433d7)
+20260821_030256: Success: DataClassInfo(ID=9865, GUID=b5c3341b-1e66-45a0-87ee-7430c48f4de1, Name=BizForm.MyForm)
+20260821_030257: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_GWT_TST_MyForm
+
+20260821_030257: Success: DataClassInfo(ID=9866, GUID=a301e464-2220-4210-8520-b23219d87c6a, Name=BizForm.ContactUs)
+20260821_030258: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_Demo_ContactUs
+
+20260821_030258: Success: DataClassInfo(ID=9867, GUID=4a493ea7-c0f7-4d34-b738-81d919cc664a, Name=BizForm.IBORTransitionRegistrationForm)
+20260821_030259: Success: DataClassInfo(ID=9868, GUID=f6ddf270-1274-4a1b-ba62-22e1c9659286, Name=BizForm.AutomotiveReport)
+20260821_030259: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_Demo_AutomotiveReport
+
+20260821_030259: Success: DataClassInfo(ID=9869, GUID=5d275844-144e-4076-ba04-87f36bac0742, Name=BizForm.RKNewForm)
+20260821_030300: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_GWT_TST_RKNewForm
+
+20260821_030300: Success: DataClassInfo(ID=9870, GUID=241fb55a-72e8-40a2-9f40-27b28f26472d, Name=BizForm.JobApply)
+20260821_030300: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_GWT_TST_JobApply
+
+20260821_030300: Success: DataClassInfo(ID=9871, GUID=757436ce-9bd4-478b-bbe2-71f756089975, Name=BizForm.RKGatedDownload)
+20260821_030300: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_GWT_TST_RKGatedDownload
+
+20260821_030300: Success: DataClassInfo(ID=9872, GUID=b2efbc31-3c31-4672-8caa-3da80e6ca807, Name=BizForm.GatedDownloadsForIndustries)
+20260821_030300: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_GWT_TST_GatedDownloadsForIndustries
+
+20260821_030300: Success: DataClassInfo(ID=9873, GUID=5abf321a-3375-48de-9934-a4c57f989648, Name=bizform.BDO_EventNodef1d26afc8fb844ccabbbc2a1963df576)
+20260821_030300: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_BDO_EventNodef1d26afc8fb844ccabbbc2a1963df576
+
+20260821_030300: Success: DataClassInfo(ID=9874, GUID=eda4a9c7-283b-4459-a607-ed3b5d213e51, Name=BizForm.E2E_694813_ContactForm)
+20260821_030301: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_GWT_TST_E2E_694813_ContactForm
+
+20260821_030301: Success: DataClassInfo(ID=9875, GUID=bf13c2a4-ca86-4f15-9d70-4479753fb3ff, Name=bizform.BDO_EventNode3d9cb85ff18848fb939007d42a61c13c)
+20260821_030301: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_BDO_EventNode3d9cb85ff18848fb939007d42a61c13c
+
+20260821_030301: Success: DataClassInfo(ID=9876, GUID=1d7b17a4-3ddc-45e8-843c-37cfb3cc024d, Name=BizForm.DemoToPO)
+20260821_030301: Success: DataClassInfo(ID=9877, GUID=e231307d-6b76-42d8-8b79-5996c066020c, Name=BizForm.DemoToOurGWTFamily)
+20260821_030301: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_GWT_TST_DemoToOurGWTFamily
+
+20260821_030301: Success: DataClassInfo(ID=9878, GUID=41c68e49-c2e8-4d2b-bc02-c775d0dd7cec, Name=BizForm.LapeForm_1)
+20260821_030302: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_GWT_TST_LapeForm_1
+
+20260821_030302: Success: DataClassInfo(ID=9879, GUID=23170c69-e0da-44f2-82f2-dd1011a39553, Name=bizform.BDO_EventNodeb939d30d2aae491b9c722c1df7432071)
+20260821_030302: Success: DataClassInfo(ID=9880, GUID=46716cd2-68d0-4bc1-b064-d0f304762791, Name=BizForm.FormWithAttachement)
+20260821_030302: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_GWT_TST_FormWithAttachement
+
+20260821_030302: Success: DataClassInfo(ID=9881, GUID=95056f35-1133-4e89-9519-46ceb2535f9b, Name=BizForm.Neliesti)
+20260821_030302: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_GWT_TST_Neliesti
+
+20260821_030302: Success: DataClassInfo(ID=9882, GUID=58573e55-8bd0-4f6a-9316-63df5bfc21b5, Name=BizForm.PersonContactForm)
+20260821_030302: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_Demo_PersonContactForm
+
+20260821_030302: Success: DataClassInfo(ID=9883, GUID=5615a26d-9d25-46da-8556-1d7b2b77b7e1, Name=bizform.BDO_EventNoded74d36a0006a41aeb334baf0a3135bb4)
+20260821_030302: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_BDO_EventNoded74d36a0006a41aeb334baf0a3135bb4
+
+20260821_030302: Success: DataClassInfo(ID=9884, GUID=53377ed4-513a-40ea-aedb-a68f43c60a04, Name=bizform.BDO_EventNode0902cc03d91a45ccb3bedb6566f7f89f)
+20260821_030302: Success: DataClassInfo(ID=9885, GUID=837d4437-35de-4228-b3d7-3af889893a11, Name=bizform.BDO_EventNode7f0c3897b2d24d159d8d9ac001e4a991)
+20260821_030303: Success: DataClassInfo(ID=9886, GUID=61fb3715-d451-463e-9e38-078b89932fda, Name=BizForm.Upload)
+20260821_030303: Success: DataClassInfo(ID=9887, GUID=6471ecd9-7971-4029-8cbd-f608a3bfe8c5, Name=bizform.BDO_EventNode5b7333b6fdfa47849b5652634f80381b)
+20260821_030303: Success: DataClassInfo(ID=9888, GUID=f2d6d03e-c295-44b6-8582-02536ddc1cd3, Name=BizForm.JobApplications)
+20260821_030303: Success: DataClassInfo(ID=9889, GUID=0374eded-9bde-4ea4-8615-8290c88ae8c0, Name=BizForm.Lape_Form_2)
+20260821_030303: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_GWT_TST_Lape_Form_2
+
+20260821_030303: Success: DataClassInfo(ID=9890, GUID=a48ace74-6ed7-4f9d-b0d7-7169a099b7a6, Name=BizForm.BDOSwitzerlandForm)
+20260821_030304: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_Demo_BDOSwitzerlandForm
+
+20260821_030304: Success: DataClassInfo(ID=9891, GUID=6518d299-4918-4a66-a1a6-9ab359cf0a13, Name=BizForm.BSIStudioForm)
+20260821_030304: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_GWT_TST_BSIStudioForm
+
+20260821_030304: Success: DataClassInfo(ID=9892, GUID=eeb856bb-7ed6-4c50-a8a7-b18790ed4616, Name=bizform.BDO_EventNode28f41d6fb6084ae9b43269acade88ad2)
+20260821_030304: Success: DataClassInfo(ID=9893, GUID=d73cd47a-907b-42ad-8588-fe2bd06e6ef3, Name=BizForm.form_96)
+20260821_030304: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_GWT_TST_form_96
+
+20260821_030304: Success: DataClassInfo(ID=9894, GUID=248b371a-0563-4f4c-988a-df29bebc7b9d, Name=BizForm.EV_Form)
+20260821_030304: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_GWT_TST_EV_Form
+
+20260821_030304: Success: DataClassInfo(ID=9895, GUID=8f147311-3978-411d-b76f-455a19827247, Name=BizForm.SubscribeToNewsletter)
+20260821_030304: Success: DataClassInfo(ID=9896, GUID=ac47f5c3-670b-42cc-842c-617f5da604bf, Name=bizform.BDO_EventNode6af2d096f10b4fe2940e81d591673e4d)
+20260821_030304: Success: DataClassInfo(ID=9897, GUID=dcbe343b-33b7-4198-8c55-7cc2a5e17fc9, Name=BizForm.BDOEventTemplate_DoNotModify1)
+20260821_030305: Success: DataClassInfo(ID=9898, GUID=04707a2f-c560-4f86-92b9-a9d3f0641776, Name=bizform.BDO_EventNode21caf0bfe3f04794a4bd6a9c2b1e4aeb)
+20260821_030305: Success: DataClassInfo(ID=9899, GUID=7edd9df7-4c46-4864-844b-0fbb90f30759, Name=bizform.BDO_EventNode5d436e58919e44dba6075e5a44bb5036)
+20260821_030305: Success: DataClassInfo(ID=9900, GUID=ee2a2805-43b2-4577-b99e-ed0256ae2eaa, Name=bizform.BDO_EventNodee54379daf0e34f75b49ffbc668b313df)
+20260821_030305: Success: DataClassInfo(ID=9901, GUID=c2978d1b-a5c8-4dd2-9085-a58702113161, Name=bizform.BDO_EventNodea00a7335729f40958a7244e99c84233f)
+20260821_030306: Success: DataClassInfo(ID=9902, GUID=c724abb4-f06c-4565-a60e-17188c395865, Name=bizform.BDO_EventNodea0438815439145c89f6e78cdc04d0839)
+20260821_030306: Success: DataClassInfo(ID=9903, GUID=458993ed-d70d-446b-9273-b68730b38975, Name=bizform.BDO_EventNodefe49ef82938b45148c1c58910364152d)
+20260821_030306: Success: DataClassInfo(ID=9904, GUID=5a8a4ce8-0414-4d45-a16f-223c1357fbd4, Name=bizform.BDO_EventNode27f0d9686a014d4e8d3e6dac396dd066)
+20260821_030306: Success: DataClassInfo(ID=9905, GUID=4b1370f8-8836-4834-9ca9-91974094c2c9, Name=bizform.BDO_EventNode94806d314d904220af68e642b45a4e2b)
+20260821_030306: Success: DataClassInfo(ID=9906, GUID=90cbf5a1-74de-4a77-9fa1-8d18b6427722, Name=bizform.BDO_EventNodef7381f343786491abeb4bb5ebba8a6e5)
+20260821_030306: Success: DataClassInfo(ID=9907, GUID=d314ca40-00a4-473d-869c-ed1f3ab8da49, Name=bizform.BDO_EventNode35421dad2aa441a69db4cd1753106207)
+20260821_030307: Success: DataClassInfo(ID=9908, GUID=b68424a1-b9d5-4c92-acf5-c03e4a50d184, Name=bizform.BDO_EventNodebbece091141443ecbfcff578ab589933)
+20260821_030307: Success: DataClassInfo(ID=9909, GUID=27ee1461-d682-478c-89a6-35811b0d3582, Name=bizform.BDO_EventNode6e7c709545ba4f199edad0e4866d3dda)
+20260821_030307: Success: DataClassInfo(ID=9910, GUID=d8a62f21-150e-4061-885a-5463fccefcb6, Name=bizform.BDO_EventNodecc46caf812e64b8d9f36c1c6ec78e74b)
+20260821_030307: Success: DataClassInfo(ID=9911, GUID=1250c02b-ebc0-4cb5-93c0-15f8933aab33, Name=bizform.BDO_EventNode56430da89c2b4abcaa4bb106a4182cce)
+20260821_030308: Success: DataClassInfo(ID=9912, GUID=8127f643-a57a-44e3-b3c2-93dfe6d3a0f5, Name=bizform.BDO_EventNode468b3faeef57411d887b378fc2700915)
+20260821_030308: Success: DataClassInfo(ID=9913, GUID=ffce3009-8f3d-40c7-8a77-7d305af8d037, Name=bizform.BDO_EventNode5b3665745c844d06935ca4c433adcb69)
+20260821_030308: Success: DataClassInfo(ID=9914, GUID=56bc81b0-13b7-49ea-b0ee-39a03705093a, Name=bizform.BDO_EventNode059a439b31db4677b6b3828cd3e158d0)
+20260821_030308: Success: DataClassInfo(ID=9915, GUID=c40b6b30-d605-4d40-9600-abba69c2fb54, Name=bizform.BDO_EventNode8846c15e5c044b01840111058fddeea7)
+20260821_030309: Success: DataClassInfo(ID=9916, GUID=3ab069ce-a59e-4659-aedd-701add7ef51a, Name=bizform.BDO_EventNode71fb958a34ca4b20a0b7b4bdd26f22ae)
+20260821_030309: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_BDO_EventNode71fb958a34ca4b20a0b7b4bdd26f22ae
+
+20260821_030309: Success: DataClassInfo(ID=9917, GUID=d471a406-c486-4027-a547-f45cd419557b, Name=bizform.BDO_EventNode2baf5237d37247a99b4bf94cb75affe7)
+20260821_030309: Success: DataClassInfo(ID=9918, GUID=a9e0756b-1f97-448c-bc1c-7e9c710a2d57, Name=bizform.BDO_EventNode2525a6f1a8064d59848cdec756735500)
+20260821_030309: Success: DataClassInfo(ID=9919, GUID=9b1561e9-2a52-452d-b0e8-fe20b0fffb91, Name=bizform.BDO_EventNode4604cd48ed9343cb853171517d858ffb)
+20260821_030309: Success: DataClassInfo(ID=9920, GUID=411d7740-7eb7-4c4f-a1d6-315635f3e8ae, Name=bizform.BDO_EventNode5baa971444de4c3cb854ef2d99912023)
+20260821_030309: Success: DataClassInfo(ID=9921, GUID=3962eac0-267d-48a7-a451-06d5924cbb65, Name=bizform.BDO_EventNode3b0dd3a057564f6db12cf95a0062d828)
+20260821_030309: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_BDO_EventNode3b0dd3a057564f6db12cf95a0062d828
+
+20260821_030309: Success: DataClassInfo(ID=9922, GUID=9d9b8c77-c730-47e6-9519-234eadbac504, Name=bizform.BDO_EventNode9c545fb841794e97a13b2b20fcde418d)
+20260821_030310: Success: DataClassInfo(ID=9923, GUID=dec5446d-ba28-4fbd-ab14-e6c38d1a85a0, Name=bizform.BDO_EventNode65fa258c9e4c4c418c5428ea40ea0368)
+20260821_030310: Success: DataClassInfo(ID=9924, GUID=b2792370-dfaa-44c0-b2d2-73d4f65b63bf, Name=bizform.BDO_EventNode36537c452cde4c558bdceee90e7be52d)
+20260821_030310: Success: DataClassInfo(ID=9925, GUID=fa8fd36d-a825-4083-82aa-7ba4024afd5e, Name=bizform.BDO_EventNode357d13de92534c93be4b4186114f11b7)
+20260821_030310: Success: DataClassInfo(ID=9926, GUID=90eac348-7197-4c76-b8fc-c13013f3d082, Name=BizForm.E2EForm)
+20260821_030310: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_E2E_Performance_E2EForm
+
+20260821_030310: Success: DataClassInfo(ID=9927, GUID=d7de0c34-92df-47ca-bbde-ed0cf9668f7f, Name=BizForm.MatasNewForm)
+20260821_030310: Success: DataClassInfo(ID=9928, GUID=fd9cec21-5b39-44a2-be7c-d0985505d142, Name=BizForm.TestFormLT)
+20260821_030310: Success: DataClassInfo(ID=9929, GUID=2969d90c-d220-4233-979c-9a02a02a36bb, Name=bizform.BDO_EventNodece84fb70112b455eb6477d2ddf78b065)
+20260821_030310: Success: DataClassInfo(ID=9930, GUID=2993f90e-a277-4296-90c3-f4ba9be53876, Name=bizform.BDO_EventNodea5d8340f79bc4d44b8baf8ceec8debe6)
+20260821_030311: Success: DataClassInfo(ID=9931, GUID=20a96bfb-ad62-41a9-aee7-a1d4cff37dac, Name=bizform.BDO_EventNode3c5dc96a6c6d46dd9d7708516fc7f545)
+20260821_030311: Success: DataClassInfo(ID=9932, GUID=4e915056-32c0-499c-b7ea-4c8c6a3699e1, Name=BizForm.LapeTest)
+20260821_030311: Success: DataClassInfo(ID=9933, GUID=4a11fa54-8c0f-45c3-b8f4-182eacf1ddd4, Name=BizForm.DemoForm)
+20260821_030311: Success: DataClassInfo(ID=9934, GUID=54918398-d86f-4ff2-8074-b20c59ef57de, Name=BizForm.ContactUsTest)
+20260821_030311: Success: DataClassInfo(ID=9935, GUID=521564a0-fece-4fb4-9583-24c8a3785dd0, Name=BizForm.BDO_ContactPeopleWithSaveUrl1)
+20260821_030311: Success: DataClassInfo(ID=9936, GUID=9c83bd59-eaaf-406f-8b58-75301dd9a80b, Name=BizForm.TestContactUs)
+20260821_030311: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_GWT_TST_TestContactUs
+
+20260821_030311: Success: DataClassInfo(ID=9937, GUID=e627d734-4a0d-4672-97fb-414e656b65a5, Name=BizForm.BDO_ContactPeopleWithSaveUrl_1)
+20260821_030311: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_Demo_BDO_ContactPeopleWithSaveUrl
+
+20260821_030311: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.DataEngine.DataClassInfo, Exception: CMS.DataEngine.CodeNameNotUniqueException: The class with code name 'BizForm.bdo_contactpeoplewithemail' already exists.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.DataEngine.DataClassInfoProviderBase`1.SetInfo(DataClassInfo info)
+   at CMS.DataEngine.DataClassInfoProvider.SetInfo(DataClassInfo info)
+   at Migration.Tool.KXP.Api.KxpClassFacade.SetClass(DataClassInfo dataClassInfo) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\Migration.Tool.KXP.Api\KxpClassFacade.cs:line 16
+   at Migration.Tool.Source.Handlers.MigrateFormsCommandHandler.MapAndSaveUsingKxoApi(ICmsClass ksClass, DataClassInfo kxoDataClass) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\KVA\Migration.Tool.Source\Handlers\MigrateFormsCommandHandler.cs:line 155, Entity: DataClassInfo(ID=0, GUID=2867a72e-2050-46a0-bcef-dd45096ddbc1, Name=BizForm.bdo_contactpeoplewithemail)
+
+20260821_030311: Success: DataClassInfo(ID=9938, GUID=e2ecc22b-ae3f-4952-b4bc-a5b4d7191b91, Name=BizForm.bdo_contactuswithsaveurl)
+20260821_030312: NeedManualAction: False, ReferenceName: DataMustNotExistInTargetInstanceTable, AdditionalInfo: tableName: Form_GWT_TST_bdo_contactuswithsaveurl
+
+20260821_030312: Success: DataClassInfo(ID=9939, GUID=28a43bd5-33df-48c9-a971-1f5026236db7, Name=BizForm.BDO_ContactPeopleWithEmail_1)
+20260821_030312: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.OnlineForms.BizFormInfo, Exception: CMS.DataEngine.CodeNameNotUniqueException: The form with code name 'BDO_ContactPeopleWithEmail' already exists.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.OnlineForms.BizFormInfoProvider.Set(BizFormInfo info)
+   at Migration.Tool.Source.Handlers.MigrateFormsCommandHandler.Handle(MigrateFormsCommand request, CancellationToken cancellationToken) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\KVA\Migration.Tool.Source\Handlers\MigrateFormsCommandHandler.cs:line 74, Entity: BizFormInfo(ID=0, GUID=0b8f790c-6f12-457b-a623-3d7a86f3fe06, Name=BDO_ContactPeopleWithEmail)
+
+20260821_030312: Success: DataClassInfo(ID=9940, GUID=45ba9de4-eea1-4876-a650-4b0ec2e6a99e, Name=BizForm.BDO_ContactPeopleWithEmail_2)
+20260821_030312: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.OnlineForms.BizFormInfo, Exception: CMS.DataEngine.CodeNameNotUniqueException: The form with code name 'BDO_ContactPeopleWithEmail' already exists.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.OnlineForms.BizFormInfoProvider.Set(BizFormInfo info)
+   at Migration.Tool.Source.Handlers.MigrateFormsCommandHandler.Handle(MigrateFormsCommand request, CancellationToken cancellationToken) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\KVA\Migration.Tool.Source\Handlers\MigrateFormsCommandHandler.cs:line 74, Entity: BizFormInfo(ID=0, GUID=b815ab1c-3286-4d99-9eab-e3795493eaa2, Name=BDO_ContactPeopleWithEmail)
+
+20260821_030312: Success: DataClassInfo(ID=9941, GUID=09e37600-6584-431c-82e3-d1faaf1b010f, Name=BizForm.BDO_ContactPeopleWithEmail_3)
+20260821_030312: NeedManualAction: True, ReferenceName: FailedToCreateTargetInstance, AdditionalInfo: TargetEntityType: CMS.OnlineForms.BizFormInfo, Exception: CMS.DataEngine.CodeNameNotUniqueException: The form with code name 'BDO_ContactPeopleWithEmail' already exists.
+   at CMS.DataEngine.AbstractInfoProvider`3.ValidateSetInfoAndThrow(TInfo info)
+   at CMS.DataEngine.AbstractInfoProvider`3.SetInfoSyncOrAsync(Boolean useAsync, TInfo info, CancellationToken cancellationToken)
+   at CMS.OnlineForms.BizFormInfoProvider.Set(BizFormInfo info)
+   at Migration.Tool.Source.Handlers.MigrateFormsCommandHandler.Handle(MigrateFormsCommand request, CancellationToken cancellationToken) in C:\Work\GWT\xperience-by-kentico-kentico-migration-tool\KVA\Migration.Tool.Source\Handlers\MigrateFormsCommandHandler.cs:line 74, Entity: BizFormInfo(ID=0, GUID=832aca43-de5d-4e97-91fb-7ffdf84ac68e, Name=BDO_ContactPeopleWithEmail)
+

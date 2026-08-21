@@ -686,7 +686,8 @@ public static class ClassMappingSample
         const string sourceClassName = "BDO.Person";
 
         // No class patcher: the target type already exists, so we don't (re)define its structure.
-        var m = new MultiClassMapping(targetClassName, _ => { });
+        var m = new MultiClassMapping(targetClassName, target => target.ClassName = targetClassName);
+        m.BuildField("PersonID").AsPrimaryKey();
 
         // Map each target field to its source field. Left = XbyK field name, right = K13 field name.
 

@@ -37,7 +37,8 @@ public static class ServiceCollectionExtensions
 
 
         // Map K13 BDO.Person pages to the existing XbyK BDO.Person page content type
-        services.AddPersonMapping();
+        // Enable only when the target instance already contains BDO.Person.
+        // services.AddPersonMapping();
 
         // Shared metadata schema (title, description, teaserImage, teaserImageAltText, canonicalUrl) - must be
         // registered before any class mapping that calls UseReusableSchema(MetadataFieldsSchema.SchemaName).
@@ -59,10 +60,12 @@ public static class ServiceCollectionExtensions
         services.AddInsightGroupMapping();
         services.AddSectionInsightsPageMapping();
 
-        // Convert BDO.GlobalLocation (custom table) into the reusable "global_location" content type.
-        services.AddGlobalLocationMapping();
+        // NOTE: BDO.GlobalLocation is a custom table. To migrate it, either:
+        //   - Add it to appsettings.json "ConvertClassesToContentHub" and uncomment the line below, OR
+        //   - Skip it entirely by not registering a mapping (tool will auto-generate one, but will fail without a PK set)
+        // services.AddGlobalLocationMapping();
 
-        // services.AddClassMergeExample();
+        // Routing content items to prefabricated content types (i.e., types not created by Migration Tool --page-types CLI argument)
         // services.AddClassMergeExampleAsReusable();
         // services.AddSimpleRemodelingSample();
         // services.AddReusableRemodelingSample();

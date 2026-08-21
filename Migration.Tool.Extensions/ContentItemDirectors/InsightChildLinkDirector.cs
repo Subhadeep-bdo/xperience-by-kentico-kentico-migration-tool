@@ -14,6 +14,10 @@ namespace Migration.Tool.Extensions.ContentItemDirectors;
 ///
 /// Prerequisite: "BDO.Insight" must remain listed in Settings.ConvertClassesToContentHub in appsettings.json -
 /// LinkChildren silently fails to create the reference if the child type isn't in that list (already satisfied).
+///
+/// IMPORTANT: excludes children with NodeLinkedNodeID != null (KX13 linked pages) - LinkedPageDirector drops
+/// all linked pages, so a dropped page never receives a migrated GUID; including it here caused a
+/// KeyNotFoundException in the tool's internal LinkChildren resolution (confirmed via migration-run4.log).
 /// </summary>
 public class InsightChildLinkDirector : ContentItemDirectorBase
 {
@@ -28,7 +32,7 @@ public class InsightChildLinkDirector : ContentItemDirectorBase
         if (sourceClassId is SectionInsightsPageClassId or InsightCategoryClassId or InsightGroupClassId
             && source.ChildNodes is { } childNodes)
         {
-            options.LinkChildren("insights", childNodes.Where(c => c.NodeClassID == InsightClassId));
+            options.LinkChildren("insights", childNodes.Where(c => c.NodeClassID == InsightClassId && c.NodeLinkedNodeID is null));
         }
 
         // Unhandled sources: no action = default migration behavior.
