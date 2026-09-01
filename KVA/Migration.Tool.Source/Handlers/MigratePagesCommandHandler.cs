@@ -193,19 +193,33 @@ public class MigratePagesCommandHandler(
 
     private string NormalizeUrlPath(string path) => path.ToLower().TrimStart('~').TrimStart('/').TrimEnd('/');
 
+    private WebsiteChannelInfo GetTargetWebsiteChannel(ICmsSite sourceSite)
+    {
+        if (!toolConfiguration.TargetWebsiteChannelMappings.TryGetValue(sourceSite.SiteName, out string? targetChannelName))
+        {
+            return WebsiteChannelInfo.Provider.Get(sourceSite.SiteGUID)
+                   ?? throw new InvalidOperationException($"Target website channel for source site '{sourceSite.SiteName}' was not found.");
+        }
+
+        var targetChannel = ChannelInfo.Provider.Get()
+            .WhereEquals(nameof(ChannelInfo.ChannelName), targetChannelName)
+            .FirstOrDefault()
+            ?? throw new InvalidOperationException($"Configured target channel '{targetChannelName}' for source site '{sourceSite.SiteName}' was not found.");
+
+        return WebsiteChannelInfo.Provider.Get()
+                   .WhereEquals(nameof(WebsiteChannelInfo.WebsiteChannelChannelID), targetChannel.ChannelID)
+                   .FirstOrDefault()
+               ?? throw new InvalidOperationException($"Configured target channel '{targetChannelName}' is not a website channel.");
+    }
+
     private async Task MigratePages()
     {
         var sites = modelFacade.GetMigratedSites();
         foreach (var ksSite in sites)
         {
-            var channelInfo = ChannelInfo.Provider.Get(ksSite.SiteGUID);
-            if (channelInfo == null)
-            {
-                logger.LogError("Target channel for site '{SiteName}' not exists!", ksSite.SiteName);
-                continue;
-            }
+            var websiteChannel = GetTargetWebsiteChannel(ksSite);
 
-            logger.LogInformation("Migrating pages for site '{SourceSiteName}' to target channel '{TargetChannelName}' as content items", ksSite.SiteName, channelInfo.ChannelName);
+            logger.LogInformation("Migrating pages for site '{SourceSiteName}' to target website channel '{TargetChannelGuid}' as content items", ksSite.SiteName, websiteChannel.WebsiteChannelGUID);
 
             var ksTrees = modelFacade.Select<ICmsTree>(
                 "NodeSiteId = @siteId",
@@ -349,7 +363,7 @@ public class MigratePagesCommandHandler(
                     var results = mapper.Map(new CmsTreeMapperSource(
                         ksNode,
                         safeNodeName,
-                        ksSite.SiteGUID,
+                        websiteChannel.WebsiteChannelGUID,
                         nodeParentGuid,
                         cultureCodeToLanguageGuid!,
                         ksNodeClass.ClassFormDefinition,
@@ -373,6 +387,11 @@ public class MigratePagesCommandHandler(
                             }
                             else
                             {
+                                if (umtModel is ContentItemDataModel { ContentItemContentTypeName: "BDO.Contact" } contactDataModel)
+                                {
+                                    contactDataModel.CustomProperties.Remove("DocumentName");
+                                }
+
                                 switch (await importer.ImportAsync(umtModel))
                                 {
                                     case { Success: false } result:
@@ -430,7 +449,7 @@ public class MigratePagesCommandHandler(
                                     {
                                         var languageGuid = cultureCodeToLanguageGuid![migratedDocument.DocumentCulture];
 
-                                        await MigratePageUrlPaths(ksSite.SiteGUID,
+                                        await MigratePageUrlPaths(websiteChannel.WebsiteChannelGUID,
                                             languageGuid,
                                             commonDataInfos,
                                             migratedDocument,
@@ -438,7 +457,7 @@ public class MigratePagesCommandHandler(
                                             migratedDocument.DocumentCulture,
                                             wasLinkedNode, webPageItemInfo);
 
-                                        await MigrateAlternativeUrls(ksSite, languageGuid, commonDataInfos, migratedDocument, webPageItemInfo);
+                                        await MigrateAlternativeUrls(ksSite, websiteChannel.WebsiteChannelGUID, languageGuid, commonDataInfos, migratedDocument, webPageItemInfo);
                                     }
                                 }
 
@@ -553,13 +572,18 @@ public class MigratePagesCommandHandler(
         return ContentItemInfo.Provider.Get(patchedNodeGuid);
     }
 
+    private static ContentLanguageInfo? GetContentLanguage(Guid languageGuid) =>
+        ContentLanguageInfo.Provider.Get()
+            .WhereEquals(nameof(ContentLanguageInfo.ContentLanguageGUID), languageGuid)
+            .FirstOrDefault();
+
     private ICmsDocument MaterializeLinkedNodeDocument(ICmsTree ksNode, ICmsDocument linkedDocument)
     {
         var fixedDocumentGuid = GuidHelper.CreateDocumentGuid($"{linkedDocument.DocumentID}|{ksNode.NodeID}|{ksNode.NodeSiteID}");
         if (ContentItemFromNode(ksNode)?.ContentItemID is { } contentItemId)
         {
             if (cultureCodeToLanguageGuid!.TryGetValue(linkedDocument.DocumentCulture, out var languageGuid) &&
-                ContentLanguageInfo.Provider.Get(languageGuid) is { } languageInfo)
+                GetContentLanguage(languageGuid) is { } languageInfo)
             {
                 if (ContentItemCommonDataInfo.Provider.Get()
                         .WhereEquals(nameof(ContentItemCommonDataInfo.ContentItemCommonDataContentItemID), contentItemId)
@@ -770,7 +794,7 @@ public class MigratePagesCommandHandler(
     private async Task MigratePageUrlPaths(Guid webSiteChannelGuid, Guid languageGuid,
         List<ContentItemCommonDataInfo> contentItemCommonDataInfos, ICmsDocument? ksDocument, ICmsTree ksTree, string documentCulture, bool wasLinkedNode, WebPageItemInfo webPageItemInfo)
     {
-        var languageInfo = ContentLanguageInfo.Provider.Get(languageGuid);
+        var languageInfo = GetContentLanguage(languageGuid) ?? throw new InvalidOperationException($"Content language '{languageGuid}' was not found.");
         var webSiteChannel = WebsiteChannelInfo.Provider.Get(webSiteChannelGuid);
 
         #region Migration of custom routing model
@@ -949,7 +973,7 @@ public class MigratePagesCommandHandler(
         }
     }
 
-    private async Task MigrateAlternativeUrls(ICmsSite ksSite, Guid languageGuid, List<ContentItemCommonDataInfo> contentItemCommonDataInfos,
+    private async Task MigrateAlternativeUrls(ICmsSite ksSite, Guid webSiteChannelGuid, Guid languageGuid, List<ContentItemCommonDataInfo> contentItemCommonDataInfos,
         ICmsDocument ksDocument, WebPageItemInfo webPageItemInfo)
     {
         if (!modelFacade.IsAvailable<ICmsAlternativeUrl>())
@@ -957,8 +981,8 @@ public class MigratePagesCommandHandler(
             return;
         }
 
-        var languageInfo = ContentLanguageInfo.Provider.Get(languageGuid);
-        var webSiteChannel = WebsiteChannelInfo.Provider.Get(ksSite.SiteGUID);
+        var languageInfo = GetContentLanguage(languageGuid) ?? throw new InvalidOperationException($"Content language '{languageGuid}' was not found.");
+        var webSiteChannel = WebsiteChannelInfo.Provider.Get(webSiteChannelGuid);
 
         var ksUrls = modelFacade.SelectWhere<ICmsAlternativeUrl>("AlternativeUrlDocumentID = @documentId AND AlternativeUrlSiteID = @siteId",
             new SqlParameter("documentId", ksDocument.DocumentID), new SqlParameter("siteId", ksSite.SiteID)).ToArray();
@@ -972,7 +996,7 @@ public class MigratePagesCommandHandler(
                     WebPageUrlPathGUID = GuidHelper.CreateWebPageUrlPathGuid($"VanityURL|{url.AlternativeUrlGUID}"),
                     WebPageUrlPath = url.AlternativeUrlUrl,
                     WebPageUrlPathWebPageItemGuid = webPageItemInfo.WebPageItemGUID,
-                    WebPageUrlPathWebsiteChannelGuid = ksSite.SiteGUID,
+                    WebPageUrlPathWebsiteChannelGuid = webSiteChannelGuid,
                     WebPageUrlPathContentLanguageGuid = languageGuid,
                     WebPageUrlPathIsLatest = contentItemCommonDataInfo.ContentItemCommonDataIsLatest,
                     WebPageUrlPathIsDraft = contentItemCommonDataInfo.ContentItemCommonDataVersionStatus switch

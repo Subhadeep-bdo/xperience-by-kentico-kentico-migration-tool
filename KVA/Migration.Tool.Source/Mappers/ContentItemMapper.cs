@@ -379,7 +379,9 @@ public class ContentItemMapper(
                 // Fields added globally
                 foreach (var legacyField in GetLegacyMetadataFields(modelFacade.SelectVersion()))
                 {
-                    if (GetMappedLegacyField(fi, targetClassInfo!.ClassName, legacyField.LegacyFieldName) is { } legacyMetadataFieldName)
+                    bool isStaleContactDocumentName =
+                        targetClassInfo!.ClassName == "BDO.Contact" && legacyField.LegacyFieldName == "DocumentName";
+                    if (!isStaleContactDocumentName && GetMappedLegacyField(fi, targetClassInfo.ClassName, legacyField.LegacyFieldName) is { } legacyMetadataFieldName)
                     {
                         if (reusableSchemaService.IsConversionToReusableFieldSchemaRequested(targetClassName))
                         {
@@ -1245,9 +1247,13 @@ public class ContentItemMapper(
             foreach (var legacyField in GetLegacyMetadataFields(modelFacade.SelectVersion(), configuration.IncludeExtendedMetadata.GetValueOrDefault(false) ? IncludedMetadata.Extended : IncludedMetadata.Basic))
             {
                 string? documentNameFieldName = GetMappedLegacyField(fi, targetClassInfo.ClassName, legacyField.LegacyFieldName);
-                if (documentNameFieldName is not null)
+                bool isStaleContactDocumentName =
+                    targetClassInfo.ClassName == "BDO.Contact" && legacyField.LegacyFieldName == "DocumentName";
+                bool isTargetField = !isStaleContactDocumentName && documentNameFieldName is not null &&
+                    (fi.GetFormField(documentNameFieldName) is not null || commonFields.Any(x => x.Name == documentNameFieldName));
+                if (isTargetField)
                 {
-                    dataModel.CustomProperties[documentNameFieldName] = contentItemModel.ContentItemName;
+                    dataModel.CustomProperties[documentNameFieldName!] = contentItemModel.ContentItemName;
                 }
             }
 

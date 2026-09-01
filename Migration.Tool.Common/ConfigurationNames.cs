@@ -48,6 +48,7 @@ public class ConfigurationNames
     public const string TodoPlaceholder = "[TODO]";
 
     public const string TargetWorkspaceName = "TargetWorkspaceName";
+    public const string TargetWebsiteChannelMappings = "TargetWebsiteChannelMappings";
 
     #region "Section names"
 

@@ -83,6 +83,9 @@ public class ToolConfiguration
     [ConfigurationKeyName(ConfigurationNames.TargetWorkspaceName)]
     public string? TargetWorkspaceName { get; set; }
 
+    [ConfigurationKeyName(ConfigurationNames.TargetWebsiteChannelMappings)]
+    public Dictionary<string, string> TargetWebsiteChannelMappings { get; set; } = new(StringComparer.OrdinalIgnoreCase);
+
     #region Opt-in features
 
     [ConfigurationKeyName(ConfigurationNames.OptInFeatures)]
