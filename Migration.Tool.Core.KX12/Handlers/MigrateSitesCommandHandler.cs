@@ -33,6 +33,10 @@ public class MigrateSitesCommandHandler(
     {
         await using var kx12Context = await kx12ContextFactory.CreateDbContextAsync(cancellationToken);
         var migratedCultureCodes = new Dictionary<string, ContentLanguageInfo>(StringComparer.CurrentCultureIgnoreCase);
+        string GetDestinationCultureCode(string sourceCultureCode) =>
+            toolConfiguration.CultureCodeMappings.TryGetValue(sourceCultureCode, out var destinationCultureCode)
+                ? destinationCultureCode
+                : sourceCultureCode;
         var entityConfiguration = toolConfiguration.EntityConfigurations.GetEntityConfiguration<CmsSite>();
         var domainSanitizer = new WebsiteChannelDomainSanitizer(logger, WebsiteChannelInfo.Provider.Get());
         var existingChannels = ChannelInfo.Provider.Get();
@@ -53,6 +57,7 @@ public class MigrateSitesCommandHandler(
             }
 
             string defaultCultureCode = GetSiteCulture(kx12CmsSite);
+            string destinationDefaultCultureCode = GetDestinationCultureCode(defaultCultureCode);
             var migratedSiteCultures = kx12CmsSite.Cultures.ToList();
             if (!migratedSiteCultures.Any(x => x.CultureCode.Equals(defaultCultureCode, StringComparison.InvariantCultureIgnoreCase)))
             {
@@ -65,13 +70,14 @@ public class MigrateSitesCommandHandler(
 
             foreach (var cmsCulture in migratedSiteCultures)
             {
-                if (migratedCultureCodes.ContainsKey(cmsCulture.CultureCode))
+                string destinationCultureCode = GetDestinationCultureCode(cmsCulture.CultureCode);
+                if (migratedCultureCodes.ContainsKey(destinationCultureCode))
                 {
                     continue;
                 }
 
                 var existing = ContentLanguageInfo.Provider.Get()
-                    .WhereEquals(nameof(ContentLanguageInfo.ContentLanguageCultureFormat), cmsCulture.CultureCode)
+                    .WhereEquals(nameof(ContentLanguageInfo.ContentLanguageCultureFormat), destinationCultureCode)
                     .FirstOrDefault();
 
                 if (existing != null)
@@ -81,7 +87,7 @@ public class MigrateSitesCommandHandler(
                         existing.ContentLanguageGUID = cmsCulture.CultureGuid;
                         existing.Update();
                     }
-                    migratedCultureCodes.TryAdd(cmsCulture.CultureCode, existing);
+                    migratedCultureCodes.TryAdd(destinationCultureCode, existing);
                 }
                 else
                 {
@@ -89,15 +95,15 @@ public class MigrateSitesCommandHandler(
                     {
                         ContentLanguageGUID = cmsCulture.CultureGuid,
                         ContentLanguageDisplayName = cmsCulture.CultureName,
-                        ContentLanguageName = cmsCulture.CultureCode,
-                        ContentLanguageIsDefault = string.Equals(cmsCulture.CultureCode, defaultCultureCode, StringComparison.InvariantCultureIgnoreCase),
+                        ContentLanguageName = destinationCultureCode,
+                        ContentLanguageIsDefault = string.Equals(destinationCultureCode, destinationDefaultCultureCode, StringComparison.InvariantCultureIgnoreCase),
                         ContentLanguageFallbackContentLanguageGuid = null,
-                        ContentLanguageCultureFormat = cmsCulture.CultureCode
+                        ContentLanguageCultureFormat = destinationCultureCode
                     });
 
                     if (langResult is { Success: true, Imported: ContentLanguageInfo importedLanguage })
                     {
-                        migratedCultureCodes.TryAdd(cmsCulture.CultureCode, importedLanguage);
+                        migratedCultureCodes.TryAdd(destinationCultureCode, importedLanguage);
                         logger.LogTrace("Imported language {Language} from {Culture}", importedLanguage.ContentLanguageName, cmsCulture.CultureCode);
                     }
                 }
@@ -130,7 +136,7 @@ public class MigrateSitesCommandHandler(
                 WebsiteChannelChannelGuid = kx12CmsSite.SiteGuid,
                 WebsiteChannelDomain = domainName,
                 // WebsiteChannelHomePage = homePageNodeAliasPath,
-                WebsiteChannelPrimaryContentLanguageGuid = migratedCultureCodes[defaultCultureCode].ContentLanguageGUID,
+                WebsiteChannelPrimaryContentLanguageGuid = migratedCultureCodes[destinationDefaultCultureCode].ContentLanguageGUID,
                 WebsiteChannelDefaultCookieLevel = cookieLevel,
                 WebsiteChannelStoreFormerUrls = storeFormerUrls
             });

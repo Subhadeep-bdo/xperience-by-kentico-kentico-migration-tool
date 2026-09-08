@@ -69,14 +69,16 @@ public class MigratePageTypesCommandHandler(
                 manuallyMappedSourceClassIDs.Add(ksClass.ClassID);
             }
 
-            if (manualMappings.ContainsKey(ksClass.ClassName))
+            if (manualMappings.TryGetValue(ksClass.ClassName, out var manualMapping))
             {
+                RegisterClassMapping(ksClass, manualMapping.target);
+                AssociateWithTargetChannels(ksClass, manualMapping.target);
                 continue;
             }
 
-            if (entityConfiguration.ExcludeCodeNames.Contains(ksClass.ClassName, StringComparer.InvariantCultureIgnoreCase))
+            if (!entityConfiguration.IncludesCodeName(ksClass.ClassName))
             {
-                logger.LogInformation("Class {ClassName} explicitly excluded in appsettings", ksClass.ClassName);
+                logger.LogInformation("Class {ClassName} excluded by appsettings entity configuration", ksClass.ClassName);
                 continue;
             }
 
@@ -135,32 +137,19 @@ public class MigratePageTypesCommandHandler(
             }
 
             var kxoDataClass = kxpClassFacade.GetClass(ksClass.ClassGUID);
+            if (kxoDataClass is null && kxpClassFacade.GetClass(ksClass.ClassName) is { } existingClass)
+            {
+                logger.LogInformation("Using existing target page type {ClassName} with a different GUID", ksClass.ClassName);
+                RegisterClassMapping(ksClass, existingClass);
+                AssociateWithTargetChannels(ksClass, existingClass);
+                continue;
+            }
+
             protocol.FetchedTarget(kxoDataClass);
 
             if (SaveUsingKxoApi(ksClass, kxoDataClass) is { } targetClass)
             {
-                if (targetClass.ClassContentTypeType is ClassContentTypeType.WEBSITE)
-                {
-                    foreach (var cmsClassSite in modelFacade.SelectWhere<ICmsClassSite>("ClassID = @classId", new SqlParameter("classId", ksClass.ClassID)))
-                    {
-                        if (modelFacade.SelectById<ICmsSite>(cmsClassSite.SiteID) is { SiteGUID: var siteGuid })
-                        {
-                            if (ChannelInfo.Provider.Get(siteGuid) is { ChannelID: var channelId })
-                            {
-                                var info = new ContentTypeChannelInfo { ContentTypeChannelChannelID = channelId, ContentTypeChannelContentTypeID = targetClass.ClassID };
-                                ContentTypeChannelInfo.Provider.Set(info);
-                            }
-                            else
-                            {
-                                logger.LogWarning("Channel for site with SiteGUID '{SiteGuid}' not found", siteGuid);
-                            }
-                        }
-                        else
-                        {
-                            logger.LogWarning("Source site with SiteID '{SiteId}' not found", cmsClassSite.SiteID);
-                        }
-                    }
-                }
+                AssociateWithTargetChannels(ksClass, targetClass);
             }
         }
 
@@ -172,6 +161,42 @@ public class MigratePageTypesCommandHandler(
         await BypassAllowedChildClasses();
 
         return new GenericCommandResult();
+    }
+
+    private void RegisterClassMapping(ICmsClass sourceClass, DataClassInfo targetClass) =>
+        primaryKeyMappingContext.SetMapping<DataClassInfo>(
+            target => target.ClassID,
+            sourceClass.ClassID,
+            targetClass.ClassID
+        );
+
+    private void AssociateWithTargetChannels(ICmsClass sourceClass, DataClassInfo targetClass)
+    {
+        if (targetClass.ClassContentTypeType is not ClassContentTypeType.WEBSITE)
+        {
+            return;
+        }
+
+        foreach (var cmsClassSite in modelFacade.SelectWhere<ICmsClassSite>("ClassID = @classId", new SqlParameter("classId", sourceClass.ClassID)))
+        {
+            if (modelFacade.SelectById<ICmsSite>(cmsClassSite.SiteID) is not { } sourceSite)
+            {
+                logger.LogWarning("Source site with SiteID '{SiteId}' not found", cmsClassSite.SiteID);
+                continue;
+            }
+
+            var targetChannel = toolConfiguration.TargetWebsiteChannelMappings.TryGetValue(sourceSite.SiteName, out var targetChannelName)
+                ? ChannelInfo.Provider.Get().WhereEquals(nameof(ChannelInfo.ChannelName), targetChannelName).FirstOrDefault()
+                : ChannelInfo.Provider.Get(sourceSite.SiteGUID);
+            if (targetChannel is null)
+            {
+                logger.LogWarning("Target channel for source site '{SiteName}' was not found", sourceSite.SiteName);
+                continue;
+            }
+
+            var info = new ContentTypeChannelInfo { ContentTypeChannelChannelID = targetChannel.ChannelID, ContentTypeChannelContentTypeID = targetClass.ClassID };
+            ContentTypeChannelInfo.Provider.Set(info);
+        }
     }
 
     private async Task BypassAllowedChildClasses()
@@ -208,7 +233,7 @@ public class MigratePageTypesCommandHandler(
         }
     }
 
-    private DataClassInfo? SaveUsingKxoApi(ICmsClass ksClass, DataClassInfo kxoDataClass)
+    private DataClassInfo? SaveUsingKxoApi(ICmsClass ksClass, DataClassInfo? kxoDataClass)
     {
         var mapped = dataClassMapper.Map(ksClass, kxoDataClass);
         protocol.MappedTarget(mapped);

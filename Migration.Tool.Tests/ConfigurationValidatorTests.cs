@@ -1,10 +1,29 @@
 using Microsoft.Extensions.Configuration;
 using Migration.Tool.CLI;
+using Migration.Tool.Common;
 
 namespace Migration.Tool.Tests;
 
 public class ConfigurationValidatorTests
 {
+    [Fact]
+    public void ToolConfiguration_BindsCultureCodeMappingsAndSkipUnavailableCultures()
+    {
+        var configuration = new ConfigurationBuilder()
+            .AddInMemoryCollection(new Dictionary<string, string?>
+            {
+                ["Settings:CultureCodeMappings:en-US"] = "en",
+                ["Settings:SkipUnavailableCultures"] = "true"
+            })
+            .Build();
+
+        var settings = configuration.GetSection(ConfigurationNames.Settings).Get<ToolConfiguration>();
+
+        Assert.NotNull(settings);
+        Assert.Equal("en", settings.CultureCodeMappings["en-US"]);
+        Assert.True(settings.SkipUnavailableCultures);
+    }
+
     [Fact]
     public void GetValidationErrors_WhenCommerceConfigurationSectionDoesNotExist_ShouldNotReturnValidationErrors()
     {

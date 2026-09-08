@@ -54,8 +54,15 @@ public class EntityConfigurations : Dictionary<string, EntityConfiguration>
 
 public class EntityConfiguration
 {
+    [JsonPropertyName(ConfigurationNames.IncludeCodeNames)]
+    public string[] IncludeCodeNames { get; set; } = Array.Empty<string>();
+
     [JsonPropertyName(ConfigurationNames.ExcludeCodeNames)]
     public string[] ExcludeCodeNames { get; set; } = Array.Empty<string>();
+
+    public bool IncludesCodeName(string codeName) =>
+        (IncludeCodeNames.Length == 0 || IncludeCodeNames.Contains(codeName, StringComparer.OrdinalIgnoreCase)) &&
+        !ExcludeCodeNames.Contains(codeName, StringComparer.OrdinalIgnoreCase);
 
     [JsonPropertyName(ConfigurationNames.ExplicitPrimaryKeyMapping)]
     public Dictionary<string, Dictionary<string, int?>> ExplicitPrimaryKeyMapping { get; set; } = new(StringComparer.OrdinalIgnoreCase);

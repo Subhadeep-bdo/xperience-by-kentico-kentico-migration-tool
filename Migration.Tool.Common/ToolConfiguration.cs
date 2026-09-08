@@ -86,6 +86,12 @@ public class ToolConfiguration
     [ConfigurationKeyName(ConfigurationNames.TargetWebsiteChannelMappings)]
     public Dictionary<string, string> TargetWebsiteChannelMappings { get; set; } = new(StringComparer.OrdinalIgnoreCase);
 
+    [ConfigurationKeyName(ConfigurationNames.CultureCodeMappings)]
+    public Dictionary<string, string> CultureCodeMappings { get; set; } = new(StringComparer.OrdinalIgnoreCase);
+
+    [ConfigurationKeyName(ConfigurationNames.SkipUnavailableCultures)]
+    public bool SkipUnavailableCultures { get; set; }
+
     #region Opt-in features
 
     [ConfigurationKeyName(ConfigurationNames.OptInFeatures)]

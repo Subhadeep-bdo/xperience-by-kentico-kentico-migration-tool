@@ -61,8 +61,9 @@ public class MigratePagesCommandHandler(
     public async Task<CommandResult> Handle(MigratePagesCommand request, CancellationToken cancellationToken)
     {
         classEntityConfiguration = toolConfiguration.EntityConfigurations.GetEntityConfiguration<DataClassInfo>();
-        cultureCodeToLanguageGuid = modelFacade.SelectAll<ICmsCulture>()
-            .ToDictionary(c => c.CultureCode, c => c.CultureGUID, StringComparer.InvariantCultureIgnoreCase);
+        await EnsureTargetContentLanguages();
+        cultureCodeToLanguageGuid = ContentLanguageInfo.Provider.Get()
+            .ToDictionary(c => c.ContentLanguageCultureFormat, c => c.ContentLanguageGUID, StringComparer.InvariantCultureIgnoreCase);
 
         await MigratePages();
 
@@ -71,6 +72,61 @@ public class MigratePagesCommandHandler(
         await MigrateRedirects();
 
         return new GenericCommandResult();
+    }
+
+    private async Task EnsureTargetContentLanguages()
+    {
+        var migratedSites = modelFacade.GetMigratedSites().ToList();
+        var migratedSiteIds = migratedSites.Select(site => site.SiteID).ToHashSet();
+        var assignedCultureIds = modelFacade.SelectAll<ICmsSiteCulture>()
+            .Where(siteCulture => migratedSiteIds.Contains(siteCulture.SiteID))
+            .Select(siteCulture => siteCulture.CultureID)
+            .ToHashSet();
+        var defaultCultureCodes = migratedSites
+            .Select(site => site.SiteDefaultVisitorCulture)
+            .Where(cultureCode => cultureCode is not null)
+            .Select(cultureCode => cultureCode!)
+            .ToHashSet(StringComparer.InvariantCultureIgnoreCase);
+        var sourceCultures = modelFacade.SelectAll<ICmsCulture>()
+            .Where(culture => assignedCultureIds.Contains(culture.CultureID) || defaultCultureCodes.Contains(culture.CultureCode))
+            .GroupBy(c => GetDestinationCultureCode(c.CultureCode), StringComparer.InvariantCultureIgnoreCase)
+            .Select(group => group.First());
+
+        foreach (var sourceCulture in sourceCultures)
+        {
+            var destinationCultureCode = GetDestinationCultureCode(sourceCulture.CultureCode);
+            var existingLanguage = ContentLanguageInfo.Provider.Get()
+                .WhereEquals(nameof(ContentLanguageInfo.ContentLanguageCultureFormat), destinationCultureCode)
+                .FirstOrDefault();
+            if (existingLanguage is not null)
+            {
+                continue;
+            }
+
+            var importResult = await importer.ImportAsync(new Kentico.Xperience.UMT.Model.ContentLanguageModel
+            {
+                ContentLanguageGUID = sourceCulture.CultureGUID,
+                ContentLanguageDisplayName = sourceCulture.CultureName,
+                ContentLanguageName = destinationCultureCode,
+                ContentLanguageIsDefault = false,
+                ContentLanguageFallbackContentLanguageGuid = null,
+                ContentLanguageCultureFormat = destinationCultureCode
+            });
+
+            if (importResult is { Success: true })
+            {
+                logger.LogInformation("Created target content language '{CultureCode}'", destinationCultureCode);
+                continue;
+            }
+
+            if (toolConfiguration.SkipUnavailableCultures)
+            {
+                logger.LogWarning(importResult.Exception, "Could not create target content language '{CultureCode}'. Content in this language will be skipped", destinationCultureCode);
+                continue;
+            }
+
+            throw new InvalidOperationException($"Could not create target content language '{destinationCultureCode}'", importResult.Exception);
+        }
     }
 
     private async Task MigrateRedirects()
@@ -99,6 +155,12 @@ public class MigratePagesCommandHandler(
                     foreach (CmsPageUrlPathK13 ksPath in ksUrlPaths)
                     {
                         var xbykLanguageInfo = GetLanguageInfoByCultureFormat(ksPath.PageUrlPathCulture);
+                        if (xbykLanguageInfo is null)
+                        {
+                            logger.LogWarning("Skipping redirect URL path '{UrlPath}' because destination culture for source culture '{CultureCode}' is unavailable", ksPath.PageUrlPathUrlPath, ksPath.PageUrlPathCulture);
+                            continue;
+                        }
+
                         pathToXbykPage[$"{ksSite.SiteGUID}|{NormalizeUrlPath(ksPath.PageUrlPathUrlPath)}"] = (xbykContentItemGuid, xbykLanguageInfo);
                     }
 
@@ -110,7 +172,14 @@ public class MigratePagesCommandHandler(
                     {
                         if (ksDocument.DocumentUnpublishedRedirectUrl is not null)
                         {
-                            sourceInstanceRedirects.Add((ksDocument.DocumentGUID!.Value, ksSite.SiteGUID, GetLanguageInfoByCultureFormat(ksDocument.DocumentCulture), xbykContentItemGuid, NormalizeUrlPath(ksDocument.DocumentUnpublishedRedirectUrl)));
+                            var xbykLanguageInfo = GetLanguageInfoByCultureFormat(ksDocument.DocumentCulture);
+                            if (xbykLanguageInfo is null)
+                            {
+                                logger.LogWarning("Skipping unpublished redirect for Document '{DocumentGuid}' because destination culture for source culture '{CultureCode}' is unavailable", ksDocument.DocumentGUID, ksDocument.DocumentCulture);
+                                continue;
+                            }
+
+                            sourceInstanceRedirects.Add((ksDocument.DocumentGUID!.Value, ksSite.SiteGUID, xbykLanguageInfo, xbykContentItemGuid, NormalizeUrlPath(ksDocument.DocumentUnpublishedRedirectUrl)));
                         }
                     }
                 }
@@ -317,10 +386,10 @@ public class MigratePagesCommandHandler(
 
                     var ksNodeClass = modelFacade.SelectById<ICmsClass>(ksNode.NodeClassID) ?? throw new InvalidOperationException($"Node with missing class, node id '{ksNode.NodeID}'");
                     string nodeClassClassName = ksNodeClass.ClassName;
-                    if (classEntityConfiguration!.ExcludeCodeNames.Contains(nodeClassClassName, StringComparer.InvariantCultureIgnoreCase))
+                    if (!classEntityConfiguration!.IncludesCodeName(nodeClassClassName))
                     {
                         protocol.Warning(HandbookReferences.EntityExplicitlyExcludedByCodeName(nodeClassClassName, "PageType"), ksNode);
-                        logger.LogWarning("Page: page of class {ClassName} was skipped => it is explicitly excluded in configuration", nodeClassClassName);
+                        logger.LogWarning("Page: page of class {ClassName} was skipped by appsettings entity configuration", nodeClassClassName);
                         continue;
                     }
 
@@ -344,9 +413,14 @@ public class MigratePagesCommandHandler(
 
                     string safeNodeName = await Service.Resolve<IContentItemCodeNameProvider>().Get(ksNode.NodeName);
                     var ksNodeParent = modelFacade.SelectById<ICmsTree>(ksNode.NodeParentID);
-                    var nodeParentGuid = ksNodeParent?.NodeAliasPath == "/" || ksNodeParent == null
-                        ? (Guid?)null
-                        : spoiledGuidContext.EnsureNodeGuid(ksNodeParent);
+                    var parentClassName = ksNodeParent is null
+                        ? null
+                        : modelFacade.SelectById<ICmsClass>(ksNodeParent.NodeClassID)?.ClassName;
+                    Guid? nodeParentGuid = null;
+                    if (ksNodeParent is not null && ksNodeParent.NodeAliasPath != "/" && parentClassName is not null && classEntityConfiguration.IncludesCodeName(parentClassName))
+                    {
+                        nodeParentGuid = spoiledGuidContext.EnsureNodeGuid(ksNodeParent);
+                    }
 
                     var classMapping = classMappingProvider.GetMapping(ksNodeClass.ClassName);
 
@@ -447,14 +521,24 @@ public class MigratePagesCommandHandler(
                                 {
                                     foreach (var migratedDocument in migratedDocuments)
                                     {
-                                        var languageGuid = cultureCodeToLanguageGuid![migratedDocument.DocumentCulture];
+                                        var destinationCultureCode = GetDestinationCultureCode(migratedDocument.DocumentCulture);
+                                        if (!cultureCodeToLanguageGuid!.TryGetValue(destinationCultureCode, out var languageGuid))
+                                        {
+                                            if (toolConfiguration.SkipUnavailableCultures)
+                                            {
+                                                logger.LogWarning("Skipping URL migration for page {NodeAliasPath} because destination culture {CultureCode} is unavailable", ksNode.NodeAliasPath, destinationCultureCode);
+                                                continue;
+                                            }
+
+                                            throw new InvalidOperationException($"Destination culture code '{destinationCultureCode}' for source culture '{migratedDocument.DocumentCulture}' is unavailable.");
+                                        }
 
                                         await MigratePageUrlPaths(websiteChannel.WebsiteChannelGUID,
                                             languageGuid,
                                             commonDataInfos,
                                             migratedDocument,
                                             ksNode,
-                                            migratedDocument.DocumentCulture,
+                                            destinationCultureCode,
                                             wasLinkedNode, webPageItemInfo);
 
                                         await MigrateAlternativeUrls(ksSite, websiteChannel.WebsiteChannelGUID, languageGuid, commonDataInfos, migratedDocument, webPageItemInfo);
@@ -582,7 +666,7 @@ public class MigratePagesCommandHandler(
         var fixedDocumentGuid = GuidHelper.CreateDocumentGuid($"{linkedDocument.DocumentID}|{ksNode.NodeID}|{ksNode.NodeSiteID}");
         if (ContentItemFromNode(ksNode)?.ContentItemID is { } contentItemId)
         {
-            if (cultureCodeToLanguageGuid!.TryGetValue(linkedDocument.DocumentCulture, out var languageGuid) &&
+            if (cultureCodeToLanguageGuid!.TryGetValue(GetDestinationCultureCode(linkedDocument.DocumentCulture), out var languageGuid) &&
                 GetContentLanguage(languageGuid) is { } languageInfo)
             {
                 if (ContentItemCommonDataInfo.Provider.Get()
@@ -608,6 +692,11 @@ public class MigratePagesCommandHandler(
         logger.LogWarning("Linked node with NodeGuid {NodeGuid} was materialized (Xperience by Kentico doesn't support links), it no longer serves as link to original document. This affect also routing, this document will have own link generated from node alias path", ksNode.NodeGUID);
         return patchedDocument;
     }
+
+    private string GetDestinationCultureCode(string sourceCultureCode) =>
+        toolConfiguration.CultureCodeMappings.TryGetValue(sourceCultureCode, out var destinationCultureCode)
+            ? destinationCultureCode
+            : sourceCultureCode;
 
     private async Task LinkChildren(Dictionary<Guid, NodeMapResult> mappedSiteNodes)
     {
@@ -1183,13 +1272,23 @@ public class MigratePagesCommandHandler(
     }
 
     private readonly List<ContentLanguageInfo> contentLanguageInfos = new();
-    private ContentLanguageInfo GetLanguageInfoByCultureFormat(string cultureFormat)
+    private ContentLanguageInfo? GetLanguageInfoByCultureFormat(string sourceCultureFormat)
     {
-        var result = contentLanguageInfos.SingleOrDefault(x => x.ContentLanguageCultureFormat.Equals(cultureFormat, StringComparison.InvariantCultureIgnoreCase));
+        var destinationCultureFormat = GetDestinationCultureCode(sourceCultureFormat);
+        var result = contentLanguageInfos.SingleOrDefault(x => x.ContentLanguageCultureFormat.Equals(destinationCultureFormat, StringComparison.InvariantCultureIgnoreCase));
         if (result is null)
         {
-            result = ContentLanguageInfo.Provider.Get().WhereEquals(nameof(ContentLanguageInfo.ContentLanguageCultureFormat), cultureFormat).SingleOrDefault()
-                ?? throw new InvalidOperationException($"Missing content language with culture format '{cultureFormat}'");
+            result = ContentLanguageInfo.Provider.Get().WhereEquals(nameof(ContentLanguageInfo.ContentLanguageCultureFormat), destinationCultureFormat).SingleOrDefault();
+            if (result is null && !toolConfiguration.SkipUnavailableCultures)
+            {
+                throw new InvalidOperationException($"Missing content language with culture format '{destinationCultureFormat}' mapped from source culture '{sourceCultureFormat}'");
+            }
+
+            if (result is null)
+            {
+                return null;
+            }
+
             contentLanguageInfos.Add(result);
         }
         return result;
