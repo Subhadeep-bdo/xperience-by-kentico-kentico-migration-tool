@@ -21,6 +21,19 @@ public static class PersonClassMapping
         });
 
         mapping.BuildField("PersonID").AsPrimaryKey();
+        mapping.BuildField("PersonFirstName").SetFrom(SourceClassName, "PersonFirstName");
+        mapping.BuildField("PersonSurnamePrefixes").SetFrom(SourceClassName, "PersonSurnamePrefixes");
+        mapping.BuildField("PersonLastName").SetFrom(SourceClassName, "PersonLastName");
+        mapping.BuildField("PersonJobTitle").SetFrom(SourceClassName, "PersonJobTitle");
+        mapping.BuildField("PersonPhone").SetFrom(SourceClassName, "PersonPhone");
+        mapping.BuildField("PersonMobilePhone").SetFrom(SourceClassName, "PersonMobilePhone");
+        mapping.BuildField("PersonDirectDialNumber").SetFrom(SourceClassName, "PersonDirectDialNumber");
+        mapping.BuildField("PersonEmail").SetFrom(SourceClassName, "PersonEmail");
+        mapping.BuildField("EnableForm").SetFrom(SourceClassName, "EnableForm");
+        mapping.BuildField("EnableVCard").SetFrom(SourceClassName, "EnableVCard");
+        mapping.BuildField("LinkedIn").SetFrom(SourceClassName, "LinkedIn");
+        mapping.BuildField("Facebook").SetFrom(SourceClassName, "Facebook");
+        mapping.BuildField("Twitter").SetFrom(SourceClassName, "Twitter");
         MapEmptyReference(mapping, "PersonCredentials");
         MapEmptyReference(mapping, "MetadataCity");
         MapEmptyReference(mapping, "MetadataOfficeLocation");

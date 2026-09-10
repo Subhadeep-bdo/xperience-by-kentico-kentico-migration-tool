@@ -399,6 +399,16 @@ public class MigratePagesCommandHandler(
                         continue;
                     }
 
+                    var existingContentItem = ContentItemFromNode(ksNode);
+                    if (existingContentItem is not null && WebPageItemInfo.Provider.Get()
+                            .WhereEquals(nameof(WebPageItemInfo.WebPageItemContentItemID), existingContentItem.ContentItemID)
+                            .WhereEquals(nameof(WebPageItemInfo.WebPageItemWebsiteChannelID), websiteChannel.WebsiteChannelID)
+                            .FirstOrDefault() is not null)
+                    {
+                        logger.LogInformation("Page '{NodeAliasPath}' already exists in target channel '{ChannelGuid}', skipping re-import", ksNode.NodeAliasPath, websiteChannel.WebsiteChannelGUID);
+                        continue;
+                    }
+
                     Debug.Assert(migratedDocuments.Count > 0, "migratedDocuments.Count > 0");
 
                     if (ksTreeOriginal is { NodeSKUID: not null })

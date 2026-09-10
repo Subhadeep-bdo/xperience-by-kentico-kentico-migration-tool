@@ -23,11 +23,11 @@ public static class ContactClassMapping
         mapping.BuildField("ContactID").AsPrimaryKey();
         mapping.BuildField("HeroCallToActionButtonType").SetFrom(SourceClassName, "HeroCallToActionButtonType");
         mapping.BuildField("HeroCallToActionButtonText").SetFrom(SourceClassName, "HeroCallToActionButtonText");
-        mapping.BuildField("HeroCallToActionButtonUrl").SetFrom(SourceClassName, "HeroCallToActionButtonUrl");
+        MapEmptyReference(mapping, "HeroCallToActionButtonUrl");
         mapping.BuildField("HeroLayout").SetFrom(SourceClassName, "HeroLayout");
-        mapping.BuildField("HeroBackgroundImage").SetFrom(SourceClassName, "HeroBackgroundImage");
+        MapEmptyReference(mapping, "HeroBackgroundImage");
         mapping.BuildField("HeroBackgroundImageAltText").SetFrom(SourceClassName, "HeroBackgroundImageAltText");
-        mapping.BuildField("HeroBackgroundImage_Mobile").SetFrom(SourceClassName, "HeroBackgroundImage_Mobile");
+        MapEmptyReference(mapping, "HeroBackgroundImage_Mobile");
         mapping.BuildField("HeroBackgroundImage_MobileAltText").SetFrom(SourceClassName, "HeroBackgroundImage_MobileAltText");
         MapEmptyReference(mapping, "MetadataOGImage");
         MapEmptyReference(mapping, "MetadataOGTwitterImage");
