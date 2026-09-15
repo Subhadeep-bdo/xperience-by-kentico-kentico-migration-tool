@@ -473,7 +473,14 @@ public class MigratePagesCommandHandler(
                             {
                                 if (umtModel is ContentItemDataModel { ContentItemContentTypeName: "BDO.Contact" } contactDataModel)
                                 {
-                                    contactDataModel.CustomProperties.Remove("DocumentName");
+                                    // Legacy metadata field; target column may be NOT NULL even though it has no C# model equivalent
+                                    contactDataModel.CustomProperties["DocumentName"] = string.Empty;
+                                }
+
+                                if (umtModel is ContentItemDataModel { ContentItemContentTypeName: "BDO.SectionServices" or "BDO.BusinessLine" or "BDO.SectionPeoplePage" } noDocumentNameColumnDataModel)
+                                {
+                                    // Legacy metadata field with no backing column at all for these types
+                                    noDocumentNameColumnDataModel.CustomProperties.Remove("DocumentName");
                                 }
 
                                 switch (await importer.ImportAsync(umtModel))

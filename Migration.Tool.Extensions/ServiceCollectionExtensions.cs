@@ -17,8 +17,10 @@ public static class ServiceCollectionExtensions
         services.AddTransient<IWidgetPropertyMigration, WidgetPathSelectorMigration>();
         services.AddTransient<IWidgetPropertyMigration, WidgetPageSelectorMigration>();
         services.AddContactMapping();
+        services.AddSectionPeoplePageMapping();
         services.AddPersonMapping();
-
+        services.AddSectionServicesMapping();
+        services.AddBusinessLineMapping();
 
         // services.AddClassMergeExample();
         // services.AddClassMergeExampleAsReusable();
