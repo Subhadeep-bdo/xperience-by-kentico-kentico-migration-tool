@@ -21,6 +21,9 @@ public static class PersonClassMapping
         });
 
         mapping.BuildField("PersonID").AsPrimaryKey();
+        mapping.BuildField("PageTitle").SetFrom(SourceClassName, "DocumentPageTitle");
+        mapping.BuildField("PageDescription").SetFrom(SourceClassName, "DocumentPageDescription");
+        mapping.BuildField("PageKeywords").SetFrom(SourceClassName, "DocumentPageKeyWords");
         mapping.BuildField("PersonFirstName").SetFrom(SourceClassName, "PersonFirstName");
         mapping.BuildField("PersonSurnamePrefixes").SetFrom(SourceClassName, "PersonSurnamePrefixes");
         mapping.BuildField("PersonLastName").SetFrom(SourceClassName, "PersonLastName");

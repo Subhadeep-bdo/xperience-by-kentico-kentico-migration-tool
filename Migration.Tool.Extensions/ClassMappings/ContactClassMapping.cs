@@ -21,6 +21,9 @@ public static class ContactClassMapping
         });
 
         mapping.BuildField("ContactID").AsPrimaryKey();
+        mapping.BuildField("PageTitle").SetFrom(SourceClassName, "DocumentPageTitle");
+        mapping.BuildField("PageDescription").SetFrom(SourceClassName, "DocumentPageDescription");
+        mapping.BuildField("PageKeywords").SetFrom(SourceClassName, "DocumentPageKeyWords");
         mapping.BuildField("HeroCallToActionButtonType").SetFrom(SourceClassName, "HeroCallToActionButtonType");
         mapping.BuildField("HeroCallToActionButtonText").SetFrom(SourceClassName, "HeroCallToActionButtonText");
         MapEmptyReference(mapping, "HeroCallToActionButtonUrl");

@@ -4,34 +4,32 @@ using Migration.Tool.Common.Builders;
 
 namespace Migration.Tool.Extensions.ClassMappings;
 
-public static class BusinessLineClassMapping
+public static class ServiceAreaClassMapping
 {
-    private const string SourceClassName = "BDO.BusinessLine";
+    private const string SourceClassName = "BDO.ServiceArea";
 
-    public static IServiceCollection AddBusinessLineMapping(this IServiceCollection services)
+    public static IServiceCollection AddServiceAreaMapping(this IServiceCollection services)
     {
         var mapping = new MultiClassMapping(SourceClassName, target =>
         {
             target.ClassName = SourceClassName;
-            target.ClassTableName = "BDO_BusinessLine";
-            target.ClassDisplayName = "Business Line";
+            target.ClassTableName = "BDO_ServiceArea";
+            target.ClassDisplayName = "Service Area";
             target.ClassType = ClassType.CONTENT_TYPE;
             target.ClassContentTypeType = ClassContentTypeType.WEBSITE;
             target.ClassWebPageHasUrl = true;
         });
 
-        mapping.BuildField("BusinessLineID").AsPrimaryKey();
+        mapping.BuildField("ServiceAreaID").AsPrimaryKey();
         mapping.BuildField("PageTitle").SetFrom(SourceClassName, "DocumentPageTitle");
         mapping.BuildField("PageDescription").SetFrom(SourceClassName, "DocumentPageDescription");
         mapping.BuildField("PageKeywords").SetFrom(SourceClassName, "DocumentPageKeyWords");
         MapEmptyReference(mapping, "TileIcon");
-        mapping.BuildField("ComingSoon").SetFrom(SourceClassName, "ComingSoon");
         mapping.BuildField("ContentTitle").SetFrom(SourceClassName, "ContentTitle");
         mapping.BuildField("ContentBody").SetFrom(SourceClassName, "ContentBody");
         mapping.BuildField("ShowSideNavigation").SetFrom(SourceClassName, "ShowSideNavigation");
         mapping.BuildField("SideNavigationTitle").SetFrom(SourceClassName, "SideNavigationTitle");
 
-        // Remaining fields are shared/common schema fields (CMS_ContentItemCommonData), not coupled-table specific
         mapping.BuildField("MetadataTitle").SetFrom(SourceClassName, "MetadataTitle");
         mapping.BuildField("MetadataDescription").SetFrom(SourceClassName, "MetadataDescription");
         MapEmptyReference(mapping, "MetadataTeaserImage");
@@ -57,10 +55,9 @@ public static class BusinessLineClassMapping
         mapping.BuildField("IncludeInSitemap").SetFrom(SourceClassName, "IncludeInSitemap");
 
         services.AddSingleton<IClassMapping>(mapping);
-
         return services;
     }
 
     private static void MapEmptyReference(MultiClassMapping mapping, string targetFieldName) =>
-        mapping.BuildField(targetFieldName).ConvertFrom(SourceClassName, "BusinessLineID", false, static (_, _) => "[]");
+        mapping.BuildField(targetFieldName).ConvertFrom(SourceClassName, "ServiceAreaID", false, static (_, _) => "[]");
 }

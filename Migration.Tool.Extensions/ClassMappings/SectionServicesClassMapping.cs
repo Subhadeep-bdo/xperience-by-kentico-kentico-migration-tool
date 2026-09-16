@@ -21,6 +21,9 @@ public static class SectionServicesClassMapping
         });
 
         mapping.BuildField("SectionServicesID").AsPrimaryKey();
+        mapping.BuildField("PageTitle").SetFrom(SourceClassName, "DocumentPageTitle");
+        mapping.BuildField("PageDescription").SetFrom(SourceClassName, "DocumentPageDescription");
+        mapping.BuildField("PageKeywords").SetFrom(SourceClassName, "DocumentPageKeyWords");
 
         // Remaining fields are shared/common schema fields (CMS_ContentItemCommonData), not coupled-table specific
         mapping.BuildField("MetadataTitle").SetFrom(SourceClassName, "MetadataTitle");

@@ -21,6 +21,7 @@ public static class ServiceCollectionExtensions
         services.AddPersonMapping();
         services.AddSectionServicesMapping();
         services.AddBusinessLineMapping();
+        services.AddServiceAreaMapping();
 
         // services.AddClassMergeExample();
         // services.AddClassMergeExampleAsReusable();

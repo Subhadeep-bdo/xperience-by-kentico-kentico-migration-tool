@@ -21,6 +21,9 @@ public static class SectionPeoplePageClassMapping
         });
 
         mapping.BuildField("SectionPeoplePageID").AsPrimaryKey();
+        mapping.BuildField("PageTitle").SetFrom(SourceClassName, "DocumentPageTitle");
+        mapping.BuildField("PageDescription").SetFrom(SourceClassName, "DocumentPageDescription");
+        mapping.BuildField("PageKeywords").SetFrom(SourceClassName, "DocumentPageKeyWords");
         mapping.BuildField("PeopleListFilteringEnabled").SetFrom(SourceClassName, "PeopleListFilteringEnabled");
         mapping.BuildField("PeopleListFilters").SetFrom(SourceClassName, "PeopleListFilters");
         mapping.BuildField("PeopleListOrderingEnabled").SetFrom(SourceClassName, "PeopleListOrderingEnabled");
