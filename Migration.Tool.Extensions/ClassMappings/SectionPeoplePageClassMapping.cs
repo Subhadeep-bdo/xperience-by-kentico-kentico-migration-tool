@@ -28,8 +28,6 @@ public static class SectionPeoplePageClassMapping
         mapping.BuildField("PeopleListFilters").SetFrom(SourceClassName, "PeopleListFilters");
         mapping.BuildField("PeopleListOrderingEnabled").SetFrom(SourceClassName, "PeopleListOrderingEnabled");
         mapping.BuildField("PeopleListDefaultOrder").SetFrom(SourceClassName, "PeopleListDefaultOrder");
-        // Source value can be legitimately absent; target column disallows NULL
-        mapping.BuildField("EnableForm").ConvertFrom(SourceClassName, "EnableForm", false, static (value, _) => value ?? true);
         mapping.BuildField("DisplayEmailAddressInPersonPage").SetFrom(SourceClassName, "DisplayEmailAddressInPersonPage");
         mapping.BuildField("DisplayFullEmailAddress").SetFrom(SourceClassName, "DisplayFullEmailAddress");
 

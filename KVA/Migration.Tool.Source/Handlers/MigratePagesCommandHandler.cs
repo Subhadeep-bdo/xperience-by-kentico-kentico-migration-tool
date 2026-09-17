@@ -461,12 +461,15 @@ public class MigratePagesCommandHandler(
                         var commonDataInfos = new List<ContentItemCommonDataInfo>();
                         ContentItemInfo? contentItemInfo = null;
                         ContentItemDirectiveBase? contentItemDirective = null;
+                        bool targetHasDocumentNameField = false;
 
                         foreach (var umtModel in results)
                         {
                             if (umtModel is ContentItemDirectiveBase yieldedDirective)
                             {
                                 contentItemDirective = yieldedDirective;
+                                targetHasDocumentNameField = new FormInfo(yieldedDirective.TargetClassInfo!.ClassFormDefinition)
+                                    .GetFormField("DocumentName") is not null;
                                 mappedSiteNodes[contentItemDirective!.Node!.NodeGUID] = new(contentItemDirective!.Node!, contentItemDirective.ContentItemGuid, [], contentItemDirective.TargetClassInfo!, contentItemDirective.ChildLinks);
                             }
                             else
@@ -477,9 +480,8 @@ public class MigratePagesCommandHandler(
                                     contactDataModel.CustomProperties["DocumentName"] = string.Empty;
                                 }
 
-                                if (umtModel is ContentItemDataModel { ContentItemContentTypeName: "BDO.SectionServices" or "BDO.BusinessLine" or "BDO.SectionPeoplePage" } noDocumentNameColumnDataModel)
+                                if (umtModel is ContentItemDataModel noDocumentNameColumnDataModel && !targetHasDocumentNameField)
                                 {
-                                    // Legacy metadata field with no backing column at all for these types
                                     noDocumentNameColumnDataModel.CustomProperties.Remove("DocumentName");
                                 }
 
