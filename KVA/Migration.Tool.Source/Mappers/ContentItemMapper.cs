@@ -575,11 +575,42 @@ public class ContentItemMapper(
         var refFields = fi.GetFields<FormFieldInfo>().Concat(commonFields).Where(x => x.DataType == "contentitemreference");
         foreach (var refField in refFields)
         {
-            if (dataModel.CustomProperties.TryGetValue(refField.Name, out var serializedValue) || commonDataModel.CustomProperties.TryGetValue(refField.Name, out serializedValue))
+            bool dataPropertyFound = dataModel.CustomProperties.TryGetValue(refField.Name, out var serializedValue);
+            bool commonPropertyFound = !dataPropertyFound && commonDataModel.CustomProperties.TryGetValue(refField.Name, out serializedValue);
+            if (dataPropertyFound || commonPropertyFound)
             {
-                if (serializedValue is string valueString && !string.IsNullOrEmpty(valueString))
+                if (serializedValue is not string valueString || string.IsNullOrWhiteSpace(valueString))
                 {
-                    var value = JToken.Parse(valueString);
+                    logger.LogWarning("Skipping non-string or empty content item reference value for field '{FieldName}'", refField.Name);
+                    if (dataPropertyFound)
+                    {
+                        dataModel.CustomProperties.Remove(refField.Name);
+                    }
+                    else
+                    {
+                        commonDataModel.CustomProperties.Remove(refField.Name);
+                    }
+
+                    continue;
+                }
+
+                if (!string.IsNullOrEmpty(valueString))
+                {
+                    if (!TryParseContentItemReferences(valueString, out var value))
+                    {
+                        logger.LogWarning("Skipping invalid content item reference value for field '{FieldName}': '{Value}'", refField.Name, valueString);
+                        if (dataPropertyFound)
+                        {
+                            dataModel.CustomProperties.Remove(refField.Name);
+                        }
+                        else
+                        {
+                            commonDataModel.CustomProperties.Remove(refField.Name);
+                        }
+
+                        continue;
+                    }
+
                     foreach (var targetGuid in value.Select(x => new Guid(x["Identifier"]!.Value<string>()!)).ToArray())
                     {
                         if (ContentItemInfo.Provider.Get(targetGuid) is null)
@@ -612,6 +643,41 @@ public class ContentItemMapper(
             {
                 logger.LogTrace("Reusable schema field '{FieldName}' from schema '{SchemaGuid}' missing", formFieldInfo.Name, formFieldInfo.Properties[ReusableFieldSchemaConstants.SCHEMA_IDENTIFIER_KEY]);
             }
+        }
+    }
+
+    private static bool TryParsePageReference(string value, out JObject pageReference)
+    {
+        try
+        {
+            pageReference = JObject.Parse(value);
+            return true;
+        }
+        catch (JsonException)
+        {
+            pageReference = null!;
+            return false;
+        }
+    }
+
+    private static bool TryParseContentItemReferences(string valueString, out JArray references)
+    {
+        references = [];
+        try
+        {
+            if (JToken.Parse(valueString) is not JArray array ||
+                array.Any(item => item["Identifier"]?.Type != JTokenType.String ||
+                    !Guid.TryParse(item["Identifier"]!.Value<string>(), out _)))
+            {
+                return false;
+            }
+
+            references = array;
+            return true;
+        }
+        catch (JsonException)
+        {
+            return false;
         }
     }
 
@@ -940,7 +1006,13 @@ public class ContentItemMapper(
                     {
                         if (sourceValue is string pageReferenceJson)
                         {
-                            var parsed = JObject.Parse(pageReferenceJson);
+                            if (!TryParsePageReference(pageReferenceJson, out var parsed))
+                            {
+                                logger.LogWarning("Skipping invalid page reference value for field '{FieldName}': '{Value}'", targetFieldName, pageReferenceJson);
+                                target.Remove(targetFieldName);
+                                continue;
+                            }
+
                             foreach (var jToken in parsed.DescendantsAndSelf())
                             {
                                 if (jToken.Path.EndsWith("NodeGUID", StringComparison.InvariantCultureIgnoreCase))

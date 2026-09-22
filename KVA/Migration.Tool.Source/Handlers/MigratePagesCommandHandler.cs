@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Xml.Linq;
 using CMS.ContentEngine;
 using CMS.ContentEngine.Internal;
 using CMS.Core;
@@ -399,16 +400,6 @@ public class MigratePagesCommandHandler(
                         continue;
                     }
 
-                    var existingContentItem = ContentItemFromNode(ksNode);
-                    if (existingContentItem is not null && WebPageItemInfo.Provider.Get()
-                            .WhereEquals(nameof(WebPageItemInfo.WebPageItemContentItemID), existingContentItem.ContentItemID)
-                            .WhereEquals(nameof(WebPageItemInfo.WebPageItemWebsiteChannelID), websiteChannel.WebsiteChannelID)
-                            .FirstOrDefault() is not null)
-                    {
-                        logger.LogInformation("Page '{NodeAliasPath}' already exists in target channel '{ChannelGuid}', skipping re-import", ksNode.NodeAliasPath, websiteChannel.WebsiteChannelGUID);
-                        continue;
-                    }
-
                     Debug.Assert(migratedDocuments.Count > 0, "migratedDocuments.Count > 0");
 
                     if (ksTreeOriginal is { NodeSKUID: not null })
@@ -468,8 +459,12 @@ public class MigratePagesCommandHandler(
                             if (umtModel is ContentItemDirectiveBase yieldedDirective)
                             {
                                 contentItemDirective = yieldedDirective;
-                                targetHasDocumentNameField = new FormInfo(yieldedDirective.TargetClassInfo!.ClassFormDefinition)
-                                    .GetFormField("DocumentName") is not null;
+                                targetHasDocumentNameField = XDocument.Parse(yieldedDirective.TargetClassInfo!.ClassXmlSchema)
+                                    .Descendants(XName.Get("element", "http://www.w3.org/2001/XMLSchema"))
+                                    .Any(element => string.Equals(
+                                        element.Attribute("name")?.Value,
+                                        "DocumentName",
+                                        StringComparison.OrdinalIgnoreCase));
                                 mappedSiteNodes[contentItemDirective!.Node!.NodeGUID] = new(contentItemDirective!.Node!, contentItemDirective.ContentItemGuid, [], contentItemDirective.TargetClassInfo!, contentItemDirective.ChildLinks);
                             }
                             else
@@ -483,6 +478,11 @@ public class MigratePagesCommandHandler(
                                 if (umtModel is ContentItemDataModel noDocumentNameColumnDataModel && !targetHasDocumentNameField)
                                 {
                                     noDocumentNameColumnDataModel.CustomProperties.Remove("DocumentName");
+                                }
+
+                                if (umtModel is ContentItemDataModel { ContentItemContentTypeName: "BDO.BlogContributors" } blogContributorsDataModel)
+                                {
+                                    blogContributorsDataModel.CustomProperties["ShowAuthoredBlogs"] = true;
                                 }
 
                                 switch (await importer.ImportAsync(umtModel))

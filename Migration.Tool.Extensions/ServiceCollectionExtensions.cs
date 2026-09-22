@@ -10,12 +10,13 @@ public static class ServiceCollectionExtensions
 {
     public static IServiceCollection UseCustomizations(this IServiceCollection services)
     {
-        services.AddTransient<IFieldMigration, AssetMigration>();
+        services.AddTransient<IFieldMigration, SkipAssetMigration>();
         services.AddTransient<IFieldMigration, SampleTextMigration>();
 
         services.AddTransient<IWidgetPropertyMigration, WidgetFileMigration>();
         services.AddTransient<IWidgetPropertyMigration, WidgetPathSelectorMigration>();
         services.AddTransient<IWidgetPropertyMigration, WidgetPageSelectorMigration>();
+        services.AddTransient<IWidgetMigration, BdoWidgetIdentifierMigration>();
         services.AddContactMapping();
         services.AddSectionPeoplePageMapping();
         services.AddPersonMapping();
@@ -23,6 +24,8 @@ public static class ServiceCollectionExtensions
         services.AddBusinessLineMapping();
         services.AddServiceAreaMapping();
         services.AddDealCardsMappings();
+        services.AddSectionInsightsPageMapping();
+        services.AddInsightMapping();
 
         // services.AddClassMergeExample();
         // services.AddClassMergeExampleAsReusable();
