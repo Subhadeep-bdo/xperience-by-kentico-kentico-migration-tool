@@ -149,7 +149,7 @@ LEFT JOIN #sa_tgt n ON n.Name = s.NodeName COLLATE DATABASE_DEFAULT
 WHERE COALESCE(g.TargetItemID, n.TargetItemID) IS NOT NULL;
 CREATE INDEX IX_samap ON #samap (NodeID);
 
--- ---- RelevantContactPerson: source NodeID (Person OR InternalPerson) -> target page (NodeGUID, else name within same class) ----
+-- ---- RelevantContactPerson: source stores DocumentID of Person/InternalPerson -> target page (NodeGUID, else name within same class) ----
 IF OBJECT_ID('tempdb..#pp_tgt') IS NOT NULL DROP TABLE #pp_tgt;
 SELECT ci.ContentItemID AS TargetItemID, ci.ContentItemGUID, cl.ClassName AS Cls, LTRIM(RTRIM(lm.ContentItemLanguageMetadataDisplayName)) AS Name
 INTO #pp_tgt
@@ -160,15 +160,16 @@ JOIN CMS_ContentItemLanguageMetadata lm ON lm.ContentItemLanguageMetadataContent
 WHERE w.WebPageItemWebsiteChannelID = 10;
 
 IF OBJECT_ID('tempdb..#rcpmap') IS NOT NULL DROP TABLE #rcpmap;
-SELECT s.NodeID, COALESCE(g.TargetItemID, n.TargetItemID) AS TargetItemID, COALESCE(g.ContentItemGUID, n.ContentItemGUID) AS ContentItemGUID
+SELECT s.DocumentID, COALESCE(g.TargetItemID, n.TargetItemID) AS TargetItemID, COALESCE(g.ContentItemGUID, n.ContentItemGUID) AS ContentItemGUID
 INTO #rcpmap
-FROM (SELECT DISTINCT t.NodeID, t.NodeGUID, cl.ClassName AS Cls, LTRIM(RTRIM(t.NodeName)) AS NodeName
-      FROM [BDO-DB-GWT-TST-EUR].dbo.CMS_Tree t
+FROM (SELECT d.DocumentID, t.NodeGUID, cl.ClassName AS Cls, LTRIM(RTRIM(t.NodeName)) AS NodeName
+      FROM [BDO-DB-GWT-TST-EUR].dbo.CMS_Document d
+      JOIN [BDO-DB-GWT-TST-EUR].dbo.CMS_Tree t ON t.NodeID = d.DocumentNodeID
       JOIN [BDO-DB-GWT-TST-EUR].dbo.CMS_Class cl ON cl.ClassID = t.NodeClassID AND cl.ClassName IN ('BDO.Person','BDO.InternalPerson')) s
 LEFT JOIN #pp_tgt g ON g.ContentItemGUID = s.NodeGUID
 LEFT JOIN #pp_tgt n ON n.Cls = s.Cls COLLATE DATABASE_DEFAULT AND n.Name = s.NodeName COLLATE DATABASE_DEFAULT
 WHERE COALESCE(g.TargetItemID, n.TargetItemID) IS NOT NULL;
-CREATE INDEX IX_rcpmap ON #rcpmap (NodeID);
+CREATE INDEX IX_rcpmap ON #rcpmap (DocumentID);
 
 -- ---- RelatedExternalPeople: source stores ExternalPerson NodeGUID -> target page (GUID match, else name) ----
 IF OBJECT_ID('tempdb..#ep_tgt') IS NOT NULL DROP TABLE #ep_tgt;
@@ -382,12 +383,12 @@ JOIN #samap mm ON mm.NodeID = TRY_CAST(LTRIM(RTRIM(ss.value)) AS int)
 WHERE s.MetadataSpecialtiesAreas IS NOT NULL AND s.MetadataSpecialtiesAreas <> ''
   AND NOT EXISTS (SELECT 1 FROM CMS_ContentItemReference r WHERE r.ContentItemReferenceSourceCommonDataID=c.CommonID AND r.ContentItemReferenceTargetItemID=mm.TargetItemID);
 
--- ---- RelevantContactPerson (common data) -> Person/InternalPerson (NodeID-keyed) ----
+-- ---- RelevantContactPerson (common data) -> Person/InternalPerson (DocumentID-keyed) ----
 ;WITH resolved AS (
     SELECT c.CommonID, '['+STRING_AGG('{"Identifier":"'+LOWER(CONVERT(nvarchar(36),mm.ContentItemGUID))+'"}', ',')+']' AS js
     FROM #corr c JOIN #srcref s ON s.InsightID=c.SourceInsightID
     CROSS APPLY STRING_SPLIT(s.RelevantContactPerson, '|') ss
-    JOIN #rcpmap mm ON mm.NodeID = TRY_CAST(LTRIM(RTRIM(ss.value)) AS int)
+    JOIN #rcpmap mm ON mm.DocumentID = TRY_CAST(LTRIM(RTRIM(ss.value)) AS int)
     WHERE s.RelevantContactPerson IS NOT NULL AND s.RelevantContactPerson <> ''
     GROUP BY c.CommonID)
 UPDATE t SET t.RelevantContactPerson = r.js
@@ -397,7 +398,7 @@ INSERT INTO CMS_ContentItemReference (ContentItemReferenceGUID, ContentItemRefer
 SELECT DISTINCT NEWID(), c.CommonID, mm.TargetItemID, NEWID()
 FROM #corr c JOIN #srcref s ON s.InsightID=c.SourceInsightID
 CROSS APPLY STRING_SPLIT(s.RelevantContactPerson, '|') ss
-JOIN #rcpmap mm ON mm.NodeID = TRY_CAST(LTRIM(RTRIM(ss.value)) AS int)
+JOIN #rcpmap mm ON mm.DocumentID = TRY_CAST(LTRIM(RTRIM(ss.value)) AS int)
 WHERE s.RelevantContactPerson IS NOT NULL AND s.RelevantContactPerson <> ''
   AND NOT EXISTS (SELECT 1 FROM CMS_ContentItemReference r WHERE r.ContentItemReferenceSourceCommonDataID=c.CommonID AND r.ContentItemReferenceTargetItemID=mm.TargetItemID);
 
