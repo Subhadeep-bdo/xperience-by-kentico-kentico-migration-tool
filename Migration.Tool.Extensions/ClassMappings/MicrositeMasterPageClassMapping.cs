@@ -4,45 +4,41 @@ using Migration.Tool.Common.Builders;
 
 namespace Migration.Tool.Extensions.ClassMappings;
 
-public static class ServiceAreaClassMapping
+public static class MicrositeMasterPageClassMapping
 {
-    private const string SourceClassName = "BDO.ServiceArea";
+    private const string SourceClassName = "BDO.MicrositeMasterPage";
 
-    public static IServiceCollection AddServiceAreaMapping(this IServiceCollection services)
+    public static IServiceCollection AddMicrositeMasterPageMapping(this IServiceCollection services)
     {
         var mapping = new MultiClassMapping(SourceClassName, target =>
         {
             target.ClassName = SourceClassName;
-            target.ClassTableName = "BDO_ServiceArea";
-            target.ClassDisplayName = "Service Area";
+            target.ClassTableName = "BDO_MicrositeMasterPage";
+            target.ClassDisplayName = "Microsite - Master Page";
             target.ClassType = ClassType.CONTENT_TYPE;
             target.ClassContentTypeType = ClassContentTypeType.WEBSITE;
             target.ClassWebPageHasUrl = true;
         });
 
-        mapping.BuildField("ServiceAreaID").AsPrimaryKey();
+        mapping.BuildField("MicrositeMasterPageID").AsPrimaryKey();
         mapping.MapPageMetadata(SourceClassName);
-        MapEmptyReference(mapping, "TileIcon");
-        mapping.BuildField("ContentTitle").SetFrom(SourceClassName, "ContentTitle");
-        mapping.BuildField("ContentBody").SetFrom(SourceClassName, "ContentBody");
-        mapping.BuildField("ShowSideNavigation").SetFrom(SourceClassName, "ShowSideNavigation");
-        mapping.BuildField("SideNavigationTitle").SetFrom(SourceClassName, "SideNavigationTitle");
 
+        // Coupled-table specific fields
+        mapping.BuildField("SettingsMenuType").ConvertFrom(SourceClassName, "SettingsMenuType", false, Coalesce); // NOT NULL
+        mapping.BuildField("LogoLinkTarget").SetFrom(SourceClassName, "LogoLinkTarget");
+        mapping.BuildField("LogoText").SetFrom(SourceClassName, "LogoText");
+        MapEmptyReference(mapping, "CustomJS");
+        MapEmptyReference(mapping, "CustomCSS");
+        mapping.BuildField("HeadHTML").SetFrom(SourceClassName, "HeadHTML");
+        mapping.BuildField("BodyTopHTML").SetFrom(SourceClassName, "BodyTopHTML");
+        mapping.BuildField("BodyBottomHTML").SetFrom(SourceClassName, "BodyBottomHTML");
+
+        // Shared/common schema fields
         mapping.BuildField("MetadataTitle").SetFrom(SourceClassName, "MetadataTitle");
         mapping.BuildField("MetadataDescription").SetFrom(SourceClassName, "MetadataDescription");
         MapEmptyReference(mapping, "MetadataTeaserImage");
         mapping.BuildField("MetadataTeaserImageAltText").SetFrom(SourceClassName, "MetadataTeaserImageAltText");
         mapping.BuildField("MetadataCanonical").SetFrom(SourceClassName, "MetadataCanonical");
-        mapping.BuildField("HeroLayout").SetFrom(SourceClassName, "HeroLayout");
-        mapping.BuildField("HeroTitle").SetFrom(SourceClassName, "HeroTitle");
-        mapping.BuildField("HeroDescription").SetFrom(SourceClassName, "HeroDescription");
-        MapEmptyReference(mapping, "HeroBackgroundImage");
-        mapping.BuildField("HeroBackgroundImageAltText").SetFrom(SourceClassName, "HeroBackgroundImageAltText");
-        MapEmptyReference(mapping, "HeroBackgroundImage_Mobile");
-        mapping.BuildField("HeroBackgroundImage_MobileAltText").SetFrom(SourceClassName, "HeroBackgroundImage_MobileAltText");
-        mapping.BuildField("HeroCallToActionButtonType").SetFrom(SourceClassName, "HeroCallToActionButtonType");
-        mapping.BuildField("HeroCallToActionButtonText").SetFrom(SourceClassName, "HeroCallToActionButtonText");
-        MapEmptyReference(mapping, "HeroCallToActionButtonUrl");
         mapping.BuildField("MetadataOGTitle").SetFrom(SourceClassName, "MetadataOGTitle");
         mapping.BuildField("MetadataOGDescription").SetFrom(SourceClassName, "MetadataOGDescription");
         MapEmptyReference(mapping, "MetadataOGImage");
@@ -56,6 +52,8 @@ public static class ServiceAreaClassMapping
         return services;
     }
 
+    private static object? Coalesce(object? value, IConvertorContext context) => value ?? "";
+
     private static void MapEmptyReference(MultiClassMapping mapping, string targetFieldName) =>
-        mapping.BuildField(targetFieldName).ConvertFrom(SourceClassName, "ServiceAreaID", false, static (_, _) => "[]");
+        mapping.BuildField(targetFieldName).ConvertFrom(SourceClassName, "MicrositeMasterPageID", false, static (_, _) => "[]");
 }

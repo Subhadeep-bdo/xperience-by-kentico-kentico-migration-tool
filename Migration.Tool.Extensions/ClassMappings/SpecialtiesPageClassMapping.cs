@@ -4,32 +4,30 @@ using Migration.Tool.Common.Builders;
 
 namespace Migration.Tool.Extensions.ClassMappings;
 
-public static class SectionPeoplePageClassMapping
+public static class SpecialtiesPageClassMapping
 {
-    private const string SourceClassName = "BDO.SectionPeoplePage";
+    private const string SourceClassName = "BDO.SpecialtiesPage";
 
-    public static IServiceCollection AddSectionPeoplePageMapping(this IServiceCollection services)
+    public static IServiceCollection AddSpecialtiesPageMapping(this IServiceCollection services)
     {
         var mapping = new MultiClassMapping(SourceClassName, target =>
         {
             target.ClassName = SourceClassName;
-            target.ClassTableName = "BDO_SectionPeoplePage";
-            target.ClassDisplayName = "Section People Page";
+            target.ClassTableName = "BDO_SpecialtiesPage";
+            target.ClassDisplayName = "Specialties Page";
             target.ClassType = ClassType.CONTENT_TYPE;
             target.ClassContentTypeType = ClassContentTypeType.WEBSITE;
             target.ClassWebPageHasUrl = true;
         });
 
-        mapping.BuildField("SectionPeoplePageID").AsPrimaryKey();
+        mapping.BuildField("SpecialtiesPageID").AsPrimaryKey();
         mapping.MapPageMetadata(SourceClassName);
-        mapping.BuildField("PeopleListFilteringEnabled").SetFrom(SourceClassName, "PeopleListFilteringEnabled");
-        mapping.BuildField("PeopleListFilters").SetFrom(SourceClassName, "PeopleListFilters");
-        mapping.BuildField("PeopleListOrderingEnabled").SetFrom(SourceClassName, "PeopleListOrderingEnabled");
-        mapping.BuildField("PeopleListDefaultOrder").SetFrom(SourceClassName, "PeopleListDefaultOrder");
-        mapping.BuildField("DisplayEmailAddressInPersonPage").SetFrom(SourceClassName, "DisplayEmailAddressInPersonPage");
-        mapping.BuildField("DisplayFullEmailAddress").SetFrom(SourceClassName, "DisplayFullEmailAddress");
 
-        // Remaining fields are shared/common schema fields (CMS_ContentItemCommonData), not coupled-table specific
+        // Coupled-table specific fields
+        mapping.BuildField("ShowSideNavigation").SetFrom(SourceClassName, "ShowSideNavigation");
+        mapping.BuildField("SideNavigationTitle").SetFrom(SourceClassName, "SideNavigationTitle");
+
+        // Shared/common schema fields
         mapping.BuildField("MetadataTitle").SetFrom(SourceClassName, "MetadataTitle");
         mapping.BuildField("MetadataDescription").SetFrom(SourceClassName, "MetadataDescription");
         MapEmptyReference(mapping, "MetadataTeaserImage");
@@ -45,11 +43,6 @@ public static class SectionPeoplePageClassMapping
         mapping.BuildField("HeroCallToActionButtonType").SetFrom(SourceClassName, "HeroCallToActionButtonType");
         mapping.BuildField("HeroCallToActionButtonText").SetFrom(SourceClassName, "HeroCallToActionButtonText");
         MapEmptyReference(mapping, "HeroCallToActionButtonUrl");
-        mapping.BuildField("ShowAuthoredInsights").SetFrom(SourceClassName, "ShowAuthoredInsights");
-        mapping.BuildField("AuthoredInsightsTitle").SetFrom(SourceClassName, "AuthoredInsightsTitle");
-        mapping.BuildField("AuthoredInsightsDescription").SetFrom(SourceClassName, "AuthoredInsightsDescription");
-        MapEmptyReference(mapping, "AuthoredInsightsBackgroundImageUrl");
-        mapping.BuildField("DisplayedAuthoredContentPageTypes").SetFrom(SourceClassName, "DisplayedAuthoredContentPageTypes");
         mapping.BuildField("MetadataOGTitle").SetFrom(SourceClassName, "MetadataOGTitle");
         mapping.BuildField("MetadataOGDescription").SetFrom(SourceClassName, "MetadataOGDescription");
         MapEmptyReference(mapping, "MetadataOGImage");
@@ -60,10 +53,9 @@ public static class SectionPeoplePageClassMapping
         mapping.BuildField("IncludeInSitemap").SetFrom(SourceClassName, "IncludeInSitemap");
 
         services.AddSingleton<IClassMapping>(mapping);
-
         return services;
     }
 
     private static void MapEmptyReference(MultiClassMapping mapping, string targetFieldName) =>
-        mapping.BuildField(targetFieldName).ConvertFrom(SourceClassName, "SectionPeoplePageID", false, static (_, _) => "[]");
+        mapping.BuildField(targetFieldName).ConvertFrom(SourceClassName, "SpecialtiesPageID", false, static (_, _) => "[]");
 }

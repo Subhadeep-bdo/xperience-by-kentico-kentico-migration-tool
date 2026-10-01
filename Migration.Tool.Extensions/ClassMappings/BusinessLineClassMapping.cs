@@ -21,9 +21,7 @@ public static class BusinessLineClassMapping
         });
 
         mapping.BuildField("BusinessLineID").AsPrimaryKey();
-        mapping.BuildField("PageTitle").SetFrom(SourceClassName, "DocumentPageTitle");
-        mapping.BuildField("PageDescription").SetFrom(SourceClassName, "DocumentPageDescription");
-        mapping.BuildField("PageKeywords").SetFrom(SourceClassName, "DocumentPageKeyWords");
+        mapping.MapPageMetadata(SourceClassName);
         MapEmptyReference(mapping, "TileIcon");
         mapping.BuildField("ComingSoon").SetFrom(SourceClassName, "ComingSoon");
         mapping.BuildField("ContentTitle").SetFrom(SourceClassName, "ContentTitle");

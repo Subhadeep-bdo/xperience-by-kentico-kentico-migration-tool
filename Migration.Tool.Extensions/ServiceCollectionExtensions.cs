@@ -23,9 +23,26 @@ public static class ServiceCollectionExtensions
         services.AddSectionServicesMapping();
         services.AddBusinessLineMapping();
         services.AddServiceAreaMapping();
+        services.AddServiceMapping();
+        services.AddSectionIndustriesMapping();
+        services.AddIndustryMapping();
+        services.AddIndustryCategoryMapping();
+        services.AddIndustryServiceMapping();
+        services.AddSectionSpecialtiesMapping();
+        services.AddSpecialtiesAreaMapping();
+        services.AddSpecialtiesCategoryMapping();
+        services.AddSpecialtiesPageMapping();
+        services.AddLocationsMapping();
+        services.AddLocationCityMapping();
+        services.AddLocationOfficeMapping();
+        services.AddSectionMicrositesMapping();
+        services.AddMicrositeMasterPageMapping();
+        services.AddMicrositePageMapping();
         services.AddDealCardsMappings();
         services.AddSectionInsightsPageMapping();
         services.AddInsightMapping();
+        services.AddSectionDealsMapping();
+        services.AddRemoteDealMapping();
 
         // services.AddClassMergeExample();
         // services.AddClassMergeExampleAsReusable();

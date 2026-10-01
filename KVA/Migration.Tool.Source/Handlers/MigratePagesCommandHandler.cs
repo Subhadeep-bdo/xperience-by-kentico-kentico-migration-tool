@@ -469,13 +469,15 @@ public class MigratePagesCommandHandler(
                             }
                             else
                             {
-                                if (umtModel is ContentItemDataModel { ContentItemContentTypeName: "BDO.Contact" } contactDataModel)
+                                // Target column may be NOT NULL even though the class schema (and C# model) has no DocumentName equivalent
+                                bool forceEmptyDocumentName = umtModel is ContentItemDataModel { ContentItemContentTypeName: "BDO.Contact" or "BDO.RemoteDeal" };
+
+                                if (umtModel is ContentItemDataModel forcedDocumentNameModel && forceEmptyDocumentName)
                                 {
-                                    // Legacy metadata field; target column may be NOT NULL even though it has no C# model equivalent
-                                    contactDataModel.CustomProperties["DocumentName"] = string.Empty;
+                                    forcedDocumentNameModel.CustomProperties["DocumentName"] = string.Empty;
                                 }
 
-                                if (umtModel is ContentItemDataModel noDocumentNameColumnDataModel && !targetHasDocumentNameField)
+                                if (umtModel is ContentItemDataModel noDocumentNameColumnDataModel && !targetHasDocumentNameField && !forceEmptyDocumentName)
                                 {
                                     noDocumentNameColumnDataModel.CustomProperties.Remove("DocumentName");
                                 }

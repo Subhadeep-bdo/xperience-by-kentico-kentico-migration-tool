@@ -22,9 +22,7 @@ public static class InsightClassMapping
 
         mapping.BuildField("InsightID").AsPrimaryKey();
 
-        mapping.BuildField("PageTitle").SetFrom(SourceClassName, "DocumentPageTitle");
-        mapping.BuildField("PageDescription").SetFrom(SourceClassName, "DocumentPageDescription");
-        mapping.BuildField("PageKeywords").SetFrom(SourceClassName, "DocumentPageKeyWords");
+        mapping.MapPageMetadata(SourceClassName);
 
         // Coupled-table specific scalar fields
         mapping.BuildField("ComingSoon").SetFrom(SourceClassName, "ComingSoon");

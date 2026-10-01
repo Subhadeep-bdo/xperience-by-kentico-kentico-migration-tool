@@ -22,9 +22,7 @@ public static class SectionInsightsPageClassMapping
 
         mapping.BuildField("SectionInsightsPageID").AsPrimaryKey();
 
-        mapping.BuildField("PageTitle").SetFrom(SourceClassName, "DocumentPageTitle");
-        mapping.BuildField("PageDescription").SetFrom(SourceClassName, "DocumentPageDescription");
-        mapping.BuildField("PageKeywords").SetFrom(SourceClassName, "DocumentPageKeyWords");
+        mapping.MapPageMetadata(SourceClassName);
 
         // Coupled-table specific fields
         mapping.BuildField("InsightListFilters").SetFrom(SourceClassName, "InsightListFilters");
